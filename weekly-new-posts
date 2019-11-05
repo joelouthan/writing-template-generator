@@ -1,0 +1,107 @@
+#! /bin/bash
+
+# Clear current weeks
+weeks=/home/jlouthan/bin/weeks
+true > $weeks
+
+# Set the prompt for the select command
+PS3="Select a date or 'q' to quit: "
+
+# Give me the next five weeks starting on Sunday
+sundays=( 0 7 14 21 28 )
+for i in "${sundays[@]}"; do
+  echo "$(date -I -d "`dateround today sunday` +$i days")" >> "$weeks"
+done
+
+next5weeks=$(cat $weeks)
+
+# Show a menu and ask for input.
+select workingSunday in $next5weeks; do
+    if [ -n "$workingSunday" ]; then
+        echo ${workingSunday}
+    fi
+    break
+done
+
+# set your dates for each post
+date_romans=`date -I -d "$workingSunday +1 days"`
+date_psalms=`date -I -d "$workingSunday +2 days"`
+date_luke=`date -I -d "$workingSunday +3 days"`
+date_the_lords_prayer=`date -I -d "$workingSunday +4 days"`
+
+# Working directories for posts
+dir_romans=/home/jlouthan/Sites/theologic.us/content/posts/study-romans
+dir_psalms=/home/jlouthan/Sites/theologic.us/content/posts/now-sings-my-soul-psalms
+dir_luke=/home/jlouthan/Sites/theologic.us/content/posts/family-devos-luke
+dir_the_lords_prayer=/home/jlouthan/Sites/theologic.us/content/posts/the-lords-prayer
+
+# Working basenames for posts
+base_romans=study-romans
+base_psalms=now-sings-my-soul-psalms
+base_luke=family-devos-luke
+base_the_lords_prayer=the-lords-prayer
+
+echo "Publishing for the week of" $workingSunday "!"
+
+read -p "Are you sure? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    cat << EOF > "$dir_romans"/"$date_romans"-"$base_romans".md
+---
+title: 'Romans '
+author: Joseph Louthan
+type: post
+publishDate: $date_romans
+url: /$base_romans/$date_romans-$base_romans/
+categories:
+  - Theology
+tags:
+  - 'Studies: Romans'
+draft: true
+---
+EOF
+    cat << EOF > "$dir_psalms"/"$date_psalms"-"$base_psalms".md
+---
+title: 'Now Sings My Soul: Psalm '
+author: Joseph Louthan
+type: post
+publishDate: $date_psalms
+url: /$base_psalms/$date_psalms-$base_psalms/
+categories:
+  - Prayers
+tags:
+  - 'Now Sings My Soul: Psalms'
+draft: true
+---
+EOF
+    cat << EOF > "$dir_luke"/"$date_luke"-"$base_luke".md
+---
+title: 'Luke '
+author: Joseph Louthan
+type: post
+publishDate: $date_luke
+url: /$base_luke/$date_luke-$base_luke/
+categories:
+  - Theology
+tags:
+  - 'Family Devotions: Luke'
+draft: true
+---
+EOF
+    cat << EOF > "$dir_the_lords_prayer"/"$date_the_lords_prayer"-"$base_the_lords_prayer".md
+---
+title: "The Lord's Prayer: "
+author: Joseph Louthan
+type: post
+publishDate: $date_the_lords_prayer
+url: /$base_the_lords_prayer/$date_the_lords_prayer-$base_the_lords_prayer/
+categories:
+  - Prayers
+tags:
+  - "The Lord's Prayer"
+draft: true
+---
+EOF
+
+fi
