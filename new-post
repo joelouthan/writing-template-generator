@@ -1,0 +1,34 @@
+#! /bin/bash
+
+date=`date +%F -d "+$1 days"`
+currentdir=`basename "$PWD"`
+day=`date +%A -d "+$1 days"`
+
+echo "Publish a" $currentdir "post on" $day $date"?"
+
+read -p "Are you sure? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    cat << EOF > $date-$currentdir
+---
+title: 
+author: Joseph Louthan
+type: post
+publishDate: $date
+url: //$date-$currentdir/
+categories:
+  - Prayers
+  - Theology
+  - Devotions
+tags:
+  - 'Devotions: Romans'
+  - 'Now Sings My Soul: Psalms'
+  - 'Family Devotions: Luke'
+  - "The Lord's Prayer"
+draft: true
+---
+EOF
+
+fi
+
