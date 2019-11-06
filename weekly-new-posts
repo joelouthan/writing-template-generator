@@ -74,6 +74,12 @@ tags:
   - 'Now Sings My Soul: Psalms'
 draft: true
 ---
+<pre>
+<div style="font-variant: small-caps;">
+ 
+</div>
+
+</pre>
 EOF
     cat << EOF > "$dir_luke"/"$date_luke"-"$base_luke".md
 ---
@@ -102,6 +108,10 @@ tags:
   - "The Lord's Prayer"
 draft: true
 ---
+<div style="font-variant: small-caps;">
+  
+</div>
+
 EOF
 
 fi
