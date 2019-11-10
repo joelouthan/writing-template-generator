@@ -28,6 +28,7 @@ date_romans=`date -I -d "$workingSunday +1 days"`
 date_psalms=`date -I -d "$workingSunday +2 days"`
 date_luke=`date -I -d "$workingSunday +3 days"`
 date_the_lords_prayer=`date -I -d "$workingSunday +4 days"`
+post_time="T12:00:04+00:00"
 
 # Working directories for posts
 dir_romans=/home/jlouthan/Sites/theologic.us/content/posts/study-romans
@@ -52,7 +53,7 @@ then
 title: 'Romans '
 author: Joseph Louthan
 type: post
-publishDate: $date_romans
+publishDate: $date_romans$post_time
 url: /$base_romans/$date_romans-$base_romans/
 categories:
   - Theology
@@ -66,7 +67,7 @@ EOF
 title: 'Now Sings My Soul: Psalm '
 author: Joseph Louthan
 type: post
-publishDate: $date_psalms
+publishDate: $date_psalms$post_time
 url: /$base_psalms/$date_psalms-$base_psalms/
 categories:
   - Prayers
@@ -75,9 +76,7 @@ tags:
 draft: true
 ---
 <pre>
-<div style="font-variant: small-caps;">
- 
-</div>
+<div style="font-variant: small-caps;"></div>
 
 </pre>
 EOF
@@ -86,7 +85,7 @@ EOF
 title: 'Luke '
 author: Joseph Louthan
 type: post
-publishDate: $date_luke
+publishDate: $date_luke$post_time
 url: /$base_luke/$date_luke-$base_luke/
 categories:
   - Theology
@@ -100,7 +99,7 @@ EOF
 title: "The Lord's Prayer: "
 author: Joseph Louthan
 type: post
-publishDate: $date_the_lords_prayer
+publishDate: $date_the_lords_prayer$post_time
 url: /$base_the_lords_prayer/$date_the_lords_prayer-$base_the_lords_prayer/
 categories:
   - Prayers
@@ -108,9 +107,7 @@ tags:
   - "The Lord's Prayer"
 draft: true
 ---
-<div style="font-variant: small-caps;">
-  
-</div>
+<div style="font-variant: small-caps;"></div>
 
 EOF
 
