@@ -59,7 +59,7 @@ categories:
   - Theology
 tags:
   - 'Studies: Romans'
-draft:false
+draft: false
 ---
 EOF
     cat << EOF > "$dir_psalms"/"$date_psalms"-"$base_psalms".md
@@ -73,7 +73,7 @@ categories:
   - Prayers
 tags:
   - 'Now Sings My Soul: Psalms'
-draft:false
+draft: false
 ---
 <pre>
 <div style="font-variant: small-caps;"></div>
@@ -91,7 +91,7 @@ categories:
   - Theology
 tags:
   - 'Family Devotions: Luke'
-draft:false
+draft: false
 ---
 EOF
     cat << EOF > "$dir_the_lords_prayer"/"$date_the_lords_prayer"-"$base_the_lords_prayer".md
@@ -105,7 +105,7 @@ categories:
   - Prayers
 tags:
   - "The Lord's Prayer"
-draft:false
+draft: false
 ---
 <div style="font-variant: small-caps;"></div>
 
