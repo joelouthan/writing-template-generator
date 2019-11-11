@@ -27,20 +27,20 @@ done
 date_romans=`date -I -d "$workingSunday +1 days"`
 date_psalms=`date -I -d "$workingSunday +2 days"`
 date_luke=`date -I -d "$workingSunday +3 days"`
-date_the_lords_prayer=`date -I -d "$workingSunday +4 days"`
+#date_the_lords_prayer=`date -I -d "$workingSunday +4 days"`
 post_time="T12:00:04+00:00"
 
 # Working directories for posts
 dir_romans=/home/jlouthan/Sites/theologic.us/content/posts/study-romans
 dir_psalms=/home/jlouthan/Sites/theologic.us/content/posts/now-sings-my-soul-psalms
 dir_luke=/home/jlouthan/Sites/theologic.us/content/posts/family-devos-luke
-dir_the_lords_prayer=/home/jlouthan/Sites/theologic.us/content/posts/the-lords-prayer
+#dir_the_lords_prayer=/home/jlouthan/Sites/theologic.us/content/posts/the-lords-prayer
 
 # Working basenames for posts
 base_romans=study-romans
 base_psalms=now-sings-my-soul-psalms
 base_luke=family-devos-luke
-base_the_lords_prayer=the-lords-prayer
+#base_the_lords_prayer=the-lords-prayer
 
 echo "Publishing for the week of" $workingSunday "!"
 
@@ -94,21 +94,19 @@ tags:
 draft: false
 ---
 EOF
-    cat << EOF > "$dir_the_lords_prayer"/"$date_the_lords_prayer"-"$base_the_lords_prayer".md
----
-title: "The Lord's Prayer: "
-author: Joseph Louthan
-type: post
-publishDate: $date_the_lords_prayer$post_time
-url: /$base_the_lords_prayer/$date_the_lords_prayer-$base_the_lords_prayer/
-categories:
-  - Prayers
-tags:
-  - "The Lord's Prayer"
-draft: false
----
-<div style="font-variant: small-caps;"></div>
-
-EOF
-
-fi
+#    cat << EOF > "$dir_the_lords_prayer"/"$date_the_lords_prayer"-"$base_the_lords_prayer".md
+#---
+#title: "The Lord's Prayer: "
+#author: Joseph Louthan
+#type: post
+#publishDate: $date_the_lords_prayer$post_time
+#url: /$base_the_lords_prayer/$date_the_lords_prayer-$base_the_lords_prayer/
+#categories:
+#  - Prayers
+#tags:
+#  - "The Lord's Prayer"
+#draft: false
+#---
+#<div style="font-variant: small-caps;"></div>
+#
+#EOF
