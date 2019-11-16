@@ -25,8 +25,8 @@ done
 
 # set your dates for each post
 date_romans=`date -I -d "$workingSunday +1 days"`
-date_psalms=`date -I -d "$workingSunday +3 days"`
-date_luke=`date -I -d "$workingSunday +5 days"`
+date_luke=`date -I -d "$workingSunday +3 days"`
+date_psalms=`date -I -d "$workingSunday +5 days"`
 
 # Working directories for posts
 content_dir=/home/jlouthan/Sites/theologic.us/content/posts
