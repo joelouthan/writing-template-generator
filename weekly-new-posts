@@ -8,7 +8,7 @@ true > $weeks
 PS3="Select a date or 'q' to quit: "
 
 # Give me the next five weeks starting on Sunday
-sundays=( 0 7 14 21 28 )
+sundays=( 0 7 14 21 28 35 )
 for i in "${sundays[@]}"; do
   echo "$(date -I -d "`dateround today sunday` +$i days")" >> "$weeks"
 done
