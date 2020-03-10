@@ -34,7 +34,7 @@ date_fri=`date -I -d "$workingSunday +5 days"`
 content_dir=/home/jlouthan/Sites/theologic.us/content/posts
 
 # Working basenames for posts
-base_testimony=testimony
+base_testimony=a-life-of-compromise
 
 
 echo "Publishing for the week of" $workingSunday "!"
