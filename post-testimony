@@ -1,7 +1,10 @@
 #! /bin/bash
 
+userdir=$HOME
+current_dir=$userdir/bin/
+
 # Clear current weeks
-weeks=/home/jlouthan/bin/weeks
+weeks=$current_dir/weeks
 true > $weeks
 
 # Set the prompt for the select command

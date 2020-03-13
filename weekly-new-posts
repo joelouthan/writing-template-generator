@@ -1,7 +1,10 @@
 #! /bin/bash
 
+userdir=$HOME
+current_dir=$userdir/bin/
+
 # Clear current weeks
-weeks=/home/jlouthan/bin/weeks
+weeks=$current_dir/weeks
 true > $weeks
 
 # Set the prompt for the select command
@@ -30,7 +33,7 @@ date_luke=`date -I -d "$workingSunday +3 days"`
 date_mark=`date -I -d "$workingSunday +4 days"`
 
 # Working directories for posts
-content_dir=/home/jlouthan/Sites/theologic.us/content/posts
+content_dir=$userdir/Sites/theologic.us/content/posts
 
 # Working basenames for posts
 base_romans=commentary-romans
