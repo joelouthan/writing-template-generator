@@ -60,7 +60,7 @@ categories:
   - Commentary
 tags:
   - 'Commentary: Romans'
-draft: false
+draft: true
 ---
 EOF
     cat << EOF > "$content_dir"/x"$date_psalms"-"$base_psalms".md
@@ -74,7 +74,7 @@ categories:
   - Prayers
 tags:
   - 'Now Sings My Soul: Psalms'
-draft: false
+draft: true
 ---
 <pre>
 <div style="font-variant: small-caps;"></div>
@@ -92,7 +92,7 @@ categories:
   - Theology
 tags:
   - 'Family Devotions: Luke'
-draft: false
+draft: true
 ---
 EOF
     cat << EOF > "$content_dir"/x"$date_mark"-"$base_mark".md
@@ -106,7 +106,7 @@ categories:
   - Commentary
 tags:
   - 'Commentary: Mark'
-draft: false
+draft: true
 ---
 EOF
 

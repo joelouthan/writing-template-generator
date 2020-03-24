@@ -33,7 +33,7 @@ categories:
   - $Category
 tags:
   - '$tag'
-draft: false
+draft: true
 ---
 EOF
 

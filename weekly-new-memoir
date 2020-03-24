@@ -60,7 +60,7 @@ categories:
   - $Category
 tags:
   - '$tag'
-draft: false
+draft: true
 ---
 EOF
     cat << EOF > "$content_dir"/x"$date_tue"-"$filename".md
@@ -74,7 +74,7 @@ categories:
   - $Category
 tags:
   - '$tag'
-draft: false
+draft: true
 ---
 EOF
     cat << EOF > "$content_dir"/x"$date_wed"-"$filename".md
@@ -88,7 +88,7 @@ categories:
   - $Category
 tags:
   - '$tag'
-draft: false
+draft: true
 ---
 EOF
     cat << EOF > "$content_dir"/x"$date_thu"-"$filename".md
@@ -102,7 +102,7 @@ categories:
   - $Category
 tags:
   - '$tag'
-draft: false
+draft: true
 ---
 EOF
     cat << EOF > "$content_dir"/x"$date_fri"-"$filename".md
@@ -116,7 +116,7 @@ categories:
   - $Category
 tags:
   - '$tag'
-draft: false
+draft: true
 ---
 EOF
 fi
