@@ -24,7 +24,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     cat << EOF > $content_dir/"$date"-"$filename".md
 ---
-title: 'A Life of Compromise, Ch x: '
+title: 'A Life of Compromise: 1. '
 author: Joseph Louthan
 type: post
 publishDate: $date
