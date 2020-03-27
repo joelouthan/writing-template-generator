@@ -1,0 +1,13 @@
+#! /bin/bash
+
+site=$HOME/Sites/theologic.us
+posts=$site/content/posts
+
+echo "Checking for any un-x posts with true draft statuses..."
+
+grep "draft: true" $posts/* | grep -v x20
+printf '%s ' 'Press any key to continue'
+read ans
+echo "/nProceeding with deploy..."
+cd $posts && git add . && git commit
+git push
