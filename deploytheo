@@ -8,11 +8,11 @@ grep --color=always "draft: true" $posts/* | grep -v x20
 printf '%s ' 'Press any key to continue'
 read ans
 
-echo "/nChecking for any x posts with false draft statuses..."
+echo "Checking for any x posts with false draft statuses..."
 grep --color=always "draft: false" $posts/* | grep x20
 printf '%s ' 'Press any key to continue'
 read ans
 
-echo "/nProceeding with deploy..."
+echo "Proceeding with deploy..."
 cd $posts && git add . && git commit
 git push
