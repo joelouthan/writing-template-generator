@@ -28,11 +28,11 @@ select workingSunday in $next5weeks; do
 done
 
 # set your dates for each post
-date_mon=`date -j -f %Y-%m-%d -v+1d $workingSunday +%F`
-date_tue=`date -j -f %Y-%m-%d -v+2d $workingSunday +%F`
-date_wed=`date -j -f %Y-%m-%d -v+3d $workingSunday +%F`
-date_thu=`date -j -f %Y-%m-%d -v+4d $workingSunday +%F`
-date_fri=`date -j -f %Y-%m-%d -v+5d $workingSunday +%F`
+date_mon=`date -j -v+1d $workingSunday +%F`
+date_tue=`date -j -v+2d $workingSunday +%F`
+date_wed=`date -j -v+3d $workingSunday +%F`
+date_thu=`date -j -v+4d $workingSunday +%F`
+date_fri=`date -j -v+5d $workingSunday +%F`
 
 # Working directories for posts
 content_dir=$HOME/Sites/theologic.us/content/posts
