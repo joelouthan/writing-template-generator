@@ -4,7 +4,7 @@
 userdir=$HOME
 current_dir=$userdir/bin/
 #date=`date +%F -d "+$1 days"`
-date=`date -v+1d +%F`
+date=`date +%F`
 #day=`date +%A -d "+$1 days"`
 day=`date -v+1d +%A`
 currentdir=`basename "$PWD"`

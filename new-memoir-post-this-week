@@ -7,12 +7,12 @@ current_dir=$userdir/bin/
 # Set the prompt for the select command
 PS3="Select a date or 'q' to quit: "
 
-# Clear current weeks
+# Clear current 'week'
 week=$current_dir/7days
 true > $week
 
-# Give me the next five weeks starting on Sunday
-next7days=( 1 2 3 4 5 6 7 )
+# Give me the next days starting today
+next7days=( 0 1 2 3 4 5 6 7 )
 for i in "${next7days[@]}"; do
   echo "$(date -j -v+"$i"d +%F)" >> 7days
 done
@@ -47,8 +47,8 @@ then
 title: 'A Life of Compromise: x. '
 author: Joseph Louthan
 type: post
-publishDate: $date
-url: /$category/$date-$filename_base/
+publishDate: $workingDay
+url: /$category/$workingDay-$filename_base/
 categories:
   - $Category
 tags:

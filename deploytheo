@@ -14,5 +14,5 @@ printf '%s ' 'Press any key to continue'
 read ans
 
 echo "Proceeding with deploy..."
-cd $posts && git add . && git commit
+cd $site && git add . && git commit
 git push
