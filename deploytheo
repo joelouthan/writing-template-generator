@@ -4,12 +4,12 @@ site=$HOME/Sites/theologic.us
 posts=$site/content/posts
 
 echo "Checking for any un-x posts with true draft statuses..."
-grep --color=always "draft: true" $posts/* | grep -v x20
+grep -R --color=always "draft: true" $posts/* | grep -v x-20
 printf '%s ' 'Press any key to continue'
 read ans
 
 echo "Checking for any x posts with false draft statuses..."
-grep --color=always "draft: false" $posts/* | grep x20
+grep -R --color=always "draft: false" $posts/* | grep x-20
 printf '%s ' 'Press any key to continue'
 read ans
 
