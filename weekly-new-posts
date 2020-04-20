@@ -12,9 +12,9 @@ true > $weeks
 PS3="Select a date or 'q' to quit: "
 
 # Give me the next five weeks starting on Sunday
-sundays=( 0 7 14 21 28 35 )
+sundays=( -7 +0 +7 +14 +21 +28 +35 )
 for i in "${sundays[@]}"; do
-  echo "$(date -j -v+sun -v+"$i"d +%F)" >> $current_dir/weeks
+  echo "$(date -j -v+sun -v"$i"d +%F)" >> $current_dir/weeks
 done
 
 next5weeks=$(cat $weeks)
