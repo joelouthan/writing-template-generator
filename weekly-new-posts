@@ -32,6 +32,7 @@ date_romans=`date -j -f %Y-%m-%d -v+1d $workingSunday +%F`
 date_psalms=`date -j -f %Y-%m-%d -v+2d $workingSunday +%F`
 date_life=`date -j -f %Y-%m-%d -v+3d $workingSunday +%F`
 date_luke=`date -j -f %Y-%m-%d -v+4d $workingSunday +%F`
+date_five=`date -j -f %Y-%m-%d -v+5d $workingSunday +%F`
 # date_mark=`date -j -f %Y-%m-%d -v+5d $workingSunday +%F`
 
 # Working directories for posts
@@ -42,6 +43,7 @@ base_romans=commentary-romans
 base_psalms=now-sings-my-soul-psalms
 base_life=a-life-of-compromise
 base_luke=family-devos-luke
+base_five=five-point-fridays
 # base_mark=commentary-mark
 
 # Working dirnames
@@ -49,6 +51,7 @@ dir_mon=1-commentary-romans
 dir_tue=2-now-sings-my-soul-psalm
 dir_wed=3-memoir-a-life-of-compromise
 dir_thu=4-family-devos-luke
+dir_fri=5-five-point-fridays
 # base_fri=commentary-mark
 
 echo "Publishing for the week of" $workingSunday"!"
@@ -114,6 +117,20 @@ categories:
   - Theology
 tags:
   - 'Family Devotions: Luke'
+draft: true
+---
+EOF
+    cat << EOF > "$content_dir"/"$dir_fri"/x-"$date_five"-"$base_five".md
+---
+title: 'Five Points on Fridays: '
+author: Joseph Louthan
+type: post
+publishDate: $date_five
+url: /$base_luke/$date_five-$base_five/
+categories:
+  - Links
+tags:
+  - 'Five Points on Fridays'
 draft: true
 ---
 EOF
