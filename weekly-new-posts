@@ -43,7 +43,7 @@ base_romans=commentary-romans
 base_psalms=now-sings-my-soul-psalms
 base_life=a-life-of-compromise
 base_luke=family-devos-luke
-base_five=five-point-fridays
+base_five=five-point-friday
 # base_mark=commentary-mark
 
 # Working dirnames
@@ -51,7 +51,7 @@ dir_mon=1-commentary-romans
 dir_tue=2-now-sings-my-soul-psalm
 dir_wed=3-memoir-a-life-of-compromise
 dir_thu=4-family-devos-luke
-dir_fri=5-five-point-fridays
+dir_fri=5-five-point-friday
 # base_fri=commentary-mark
 
 echo "Publishing for the week of" $workingSunday"!"
@@ -98,7 +98,7 @@ title: 'A Life of Compromise: x. '
 author: Joseph Louthan
 type: post
 publishDate: $date_life
-url: /memoir/$date_lift-$base_life/
+url: /memoir/$date_life-$base_life/
 categories:
   - Memoir
 tags:
@@ -122,15 +122,15 @@ draft: true
 EOF
     cat << EOF > "$content_dir"/"$dir_fri"/x-"$date_five"-"$base_five".md
 ---
-title: 'Five Points on Fridays: '
+title: 'Five Points on Friday: '
 author: Joseph Louthan
 type: post
 publishDate: $date_five
-url: /$base_luke/$date_five-$base_five/
+url: /$base_five/$date_five-$base_five/
 categories:
   - Links
 tags:
-  - 'Five Points on Fridays'
+  - 'Five Points on Friday'
 draft: true
 ---
 EOF
