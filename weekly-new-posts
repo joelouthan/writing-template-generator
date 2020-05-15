@@ -32,7 +32,8 @@ date_romans=`date -j -f %Y-%m-%d -v+1d $workingSunday +%F`
 date_psalms=`date -j -f %Y-%m-%d -v+2d $workingSunday +%F`
 date_life=`date -j -f %Y-%m-%d -v+3d $workingSunday +%F`
 date_luke=`date -j -f %Y-%m-%d -v+4d $workingSunday +%F`
-date_five=`date -j -f %Y-%m-%d -v+5d $workingSunday +%F`
+date_few=`date -j -f %Y-%m-%d -v+5d $workingSunday +%F`
+date_sundry=`date -j -f %Y-%m-%d -v+5d $workingSunday +%F`
 # date_mark=`date -j -f %Y-%m-%d -v+5d $workingSunday +%F`
 
 # Working directories for posts
@@ -43,7 +44,8 @@ base_romans=commentary-romans
 base_psalms=now-sings-my-soul-psalms
 base_life=a-life-of-compromise
 base_luke=family-devos-luke
-base_five=five-point-friday
+base_few=few-points-friday
+base_sundry=five-point-friday
 # base_mark=commentary-mark
 
 # Working dirnames
@@ -51,7 +53,8 @@ dir_mon=1-commentary-romans
 dir_tue=2-now-sings-my-soul-psalm
 dir_wed=3-memoir-a-life-of-compromise
 dir_thu=4-family-devos-luke
-dir_fri=5-five-point-friday
+dir_fri=5-few-points-friday
+dir_sat=6-sundry-saturday
 # base_fri=commentary-mark
 
 echo "Publishing for the week of" $workingSunday"!"
@@ -120,17 +123,31 @@ tags:
 draft: true
 ---
 EOF
-    cat << EOF > "$content_dir"/"$dir_fri"/x-"$date_five"-"$base_five".md
+    cat << EOF > "$content_dir"/"$dir_fri"/x-"$date_few"-"$base_few".md
 ---
-title: 'Five Points on Friday: '
+title: 'A Few Points on Friday: _ Edition'
 author: Joseph Louthan
 type: post
-publishDate: $date_five
-url: /$base_five/$date_five-$base_five/
+publishDate: $date_few
+url: /$base_few/$date_fri-$base_few/
 categories:
   - Links
 tags:
-  - 'Five Points on Friday'
+  - 'Few Points on Friday'
+draft: true
+---
+EOF
+    cat << EOF > "$content_dir"/"$dir_sundry"/x-"$date_sat"-"$base_sundry".md
+---
+title: 'Sundry Saturdays: '
+author: Joseph Louthan
+type: post
+publishDate: $date_five
+url: /$base_sundry/$date_sat-$base_sundry/
+categories:
+  - Links
+tags:
+  - 'Sundry Saturdays'
 draft: true
 ---
 EOF

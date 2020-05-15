@@ -1,0 +1,167 @@
+#! /bin/bash
+# date command: MACOS
+
+userdir=$HOME
+current_dir=$userdir/bin/
+content_dir=$userdir/Sites/theologic.us/content/posts
+dir_prayers=$content_dir/prayers
+base_prayers=daily_prayers
+base_am_prayers=daily_morning_prayers
+
+# loop: print out 1-30
+for ((i=0;i<=31;i++)); 
+do 
+   date_prayers=`date -j -v+"$i"d +%F`
+   day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
+   am_time=T09:00-06:00
+   pm_time=T14:00-06:00
+   cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_am_prayers".md
+---
+title: 'Morning Prayers for $day_prayers'
+author: Joseph Louthan
+type: post
+publishDate: $date_prayers$am_time
+url: /$base_am_prayers/$date_prayers-$base_am_prayers/
+categories:
+  - Prayers
+tags:
+  - 'Prayers'
+draft: true
+---
+## Give thanks to the Lord, for He is good and His steadfast love endures forever
+
+
+**Sarah, my love** - 
+
+**Lord, help me to gentle, patient, and tender like you** - 
+
+**Lord, let me preach your gospel, die, and then be forgotten** -
+
+**Lord, I cared not where or how I lived, or what hardships I went through, so I could but gain souls to Christ. —Henry Martyn** - 
+
+EOF
+   cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_prayers".md
+---
+title: 'Daily Prayers for $day_prayers'
+author: Joseph Louthan
+type: post
+publishDate: $date_prayers$pm_time
+url: /$base_prayers/$date_prayers-$base_prayers/
+categories:
+  - Prayers
+tags:
+  - 'Prayers'
+draft: true
+---
+### For those who do not know You
+
+**Yusef and Nichole** - 
+
+**Elijah & Ivy, Amber & Kara, Griffen, Gabe, Emma, Lacey, Grace, Lucy** - 
+
+**Natalie, Jackson, Kingston** - 
+
+**Reed & Sandy** - 
+
+**Johnny & Jamie, Kolton, Korbin** - 
+
+**Jeanny** - 
+
+**Jodi & Ryan, Piper, Rylee** - 
+
+**Jennifer & John; Brandon; Phillip & Keri; Pedigo & Deb** - 
+
+**Melissa & Micah, Noah, Levi, Judah** - 
+
+**James** - 
+
+**Jason, Molly** - 
+
+**Jansen & Mandy** - 
+
+**Sean & Sunny** - 
+
+**Evan** - 
+
+**Mark & Nicole, Gabrielle** - 
+
+**Mark & Robin** - 
+
+**Louis** - 
+
+**Eileen & Hubs, fam** - 
+
+**Ray** - 
+
+**Randall** - 
+
+**Cynthia** - 
+
+**Joe P** - 
+
+**George** - 
+
+**Wayne Barber** - 
+
+**Eric Robinson** - 
+
+**Jonathan & Jenn Williams** - 
+
+
+
+### Friends
+
+**Alix & Braden** - 
+
+**Dena & Dave** - 
+
+**Reva & Ronnie** - 
+
+**Andrew & Hilary, Evie, Eleanor, Bear** - 
+
+**Tyler & Heather, Shepherd** -
+
+
+
+### Discipleship Group
+
+##### Chuck & Lauren
+
+*(teaching job, childhood trauma, Sabbath, L: back, neighbor Carla type 6)*
+
+##### Riley & Emily
+
+*(pregnancy, baby boy, back pain, health issues, depression, godliness in marriage, provision, communication)*
+
+##### Scott & Melody
+
+*(Wayne, sore thumb)*
+
+##### Andrew & Andi
+
+*(wedding plans, Faith's brain surgery, Savannah's psych/personality disorder)*
+
+
+
+### Family
+
+**Sarah** - 
+
+**Yusef, Elijah, Ivy, Ava** - 
+
+**Marmie** *(Removal from Spiritual Isolation; Brought into Spiritual community; Equally yoked)* - 
+
+
+
+### Church
+
+**Frontline Norman** - 
+
+**Frontline South** - 
+
+**Frontline** - 
+
+**All the churches in Norman** - 
+
+EOF
+done
