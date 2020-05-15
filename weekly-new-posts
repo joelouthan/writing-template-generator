@@ -65,7 +65,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     cat << EOF > "$content_dir"/"$dir_mon"/x-"$date_romans"-"$base_romans".md
 ---
-title: 'xRomans '
+title: 'Romans '
 author: Joseph Louthan
 type: post
 publishDate: $date_romans
@@ -79,7 +79,7 @@ draft: true
 EOF
     cat << EOF > "$content_dir"/"$dir_tue"/x-"$date_psalms"-"$base_psalms".md
 ---
-title: 'xNow Sings My Soul: Psalm '
+title: 'Now Sings My Soul: Psalm '
 author: Joseph Louthan
 type: post
 publishDate: $date_psalms
@@ -111,7 +111,7 @@ draft: true
 EOF
     cat << EOF > "$content_dir"/"$dir_thu"/x-"$date_luke"-"$base_luke".md
 ---
-title: 'xLuke '
+title: 'Luke '
 author: Joseph Louthan
 type: post
 publishDate: $date_luke

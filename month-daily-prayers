@@ -13,8 +13,8 @@ for ((i=0;i<=31;i++));
 do 
    date_prayers=`date -j -v+"$i"d +%F`
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
-   am_time=T09:00-06:00
-   pm_time=T14:00-06:00
+   am_time=T08:00:00-06:00
+   pm_time=T14:00:00-06:00
    cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_am_prayers".md
 ---
 title: 'Morning Prayers for $day_prayers'
