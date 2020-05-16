@@ -4,7 +4,7 @@ site=$HOME/Sites/theologic.us
 posts=$site/content/posts
 
 echo "Checking for any un-x posts with true draft statuses..."
-grep -R --color=always "draft: true" $posts/* | grep -v x-
+grep -R --color=always "draft: true" $posts/* | grep -v x- | grep -v prayer
 printf '%s ' 'Press any key to continue'
 read ans
 

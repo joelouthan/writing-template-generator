@@ -9,7 +9,7 @@ base_prayers=daily_prayers
 base_am_prayers=daily_morning_prayers
 
 # loop: print out 1-30
-for ((i=0;i<=31;i++)); 
+for ((i=1;i<=31;i++)); 
 do 
    date_prayers=`date -j -v+"$i"d +%F`
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
@@ -38,6 +38,8 @@ draft: true
 **Lord, let me preach your gospel, die, and then be forgotten** -
 
 **Lord, I cared not where or how I lived, or what hardships I went through, so I could but gain souls to Christ. —Henry Martyn** - 
+
+**For my Jonathan** -
 
 EOF
    cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_prayers".md
