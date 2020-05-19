@@ -5,8 +5,8 @@ userdir=$HOME
 current_dir=$userdir/bin/
 content_dir=$userdir/Sites/theologic.us/content/posts
 dir_prayers=$content_dir/prayers
-base_prayers=daily_prayers
-base_am_prayers=daily_morning_prayers
+base_prayers=evening_prayers
+base_am_prayers=morning_prayers
 
 # loop: print out 1-30
 for ((i=1;i<=31;i++)); 
@@ -31,6 +31,7 @@ draft: true
 ## Give thanks to the Lord, for He is good and His steadfast love endures forever
 
 
+
 **Sarah, my love** - 
 
 **Lord, help me to gentle, patient, and tender like you** - 
@@ -44,7 +45,7 @@ draft: true
 EOF
    cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_prayers".md
 ---
-title: 'Daily Prayers for $day_prayers'
+title: 'Evening Prayers for $day_prayers'
 author: Joseph Louthan
 type: post
 publishDate: $date_prayers$pm_time
@@ -57,109 +58,111 @@ draft: true
 ---
 ### For those who do not know You
 
-**Yusef and Nichole** - 
+**Yusef and Nichole** 
 
-**Elijah & Ivy, Amber & Kara, Griffen, Gabe, Emma, Lacey, Grace, Lucy** - 
+**Elijah & Ivy, Amber & Kara, Griffen, Gabe, Emma, Lacey, Grace, Lucy** 
 
-**Natalie, Jackson, Kingston** - 
+**Natalie, Jackson, Kingston** 
 
-**Reed & Sandy** - 
+**Reed & Sandy** 
 
-**Johnny & Jamie, Kolton, Korbin** - 
+**Johnny & Jamie, Kolton, Korbin** 
 
-**Jeanny** - 
+**Jeanny** 
 
-**Jodi & Ryan, Piper, Rylee** - 
+**Jodi & Ryan, Piper, Rylee** 
 
-**Jennifer & John; Brandon; Phillip & Keri; Pedigo & Deb** - 
+**Jennifer & John; Brandon; Phillip & Keri; Pedigo & Deb** 
 
-**Melissa & Micah, Noah, Levi, Judah** - 
+**Melissa & Micah, Noah, Levi, Judah** 
 
-**James** - 
+**James** 
 
-**Jason, Molly** - 
+**Jason, Molly** 
 
-**Jansen & Mandy** - 
+**Jansen & Mandy** 
 
-**Sean & Sunny** - 
+**Sean & Sunny** 
 
-**Evan** - 
+**Evan** 
 
-**Mark & Nicole, Gabrielle** - 
+**Mark & Nicole, Gabrielle** 
 
-**Mark & Robin** - 
+**Mark & Robin** 
 
-**Louis** - 
+**Louis** 
 
-**Greg & wife** - 
+**Greg & wife** 
 
-**Liz** - 
+**Liz** 
 
-**Eileen & Hubs, fam** - 
+**Eileen & Hubs, fam** 
 
-**Ray** - 
+**Ray** 
 
-**Randall** - 
+**Randall** 
 
-**Cynthia** - 
+**Cynthia** 
 
-**Joe P** - 
+**Joe P** 
 
-**George** - 
+**George** 
 
-**Wayne Barber** - 
+**Wayne Barber** 
 
-**Eric Robinson** - 
+**Eric Robinson** 
 
-**Jonathan & Jenn Williams** - 
+**Jonathan & Jenn Williams** 
 
 
 
 ### Friends
 
-**Andrew & Jordyn, Will, Alice, Elliot** - 
+**Andrew & Jordyn, Will, Alice, Elliot** 
 
-**Alix & Braden** - 
+**Alix & Braden** 
 
-**Dena & Dave** - 
+**Dena & Dave** 
 
-*grandkids* **Ashlyn, Kadence, Liam, Coleman, Brayden, Gray, Madalyn, Hudson** - 
+*grandkids* **Ashlyn, Kadence, Liam, Coleman, Brayden, Gray, Madalyn, Hudson** 
 
-**Reva & Ronnie** - 
+**Reva & Ronnie** 
 
-**Sean & Jacqueline** - 
+**Sean & Jacqueline** 
 
-**Andrew & Hilary, Evie, Eleanor, Bear** - 
+**Andrew & Hilary, Evie, Eleanor, Bear** 
 
-**Tyler & Heather, Shepherd** -
+**Tyler & Heather, Shepherd**
 
-**Reuben** - 
+**Reuben** 
 
-**Tyler & Melanie, Addy, Jocelyn, Kerslyn** - 
+**Tyler & Melanie, Addy, Jocelyn, Kerslyn** 
 
-**Will & Carli, kids** -
+**Will & Carli, kids**
 
-**Dawn & Mark** -
+**Dawn & Mark**
 
-**Deanna & Hubs, Quinn** -
+**Deanna & Hubs, Quinn**
+
+**Holly & Jake, Jonah, Ellis, Finley**
 
 
 
 ### Discipleship Group
 
-**Chuck & Lauren, Timothy, Emily, Rebekah, Zachary, Samuel** - 
+**Chuck & Lauren, Timothy, Emily, Rebekah, Zachary, Samuel** 
 
 *(teaching job, childhood trauma, Sabbath, L: back, neighbor Carla type 6)*
 
-**Riley & Emily** -
+**Riley & Emily**
 
 *(pregnancy, baby boy, back pain, health issues, depression, godliness in marriage, provision, communication)*
 
-**Scott & Melody, Emily, Adelyn, Caleb** -
+**Scott & Melody, Emily, Adelyn, Caleb**
 
 *(Wayne, sore thumb)*
 
-**Andrew & Andi** - 
+**Andrew & Andi** 
 
 *(wedding plans, Faith's brain surgery, Savannah's psych/personality disorder)*
 
@@ -167,25 +170,27 @@ draft: true
 
 ### Family
 
-**Sarah** - 
+**Sarah** 
 
-**Yusef, Elijah, Ivy, Ava** - 
+**Yusef, Elijah, Ivy, Ava** 
 
-**Marmie** *(Removal from Spiritual Isolation; Brought into Spiritual community; Equally yoked)* - 
+**Marmie** *(Removal from Spiritual Isolation; Brought into Spiritual community; Equally yoked)* 
 
 
 
 ### Church
 
-**Frontline Norman** - 
+**Frontline Norman**
 
-**Frontline South** - 
+**Antioch Norman** 
 
-**Frontline** - 
+**Frontline South** 
 
-**All the churches in Norman** - 
+**Frontline** 
 
-**Norman** - 
+**All the churches in Norman** 
+
+**Norman** 
 
 EOF
 done
