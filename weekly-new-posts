@@ -125,7 +125,7 @@ draft: true
 EOF
     cat << EOF > "$content_dir"/"$dir_fri"/x-"$date_fri"-"$base_fri".md
 ---
-title: 'A Few Points on Friday'
+title: 'A Few Points for Friday'
 author: Joseph Louthan
 type: post
 publishDate: $date_fri
@@ -133,7 +133,7 @@ url: /$base_fri/$date_fri-$base_fri/
 categories:
   - Links
 tags:
-  - 'Few Points on Friday'
+  - 'A Few Points for Friday'
 draft: true
 ---
 EOF
