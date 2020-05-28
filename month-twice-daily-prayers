@@ -5,19 +5,19 @@ userdir=$HOME
 current_dir=$userdir/bin/
 content_dir=$userdir/Sites/theologic.us/content/posts
 dir_prayers=$content_dir/prayers
-#base_prayers=evening_prayers
-base_am_prayers=daily_prayers
+base_prayers=evening_prayers
+base_am_prayers=morning_prayers
 
 # loop: print out 1-30
-for ((i=0;i<=31;i++)); 
+for ((i=1;i<=31;i++)); 
 do 
    date_prayers=`date -j -v+"$i"d +%F`
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
    am_time=T08:00:00-06:00
-   #pm_time=T14:00:00-06:00
+   pm_time=T14:00:00-06:00
    cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_am_prayers".md
 ---
-title: 'Daily Prayers for $day_prayers'
+title: 'Morning Prayers for $day_prayers'
 author: Joseph Louthan
 type: post
 publishDate: $date_prayers$am_time
@@ -42,8 +42,20 @@ draft: true
 
 **For my Jonathan** -
 
-
-
+EOF
+   cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_prayers".md
+---
+title: 'Evening Prayers for $day_prayers'
+author: Joseph Louthan
+type: post
+publishDate: $date_prayers$pm_time
+url: /$base_prayers/$date_prayers-$base_prayers/
+categories:
+  - Prayers
+tags:
+  - 'Prayers'
+draft: true
+---
 ### For those who do not know You
 
 **Yusef and Nichole** 
