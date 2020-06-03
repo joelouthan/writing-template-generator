@@ -45,6 +45,7 @@ base_tue=now-sings-my-soul-psalms
 base_wed=a-life-of-compromise
 base_thu=family-devos-luke
 base_fri=few-points-friday
+base_tim=letters-to-timothy
 base_sat=sundry-saturday
 # base_mark=commentary-mark
 
@@ -54,6 +55,7 @@ dir_tue=2-now-sings-my-soul-psalm
 dir_wed=3-memoir-a-life-of-compromise
 dir_thu=4-family-devos-luke
 dir_fri=5-few-points-friday
+dir_tim=5-letters-to-timothy
 dir_sat=6-sundry-saturday
 # base_fri=commentary-mark
 
@@ -117,7 +119,7 @@ type: post
 publishDate: $date_thu
 url: /$base_thu/$date_thu-$base_thu/
 categories:
-  - Theology
+  - Devotions
 tags:
   - 'Family Devotions: Luke'
 draft: true
@@ -134,6 +136,20 @@ categories:
   - Links
 tags:
   - 'A Few Points for Friday'
+draft: true
+---
+EOF
+    cat << EOF > "$content_dir"/"$dir_tim"/x-"$date_fri"-"$base_tim".md
+---
+title: 'Philosophy of Ministry: 1 Timothy '
+author: Joseph Louthan
+type: post
+publishDate: $date_fri
+url: /$base_fri/$date_fri-$base_fri/
+categories:
+  - Ministry
+tags:
+  - 'Philosophy of Ministry'
 draft: true
 ---
 EOF
