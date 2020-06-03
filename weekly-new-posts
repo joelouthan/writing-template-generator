@@ -141,7 +141,7 @@ draft: true
 EOF
     cat << EOF > "$content_dir"/"$dir_tim"/x-"$date_fri"-"$base_tim".md
 ---
-title: 'Philosophy of Ministry: 1 Timothy '
+title: 'Why Do We Minister In This Way?: 1 Timothy '
 author: Joseph Louthan
 type: post
 publishDate: $date_fri
