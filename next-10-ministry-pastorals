@@ -29,7 +29,7 @@ then
 	weds=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 )
 	for i in "${weds[@]}"; do
 	  date_weds=`date -j -v+wed -v"$i"d +%F`
-      cat << EOF > "$posts_dir"/x-"$date_weds"-"$base_tim".md
+      cat << EOF > "$posts_dir"/"$date_weds"-"$base_tim".md
 ---
 title: '$title'
 author: Joseph Louthan

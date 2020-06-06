@@ -29,7 +29,7 @@ then
 	thus=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 )
 	for i in "${thus[@]}"; do
 	  date_thus=`date -j -v+thu -v"$i"d +%F`
-      cat << EOF > "$posts_dir"/x-"$date_thus"-"$base_thu".md
+      cat << EOF > "$posts_dir"/"$date_thus"-"$base_thu".md
 ---
 title: 'Luke 4:'
 author: Joseph Louthan
