@@ -31,11 +31,11 @@ then
 	  date_fris=`date -j -v+fri -v"$i"d +%F`
       cat << EOF > "$subject_dir"/x-"$date_fris"-"$base_tim".md
 ---
-title: 'Thinking Through Ministry (Pastoral Letters): 1 Timothy'
+title: 'Thinking Through Ministry: 1 Timothy'
 author: Joseph Louthan
 type: post
 publishDate: $date_fris
-url: /$base_tim/$date_fris-$base_tim/
+url: /$base_tim/x-$date_fris-$base_tim/
 categories:
   - $Category
 tags:
