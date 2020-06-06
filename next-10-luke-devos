@@ -1,13 +1,12 @@
 #! /bin/bash
 # date command: MACOS
 
-title='Luke 4:'
-subject=4-family-devos-luke
+title='Luke '
 userdir=$HOME
 bin_dir=$userdir/bin
 subject_dir=4-family-devos-luke
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
-weekof=$(date -j -v+thu +%F)
+weekof=$(date -j -v+thu '+%A, %F')
 Category='Devotions'
 Tag='Family Devotions: Luke'
 
@@ -21,7 +20,7 @@ base_thu=family-devos-luke
 # base_sat=sundry-saturday
 # base_mark=commentary-mark
 
-echo "Publishing for the week of" $weekof"!"
+echo "Publishing 'Devotions in Luke' for the week of" $weekof"!"
 
 read -p "Are you sure? " -n 1 -r
 echo
@@ -30,7 +29,7 @@ then
 	thus=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 )
 	for i in "${thus[@]}"; do
 	  date_thus=`date -j -v+thu -v"$i"d +%F`
-      cat << EOF > "$posts_dir"/"$date_thus"-"$base_thu".md
+      cat << EOF > "$posts_dir"/x-"$date_thus"-"$base_thu".md
 ---
 title: 'Luke 4:'
 author: Joseph Louthan
@@ -41,7 +40,7 @@ categories:
   - $Category
 tags:
   - '$Tag'
-draft: false
+draft: true
 ---
 EOF
 	done
