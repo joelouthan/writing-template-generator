@@ -1,21 +1,21 @@
 #! /bin/bash
 # date command: MACOS
 
-title='Luke 4:'
-subject=4-family-devos-luke
+title='Romans'
+subject=Romans
 userdir=$HOME
 bin_dir=$userdir/bin
-subject_dir=4-family-devos-luke
+subject_dir=1-commentary-romans
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
-weekof=$(date -j -v+thu +%F)
-Category='Devotions'
-Tag='Family Devotions: Luke'
+weekof=$(date -j -v+fri +%F)
+Category='Commentary'
+Tag='Commentary: Romans'
 
 # Working basenames for posts
-# base_mon=commentary-romans
+base_mon=commentary-romans
 # base_tue=now-sings-my-soul-psalms
 # base_wed=a-life-of-compromise
-base_thu=family-devos-luke
+# base_thu=family-devos-luke
 # base_fri=few-points-friday
 # base_tim=letters-to-timothy
 # base_sat=sundry-saturday
@@ -27,16 +27,16 @@ read -p "Are you sure? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	thus=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 )
-	for i in "${thus[@]}"; do
-	  date_thus=`date -j -v+thu -v"$i"d +%F`
-      cat << EOF > "$posts_dir"/"$date_thus"-"$base_thu".md
+	mons=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 )
+	for i in "${mons[@]}"; do
+	  date_mons=`date -j -v+mon -v"$i"d +%F`
+      cat << EOF > "$posts_dir"/"$date_mons"-"$base_mon".md
 ---
-title: 'Luke 4:'
+title: '$title'
 author: Joseph Louthan
 type: post
-publishDate: $date_thus
-url: /$base_thu/x-$date_thus-$base_thu/
+publishDate: $date_mons
+url: /$base_mon/x-$date_mons-$base_mon/
 categories:
   - $Category
 tags:

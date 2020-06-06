@@ -1,11 +1,12 @@
 #! /bin/bash
 # date command: MACOS
 
+title='Now Sings My Soul: Psalm'
 subject=2-now-sings-my-soul-psalm
 userdir=$HOME
 bin_dir=$userdir/bin
-posts_dir=$userdir/Sites/theologic.us/content/posts/$tag_dir
-subject_dir=$posts_dir/$subject
+subject_dir=2-now-sings-my-soul-psalm
+posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 weekof=$(date -j -v+tue +%F)
 Category='Prayers'
 Tag='Now Sings My Soul: Psalms'
@@ -29,9 +30,9 @@ then
 	tues=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 )
 	for i in "${tues[@]}"; do
 	  date_tues=`date -j -v+tue -v"$i"d +%F`
-      cat << EOF > "$subject_dir"/x-"$date_tues"-"$base_tue".md
+      cat << EOF > "$posts_dir"/"$date_tues"-"$base_tue".md
 ---
-title: 'Now Sings My Soul: Psalm'
+title: '$title'
 author: Joseph Louthan
 type: post
 publishDate: $date_tues

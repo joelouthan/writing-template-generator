@@ -1,11 +1,12 @@
 #! /bin/bash
 # date command: MACOS
 
+title='Thinking Through Ministry: 1 Timothy'
 subject=5-letters-to-timothy
 userdir=$HOME
 bin_dir=$userdir/bin
-posts_dir=$userdir/Sites/theologic.us/content/posts/$tag_dir
-subject_dir=$posts_dir/$subject
+subject_dir=5-letters-to-timothy
+posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 weekof=$(date -j -v+fri +%F)
 Category='Ministry'
 Tag='Philosophy of Ministry'
@@ -29,9 +30,9 @@ then
 	fris=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 )
 	for i in "${fris[@]}"; do
 	  date_fris=`date -j -v+fri -v"$i"d +%F`
-      cat << EOF > "$subject_dir"/x-"$date_fris"-"$base_tim".md
+      cat << EOF > "$posts_dir"/"$date_fris"-"$base_tim".md
 ---
-title: 'Thinking Through Ministry: 1 Timothy'
+title: '$title'
 author: Joseph Louthan
 type: post
 publishDate: $date_fris
