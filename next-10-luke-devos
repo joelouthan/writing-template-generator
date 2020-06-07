@@ -35,7 +35,7 @@ title: 'Luke 4:'
 author: Joseph Louthan
 type: post
 publishDate: $date_thus
-url: /$base_thu/x-$date_thus-$base_thu/
+url: /$base_thu/$date_thus-$base_thu/
 categories:
   - $Category
 tags:

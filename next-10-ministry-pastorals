@@ -35,7 +35,7 @@ title: '$title'
 author: Joseph Louthan
 type: post
 publishDate: $date_weds
-url: /$base_tim/x-$date_weds-$base_tim/
+url: /$base_tim/$date_weds-$base_tim/
 categories:
   - $Category
 tags:
