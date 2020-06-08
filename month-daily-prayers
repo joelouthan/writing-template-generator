@@ -9,7 +9,7 @@ dir_prayers=$content_dir/prayers
 base_am_prayers=daily_prayers
 
 # loop: print out 1-30
-for ((i=0;i<=31;i++)); 
+for ((i=1;i<=31;i++)); 
 do 
    date_prayers=`date -j -v+"$i"d +%F`
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
@@ -144,7 +144,7 @@ draft: true
 
 **Tyler & Melanie, Addy, Jocelyn, Kerslyn** 
 
-**Will & Carli, kids**
+**Will & Carli, Will, Theo**
 
 **Dawn & Mark**
 
