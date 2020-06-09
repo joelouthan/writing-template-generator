@@ -2,7 +2,6 @@
 # date command: MACOS
 
 title='A Few Points for Friday '
-subject='Few Points'
 userdir=$HOME
 bin_dir=$userdir/bin
 subject_dir=few-points-friday

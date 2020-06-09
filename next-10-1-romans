@@ -7,19 +7,12 @@ userdir=$HOME
 bin_dir=$userdir/bin
 subject_dir=1-commentary-romans
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
-weekof=$(date -j -v+mon '+%A %F')
+weekof=$workingSunday
 Category='Commentary'
 Tag='Commentary: Romans'
 
 # Working basenames for posts
 base_mon=commentary-romans
-# base_tue=now-sings-my-soul-psalms
-# base_wed=a-life-of-compromise
-# base_thu=family-devos-luke
-# base_fri=few-points-friday
-# base_tim=letters-to-timothy
-# base_sat=sundry-saturday
-# base_mark=commentary-mark
 
 echo "Publishing Romans starting the week of" $weekof"!"
 
