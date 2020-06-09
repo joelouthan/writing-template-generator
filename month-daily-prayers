@@ -15,7 +15,7 @@ do
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
    am_time=T08:00:00-06:00
    #pm_time=T14:00:00-06:00
-   cat << EOF > "$dir_prayers"/x-"$date_prayers"-"$base_am_prayers".md
+   cat << EOF > "$dir_prayers"/"$date_prayers"-"$base_am_prayers".md
 ---
 title: 'Daily Prayers for $day_prayers'
 author: Joseph Louthan
@@ -81,6 +81,8 @@ draft: true
 **James** 
 
 **Jason, Molly** 
+
+**Chelsea**
 
 **Jansen & Mandy** 
 
@@ -152,6 +154,8 @@ draft: true
 
 **Holly & Jake, Jonah, Ellis, Finley**
 
+**Jason & Michelle, Hazel, Charlette, Evelyn** 
+
 
 
 ## Discipleship Group
@@ -172,7 +176,7 @@ draft: true
 
 **Yusef, Elijah, Ivy, Ava** 
 
-**Marmie** *(Removal from Spiritual Isolation; Brought into Spiritual community; Equally yoked)* 
+**Marmie & Jason, Molly** *(Removal from Spiritual Isolation; Brought into Spiritual community; Equally yoked)* 
 
 
 

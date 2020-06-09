@@ -111,6 +111,20 @@ tags:
 draft: true
 ---
 EOF
+    cat << EOF > "$content_dir"/"$dir_tim"/x-"$date_fri"-"$base_tim".md
+---
+title: 'Thinking Through Ministry: 1 Timothy'
+author: Joseph Louthan
+type: post
+publishDate: $date_fri
+url: /$base_fri/$date_fri-$base_fri/
+categories:
+  - Ministry
+tags:
+  - 'Philosophy of Ministry'
+draft: true
+---
+EOF
     cat << EOF > "$content_dir"/"$dir_thu"/x-"$date_thu"-"$base_thu".md
 ---
 title: 'Luke'
@@ -136,20 +150,6 @@ categories:
   - Links
 tags:
   - 'A Few Points for Friday'
-draft: true
----
-EOF
-    cat << EOF > "$content_dir"/"$dir_tim"/x-"$date_fri"-"$base_tim".md
----
-title: 'Thinking Through Ministry: 1 Timothy'
-author: Joseph Louthan
-type: post
-publishDate: $date_fri
-url: /$base_fri/$date_fri-$base_fri/
-categories:
-  - Ministry
-tags:
-  - 'Philosophy of Ministry'
 draft: true
 ---
 EOF
