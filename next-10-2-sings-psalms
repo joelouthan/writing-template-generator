@@ -65,6 +65,9 @@ tags:
   - '$Tag'
 draft: true
 ---
+<pre>
+<div style="font-variant: small-caps;"></div>
+</pre>
 EOF
 	done
 fi
