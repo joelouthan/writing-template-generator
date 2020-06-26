@@ -52,7 +52,7 @@ then
 	future=( +0 +7 +14 +21 +28 +35 +42 +49 +56 +63 +70 )
 	for i in "${future[@]}"; do
 	  dates=`date -j -f %Y-%m-%d -v"$i"d $date +%F`
-      cat << EOF > "$posts_dir"/x-"$dates"-"$url_subject".md
+      cat << EOF > "$posts_dir"/"$dates"-"$url_subject".md
 ---
 title: '$subject '
 author: Joseph Louthan
