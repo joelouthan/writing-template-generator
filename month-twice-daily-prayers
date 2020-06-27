@@ -255,6 +255,8 @@ C. Church is a community centered on Christ
 
 **Norman** 
 
+**Stillwater RPC (Pastor Bruce)**
+
 EOF
    cat << EOF > "$dir_prayers"/"$date_prayers"-"$base_pm_prayers".md
 ---
