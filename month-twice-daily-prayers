@@ -281,6 +281,10 @@ And as Jesus reclined at table in the house, behold, many tax collectors and sin
 
 **Stillwater RPC (Pastor Bruce)**
 
+**Pastor Dana Coverstone, Living Word Ministries AoG Burkesville, KY**
+
+** Burkesville Baptist Church**
+
 EOF
    cat << EOF > "$dir_prayers"/"$date_prayers"-"$base_pm_prayers".md
 ---
