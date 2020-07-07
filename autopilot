@@ -1,0 +1,14 @@
+#!/bin/bash
+clear
+for (( i=7; i>0; i--)); do
+    printf "\rLogging into ws1 in $i seconds.  Hit any key to stop!"
+    echo ""
+    read -s -n 1 -t 1 key
+    if [ $? -eq 0 ]    
+    then
+        break
+    fi
+	echo ""
+	echo "Logging into ws1..."
+	ssh jlouthan@outhouse.jwtreporting.com
+done
