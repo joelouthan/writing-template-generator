@@ -1,9 +1,8 @@
 #! /bin/bash
 # date command: MACOS
 
-userdir=$HOME
-current_dir=$userdir/bin/
-content_dir=$userdir/Sites/theologic.us/content/posts
+current_dir=$HOME/bin/
+content_dir=$HOME/Sites/theologic.us/content/posts
 dir_prayers=$content_dir/prayers
 base_pm_prayers=pm_prayers
 base_am_prayers=am_prayers

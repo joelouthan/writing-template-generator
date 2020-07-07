@@ -1,0 +1,7 @@
+clear
+read -p "Do you want to jump ahead to ws1? [y/n] " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    ssh jlouthan@outhouse.jwtreporting.com
+fi
