@@ -3,15 +3,15 @@
 site=$HOME/Sites/theologic.us
 posts=$site/content/posts
 
-echo "Checking for any un-x posts with true draft statuses..."
-grep -R --color=always "draft: true" $posts/* | grep -v x- | grep -v prayer
-printf '%s ' 'Press any key to continue'
-read ans
+#echo "Checking for any un-x posts with true draft statuses..."
+#grep -R --color=always "draft: true" $posts/* | grep -v x- | grep -v prayer
+#printf '%s ' 'Press any key to continue'
+#read ans
 
-echo "Checking for any x posts with false draft statuses..."
-grep -R --color=always "draft: false" $posts/* | grep x-
-printf '%s ' 'Press any key to continue'
-read ans
+#echo "Checking for any x posts with false draft statuses..."
+#grep -R --color=always "draft: false" $posts/* | grep x-
+#printf '%s ' 'Press any key to continue'
+#read ans
 
 echo "Proceeding with deploy..."
 cd $site && git add . && git commit
