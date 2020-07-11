@@ -1,0 +1,20 @@
+#! /bin/bash
+# date command: MACOS
+
+bin=$HOME/bin/
+content=/Users/jlouthan/Sites/theologic.us/content/posts
+output_file=$bin/theologicus_word_count_thisweek
+date=$(date -j +%F)
+
+PS3="How many days back do you want to check the number of words written?: "
+
+select i in {1..7}; do
+  if [ -n "$i" ]; then
+      echo ${i}
+  fi
+  break
+done
+
+this_word_count=$(find $content -name '*.md' -mtime -$i -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }')
+
+echo "Total word count for the week so far:" $this_word_count
