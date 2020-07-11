@@ -18,7 +18,7 @@ weeks=$bin_dir/weeks
 true > $weeks
 
 echo "Last entry for $subject: "
-echo "$(ls -1 $posts_dir | tail -n1)"
+echo "$(ls -1 $posts_dir | grep md | tail -n1)"
 
 # Set the prompt for the select command
 echo "Setting up posts for $subject"
@@ -66,6 +66,32 @@ tags:
   - '$Tag'
 draft: true
 ---
+
+##
+
+
+------
+
+##
+
+
+------
+
+##
+
+
+------
+
+##
+
+
+------
+
+##
+
+
+------
+
 EOF
 	done
 fi
