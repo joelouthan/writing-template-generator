@@ -10,3 +10,5 @@ this_word_count=$(find $content -name '*.md' -type f -exec awk 1 {} + | wc -w | 
 words_written=$(($this_word_count-$previous_word_count))
 
 echo -e "$date \t$previous_word_count \t$this_word_count \t$words_written" >> $output_file
+
+# find $content -name '*.md' -mtime +8 -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }' ; find $content -name '*.md' -mtime +1 -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }'
