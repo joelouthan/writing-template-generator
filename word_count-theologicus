@@ -3,12 +3,15 @@
 
 bin=$HOME/bin/
 content=/Users/jlouthan/Sites/theologic.us/content/posts
-output_file=$bin/theologicus_word_count
+previous_file=$bin/wc-theo-previous
+previous_count=$(cat $previous_count | awk '{ print $1 }')
+output_file=$bin/wc_theologicus
 date=$(date -j +%F)
-previous_word_count=$(find $content -name '*.md' -mtime +7 -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }')
 this_word_count=$(find $content -name '*.md' -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }')
-words_written=$(($this_word_count-$previous_word_count))
+words_written=$(($this_word_count-$previous_count))
 
-echo -e "$date \t$previous_word_count \t$this_word_count \t$words_written" >> $output_file
+echo -e "$date \t$this_word_count \t$words_written" >> $output_file
+
+echo $this_word_count > $previous_count
 
 # find $content -name '*.md' -mtime +8 -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }' ; find $content -name '*.md' -mtime +1 -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }'
