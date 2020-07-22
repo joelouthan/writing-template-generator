@@ -13,6 +13,12 @@ posts=$site/content/posts
 #printf '%s ' 'Press any key to continue'
 #read ans
 
+echo "Checking master branch"
+cd $site
+git pull origin master
+
 echo "Proceeding with deploy..."
-cd $site && git add . && git commit
+cd $site
+git add $site/*
+git commit
 git push
