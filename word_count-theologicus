@@ -2,7 +2,7 @@
 # date command: MACOS
 
 bin=$HOME/bin/
-content=/Users/jlouthan/Sites/theologic.us/content/posts
+content=$HOME/Sites/theologic.us/content/posts
 previous_file=$bin/wc-theo-previous
 previous_count=$(cat $previous_count | awk '{ print $1 }')
 output_file=$bin/wc_theologicus
