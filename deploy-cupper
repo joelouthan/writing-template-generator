@@ -1,0 +1,31 @@
+#! /bin/bash
+
+site=$HOME/Sites/theologic.us
+theme=$site/themes/cupper
+
+#echo "Checking for any un-x posts with true draft statuses..."
+#grep -R --color=always "draft: true" $posts/* | grep -v x- | grep -v prayer
+#printf '%s ' 'Press any key to continue'
+#read ans
+
+#echo "Checking for any x posts with false draft statuses..."
+#grep -R --color=always "draft: false" $posts/* | grep x-
+#printf '%s ' 'Press any key to continue'
+#read ans
+
+echo "Checking master branch for Cupper changes"
+cd $theme
+git pull origin master
+
+echo "Proceeding with deploy for Cupper theme..."
+cd $theme
+git add $theme/*
+git commit
+git push
+
+echo "Now proceeding with deploy for Theologicus"
+cd $site
+git pull origin master
+git add $site/*
+git commit
+git push
