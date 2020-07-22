@@ -12,6 +12,12 @@ site=$HOME/bin
 #printf '%s ' 'Press any key to continue'
 #read ans
 
+echo "Checking master branch"
+cd $site
+git pull origin master
+
 echo "Proceeding with deploy..."
-cd $site && git pull origin master && git add $site/* && git commit
+cd $site
+git add $site/*
+git commit
 git push
