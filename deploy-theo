@@ -13,12 +13,16 @@ site=$HOME/Sites/theologic.us
 #printf '%s ' 'Press any key to continue'
 #read ans
 
+echo "======================"
 echo "Checking master branch"
 cd $site
 git pull origin master
 
+echo "========================="
 echo "Proceeding with deploy..."
 cd $site
-git add $site/*
-git commit
+read -p "Commit descript: " desc
+git add . &&\
+git add -u &&\
+git commit -m "$desc" &&\
 git push
