@@ -8,15 +8,20 @@ posts=$theologicus/content/posts
 prayers=$posts/prayers
 date_prayers=`date -j +%F`
 
+echo "============================================="
 echo "Generating new prayers and commit gen-prayers"
 cd $bin
 $genprayers
-git add gen-prayers
-git commit -m "Updating prayers for $date_prayers"
+read -p "Commit descript: " desc
+git add gen-prayers && \
+git add -u &&\
+git commit -m "$desc" && \
 git push origin master
 
+echo "==========================="
 echo "Now committing new prayers"
-cd $theologicus
-git add $prayers/*
-git commit -m "Updating future prayers with prayer requests for $date_prayers"
+cd $theologicus && \
+git add $prayers/* && \
+git add -u &&\
+git commit -m "$desc" && \
 git push origin master
