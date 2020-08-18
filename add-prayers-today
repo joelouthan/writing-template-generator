@@ -1,0 +1,27 @@
+#! /bin/bash
+# date command: MACOS
+
+bin=$HOME/bin/
+genprayers=$bin/gen-prayers-today
+theologicus=$HOME/Sites/theologic.us
+posts=$theologicus/content/posts
+prayers=$posts/prayers
+date_prayers=`date -j +%F`
+
+echo "============================================="
+echo "Generating new prayers and commit gen-prayers"
+cd $bin
+$genprayers
+read -p "Commit descript: " desc
+git add $genprayers && \
+git add -u &&\
+git commit -m "$desc" && \
+git push origin master
+
+echo "==========================="
+echo "Now committing new prayers"
+cd $theologicus && \
+git add $prayers/* && \
+git add -u &&\
+git commit -m "$desc" && \
+git push origin master
