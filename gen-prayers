@@ -8,7 +8,7 @@ base_pm_prayers=pm_prayers
 base_am_prayers=am_prayers
 
 # loop: print out 1-30
-for ((i=0;i<=31;i++)); 
+for ((i=1;i<=31;i++)); 
 do 
    date_prayers=`date -j -v+"$i"d +%F`
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
@@ -500,6 +500,7 @@ Aimee & James
 
 **Tom Gardner**
 
+### Antioch OKC
 
 ### Antioch Norman
 
@@ -667,6 +668,7 @@ Aimee & James
 **Pastor Terry Bennett, Messengers of Shiloh AoG, Vanleer, TN**
 
 **All the churches in Norman**
+- **Antioch OKC** 
 - **LifeSpring Church** Jeff Robinett
 - **Northgate Baptist** 
 - **Calgary Church** - Daniel & Jamie Sweets, Lukas, Karis, Selah, & Zoe
