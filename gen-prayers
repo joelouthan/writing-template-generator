@@ -7,8 +7,10 @@ dir_prayers=$content_dir/prayers
 base_am_prayers=am_prayers
 base_noon_prayers=noon_prayers
 base_pm_prayers=pm_prayers
+first_day=1
+last_day=31
 # loop: print out 1-30
-for ((i=0;i<=31;i++)); 
+for ((i=$first_day;i<=$last_day;i++)); 
 do 
    date_prayers=`date -j -v+"$i"d +%F`
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
@@ -28,18 +30,13 @@ tags:
  - 'Prayers'
 draft: true
 ---
-> **2 Timothy 4:1-5 (ESV) I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom: preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths. As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry.**
-
-***
+      
 
 # Pray to preach the gospel
 
-> **2 Timothy 1:6-12 (CSB) Therefore, I remind you to rekindle the gift of God that is in you through the laying on of my hands. For God has not given us a spirit of fear, but one of power, love, and sound judgment.**
-
-> **So don’t be ashamed of the testimony about our Lord, or of me his prisoner. Instead, share in suffering for the gospel, relying on the power of God. He has saved us and called us with a holy calling, not according to our works, but according to his own purpose and grace, which was given to us in Christ Jesus before time began. This has now been made evident through the appearing of our Savior Christ Jesus, who has abolished death and has brought life and immortality to light through the gospel. For this gospel I was appointed a herald, apostle, and teacher, and that is why I suffer these things. But I am not ashamed, because I know whom I have believed and am persuaded that he is able to guard what has been entrusted to me until that day.**
+> **2 Timothy 4:1-5 (ESV) I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom: preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths. As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry.**
 
 ***
-
 # For Sarah
 
 Melissa
@@ -57,11 +54,9 @@ Natasha
 Jamie
 
 ***
-
 # Give thanks
 
 ***
-
 # For healing
 
 My Lord,
@@ -76,8 +71,7 @@ Heal Randy (Jordan Mayfield's dad) - possible hospice
 
 Heal Kathleen (Leah's mom)
 
----
-
+***
 # Daily
 
 On marriage: **Sarah, my love** 
@@ -103,7 +97,6 @@ On glory of God: **“On Christ’s glory I would fix all my thoughts and desire
 On his provision: **Lord, anything you give will be good enough for me.**
 
 ***
-
 # Next steps
 
 My God,
@@ -114,7 +107,7 @@ But I will praise you for the triple blessings of being with the staff. Bless th
 
 Amen
 
-
+***
 # For those who do not know You
 
 My Lord above,
@@ -208,7 +201,6 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 **Evan & Kaylee, Everett, Baby**
 
 ***
-
 # Friends
 
 **Sarah & Josiah**
@@ -251,6 +243,12 @@ tags:
  - 'Prayers'
 draft: true
 ---
+<pre>
+<div style="font-variant: small-caps;"></div>
+
+</pre>
+
+***
 **Isaiah 61 (ESV)**
 
 **The Spirit of the Lord GOD is upon me,**
@@ -354,7 +352,6 @@ draft: true
 **to sprout up before all the nations.**
 
 ***
-
 # Family
 
 **Sarah, Yusef, Elijah, Ivy, Ava**
@@ -362,7 +359,6 @@ draft: true
 **Marmie & Jason, Molly**
 
 ***
-
 # Norman
 
 > **Matthew 3:12 (CSB) His winnowing shovel is in his hand, and he will clear his threshing floor and gather his wheat into the barn. But the chaff he will burn with fire that never goes out.”**
@@ -398,7 +394,6 @@ Liz & Trey Davidson
 Aimee & James Coker
 
 ***
-
 # Antioch Norman
 
 - Tatenda
@@ -556,7 +551,6 @@ Aimee & James Coker
 > **1 Thessalonians 2:8 (NIV) We loved you so much that we were delighted to share with you not only the gospel of God but our lives as well, because you had become so dear to us.**
 
 ***
-
 # All the churches in Norman
 
 > **John 10:11-18 (CSB) “I am the good shepherd. The good shepherd lays down his life for the sheep. The hired hand, since he is not the shepherd and doesn’t own the sheep, leaves them and runs away when he sees a wolf coming. The wolf then snatches and scatters them. This happens because he is a hired hand and doesn’t care about the sheep.**
@@ -635,7 +629,6 @@ Aimee & James Coker
 - **The Wesley** - Joshua & Bonny Coats, Eli, Adelyn
 
 ***
-
 # Frontline Norman
 
 > **Matthew 9:35-38 (CSB) Jesus continued going around to all the towns and villages, teaching in their synagogues, preaching the good news of the kingdom, and healing every disease and every sickness. When he saw the crowds, he felt compassion for them, because they were distressed and dejected, like sheep without a shepherd. Then he said to his disciples, “The harvest is abundant, but the workers are few. Therefore, pray to the Lord of the harvest to send out workers into his harvest.”**
@@ -681,7 +674,6 @@ My God, give me your Spirit. Give me the fullness of the Spirit that raised Jesu
 Draw me closer. Let the world die to me so I can live to you.
 
 ***
-
 # Discipleship Group
 
 Lord,
@@ -733,7 +725,6 @@ I love you so much.
 - 0928M Nasal surgery
 
 ***
-
 # City of Norman
 
 - Mayor Breea Clark
@@ -769,129 +760,9 @@ tags:
  - 'Prayers'
 draft: true
 ---
-
-> **2 Timothy 4:1-5 (CSB) I solemnly charge you before God and Christ Jesus, who is going to judge the living and the dead, and because of his appearing and his kingdom: Preach the word; be ready in season and out of season; correct, rebuke, and encourage with great patience and teaching. For the time will come when people will not tolerate sound doctrine, but according to their own desires, will multiply teachers for themselves because they have an itch to hear what they want to hear. They will turn away from hearing the truth and will turn aside to myths. But as for you, exercise self-control in everything, endure hardship, do the work of an evangelist, fulfill your ministry.**
-
-**Isaiah 61 (CSB)**
-
-**The Spirit of the Lord GOD is on me,**
-
-**because the LORD has anointed me**
-
-**to bring good news to the poor.**
-
-**He has sent me to heal the brokenhearted,**
-
-**to proclaim liberty to the captives**
-
-**and freedom to the prisoners;**
-
-**to proclaim the year of the LORD’s favor,**
-
-**and the day of our God’s vengeance;**
-
-**to comfort all who mourn,**
-
-**to provide for those who mourn in Zion;**
-
-**to give them a crown of beauty instead of ashes,**
-
-**festive oil instead of mourning,**
-
-**and splendid clothes instead of despair.**
-
-**And they will be called righteous trees,**
-
-**planted by the LORD**
-
-**to glorify him.**
-
-
-
-**They will rebuild the ancient ruins;**
-
-**they will restore the former devastations;**
-
-**they will renew the ruined cities,**
-
-**the devastations of many generations.**
-
-
-
-**Strangers will stand and feed your flocks,**
-
-**and foreigners will be your plowmen and vinedressers.**
-
-
-
-**But you will be called the LORD’s priests;**
-
-**they will speak of you as ministers of our God;**
-
-**you will eat the wealth of the nations,**
-
-**and you will boast in their riches.**
-
-
-
-**In place of your shame, you will have a double portion;**
-
-**in place of disgrace, they will rejoice over their share.**
-
-
-
-**So they will possess double in their land,**
-
-**and eternal joy will be theirs.**
-
-
-
-**For I the LORD love justice;**
-
-**I hate robbery and injustice;**
-
-**I will faithfully reward my people**
-
-**and make a permanent covenant with them.**
-
-
-
-**Their descendants will be known among the nations,**
-
-**and their posterity among the peoples.**
-
-
-
-**All who see them will recognize**
-
-**that they are a people the LORD has blessed.**
-
-
-
-**I rejoice greatly in the LORD,**
-
-**I exult in my God;**
-
-**for he has clothed me with the garments of salvation**
-
-**and wrapped me in a robe of righteousness,**
-
-**as a groom wears a turban**
-
-**and as a bride adorns herself with her jewels.**
-
-
-
-**For as the earth produces its growth,**
-
-**and as a garden enables what is sown to spring up,**
-
-**so the Lord GOD will cause righteousness and praise**
-
-**to spring up before all the nations.**
+      
 
 ***
-
 # Prayers for those who are trapped in NAR churches
 
 ## Gateway Church
@@ -944,7 +815,6 @@ draft: true
 **Terry Bennett, Messengers of Shiloh AoG, Vanleer, TN**
 
 ***
-
 # Frontline
 
 ## Leaders within Frontline
@@ -954,7 +824,6 @@ Lord, would you raise up even more leaders for Norman. No matter what direction 
 Lord, be glorified in our homes and in our city. Today. 
 
 ***
-
 # Interns
 
 ## Bois
@@ -1013,7 +882,6 @@ Janelle Rogers
 # Frontline Norman
 
 ***
-
 # Frontline South
 
 **Dena & Dave**
@@ -1085,31 +953,25 @@ Janelle Rogers
 * Hannah Lavender - raised by grandma, attends once a month, really needs healing with rough family and for the Lord to keep her from trying to find identity in hs guys and dating.
 
 ***
-
 # Frontline Central
 
 **Josh & Nancy, +kiddos**
 
 ***
-
 # Frontline Shawnee
 
 Pastor Ben - Lord, show me how I can be praying, encouraging and lifting up Ben and all the peoples at Shawnee.
 
 ***
-
 # Frontline Yukon
 
 ***
-
 # Frontline Edmond
 
 ***
-
 # Frontline Downtown
 
 ***
-
 # Frontline Midwest City
 
 ***
