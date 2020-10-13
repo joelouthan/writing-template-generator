@@ -7,7 +7,7 @@ dir_prayers=$content_dir/prayers
 base_am_prayers=am_prayers
 base_noon_prayers=noon_prayers
 base_pm_prayers=pm_prayers
-first_day=1
+first_day=0
 last_day=31
 # loop: print out 1-30
 for ((i=$first_day;i<=$last_day;i++)); 
@@ -36,7 +36,8 @@ draft: true
 
 > **2 Timothy 4:1-5 (ESV) I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom: preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths. As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry.**
 
-***
+___
+
 # For Sarah
 
 Melissa
@@ -53,10 +54,12 @@ Natasha
 
 Jamie
 
-***
+___
+
 # Give thanks
 
-***
+___
+
 # For healing
 
 My Lord,
@@ -71,7 +74,8 @@ Heal Randy (Jordan Mayfield's dad) - possible hospice
 
 Heal Kathleen (Leah's mom)
 
-***
+___
+
 # Daily
 
 On marriage: **Sarah, my love** 
@@ -96,7 +100,8 @@ On glory of God: **“On Christ’s glory I would fix all my thoughts and desire
 
 On his provision: **Lord, anything you give will be good enough for me.**
 
-***
+___
+
 # Next steps
 
 My God,
@@ -107,7 +112,8 @@ But I will praise you for the triple blessings of being with the staff. Bless th
 
 Amen
 
-***
+___
+
 # For those who do not know You
 
 My Lord above,
@@ -200,7 +206,8 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 
 **Evan & Kaylee, Everett, Baby**
 
-***
+___
+
 # Friends
 
 **Sarah & Josiah**
@@ -248,7 +255,8 @@ draft: true
 
 </pre>
 
-***
+___
+
 **Isaiah 61 (ESV)**
 
 **The Spirit of the Lord GOD is upon me,**
@@ -351,14 +359,16 @@ draft: true
 
 **to sprout up before all the nations.**
 
-***
+___
+
 # Family
 
 **Sarah, Yusef, Elijah, Ivy, Ava**
 
 **Marmie & Jason, Molly**
 
-***
+___
+
 # Norman
 
 > **Matthew 3:12 (CSB) His winnowing shovel is in his hand, and he will clear his threshing floor and gather his wheat into the barn. But the chaff he will burn with fire that never goes out.”**
@@ -393,7 +403,8 @@ Liz & Trey Davidson
 
 Aimee & James Coker
 
-***
+___
+
 # Antioch Norman
 
 - Tatenda
@@ -550,7 +561,8 @@ Aimee & James Coker
 
 > **1 Thessalonians 2:8 (NIV) We loved you so much that we were delighted to share with you not only the gospel of God but our lives as well, because you had become so dear to us.**
 
-***
+___
+
 # All the churches in Norman
 
 > **John 10:11-18 (CSB) “I am the good shepherd. The good shepherd lays down his life for the sheep. The hired hand, since he is not the shepherd and doesn’t own the sheep, leaves them and runs away when he sees a wolf coming. The wolf then snatches and scatters them. This happens because he is a hired hand and doesn’t care about the sheep.**
@@ -628,7 +640,8 @@ Aimee & James Coker
 - **Grace Fellowship Norman** - Rick & Andrea Anthony
 - **The Wesley** - Joshua & Bonny Coats, Eli, Adelyn
 
-***
+___
+
 # Frontline Norman
 
 > **Matthew 9:35-38 (CSB) Jesus continued going around to all the towns and villages, teaching in their synagogues, preaching the good news of the kingdom, and healing every disease and every sickness. When he saw the crowds, he felt compassion for them, because they were distressed and dejected, like sheep without a shepherd. Then he said to his disciples, “The harvest is abundant, but the workers are few. Therefore, pray to the Lord of the harvest to send out workers into his harvest.”**
@@ -675,7 +688,8 @@ My God, give me your Spirit. Give me the fullness of the Spirit that raised Jesu
 
 Draw me closer. Let the world die to me so I can live to you.
 
-***
+___
+
 # Discipleship Group
 
 Lord,
@@ -719,7 +733,8 @@ I love you so much.
 - friend, Ben (Rachel's twin brother) & wife
 - **mom Lara - heart attack**
 
-***
+___
+
 # City of Norman
 
 - Mayor Breea Clark
@@ -757,10 +772,23 @@ draft: true
 ---
       
 
-***
+___
+
 # Prayers for those who are trapped in NAR churches
 
 ## Antioch Norman
+
+Lord,
+
+Deliver them. Protect them. Keep them.
+
+Shield them from the attacks of the enemy.
+
+You are their Pastor and Lord. Do not let your little ones go astray.
+
+Keep your presence there.
+
+Have you way in them.
 
 ## Bethesda Church
 
@@ -821,7 +849,8 @@ draft: true
 
 **Terry Bennett, Messengers of Shiloh AoG, Vanleer, TN**
 
-***
+___
+
 # Frontline
 
 ## Leaders within Frontline
@@ -830,7 +859,8 @@ Lord, would you raise up even more leaders for Norman. No matter what direction 
 
 Lord, be glorified in our homes and in our city. Today. 
 
-***
+___
+
 # Bois
 
 **Caleb Dyer**
@@ -884,7 +914,9 @@ Zach Shomaker
 Hope Wilson
 
 Janelle Rogers
-***
+
+___
+
 # Frontline Norman
 
 Lord,
@@ -895,7 +927,8 @@ But not my will but your will be done.
 
 Amen.
 
-***
+___
+
 # Frontline South
 
 **Dena & Dave**
@@ -966,28 +999,35 @@ Amen.
 * Shelby Mathews - emotional health and freedom from anxiety/depression, pressure from parents and sisters to be “perfect” 
 * Hannah Lavender - raised by grandma, attends once a month, really needs healing with rough family and for the Lord to keep her from trying to find identity in hs guys and dating.
 
-***
+___
+
 # Frontline Central
 
 **Josh & Nancy, +kiddos**
 
-***
+___
+
 # Frontline Shawnee
 
 Pastor Ben - Lord, show me how I can be praying, encouraging and lifting up Ben and all the peoples at Shawnee.
 
-***
+___
+
 # Frontline Yukon
 
-***
+___
+
 # Frontline Edmond
 
-***
+___
+
 # Frontline Downtown
 
-***
+___
+
 # Frontline Midwest City
 
-***
+___
+
 EOF
 done
