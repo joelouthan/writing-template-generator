@@ -7,7 +7,7 @@ dir_prayers=$content_dir/prayers
 base_am_prayers=am_prayers
 base_noon_prayers=noon_prayers
 base_pm_prayers=pm_prayers
-first_day=0
+first_day=1
 last_day=31
 # loop: print out 1-30
 for ((i=$first_day;i<=$last_day;i++)); 
