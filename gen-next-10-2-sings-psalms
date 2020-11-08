@@ -65,10 +65,10 @@ tags:
   - '$Tag'
 draft: true
 ---
-<pre>
+```
 <div style="font-variant: small-caps;">Lord</div>
 Lorem ipsum
-</pre>
+```
 EOF
 	done
 fi
