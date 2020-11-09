@@ -1,8 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "bin",
-			"path": "."
+			"path": "../Sites/theologic.us"
 		}
 	],
 	"settings": {}
