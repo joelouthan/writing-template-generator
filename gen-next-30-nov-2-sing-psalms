@@ -37,11 +37,12 @@ tags:
   - '$Tag'
 draft: true
 ---
-
-```
-<div style="font-variant: small-caps;">Lord</div>
+<pre>
+<div style="font-variant: small-caps;">
+Lord
+</div>
 Lorem ipsum
-```
+</pre>
 EOF
    cat << EOF > "$posts_dir"/"$date_prayers"-noon-"$url_subject".md
 ---
@@ -56,11 +57,12 @@ tags:
   - '$Tag'
 draft: true
 ---
-
-```
-<div style="font-variant: small-caps;">Lord</div>
+<pre>
+<div style="font-variant: small-caps;">
+Lord
+</div>
 Lorem ipsum
-```
+</pre>
 EOF
    cat << EOF > "$posts_dir"/"$date_prayers"-pm-"$url_subject".md
 ---
@@ -75,10 +77,11 @@ tags:
   - '$Tag'
 draft: true
 ---
-
-```
-<div style="font-variant: small-caps;">Lord</div>
+<pre>
+<div style="font-variant: small-caps;">
+Lord
+</div>
 Lorem ipsum
-```
+</pre>
 EOF
 done
