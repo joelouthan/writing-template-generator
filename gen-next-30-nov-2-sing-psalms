@@ -11,11 +11,11 @@ posts_dir=$content_dir/$subject_dir
 Category='Prayers'
 Tag='Now Sings My Soul: Psalms'
 month=Nov
-day=1
+day=16
 year=2020
 first_day=0
-last_day=29
-title='Now Sings My Soul: Psalm 3:'
+last_day=13
+title='Now Sings My Soul: Psalm '
 # loop: print out 1-30
 for ((i=$first_day;i<=$last_day;i++)); 
 do 
@@ -39,9 +39,9 @@ draft: true
 ---
 <pre>
 <div style="font-variant: small-caps;">
-Lord
+
 </div>
-Lorem ipsum
+
 </pre>
 EOF
    cat << EOF > "$posts_dir"/"$date_prayers"-noon-"$url_subject".md
@@ -59,9 +59,9 @@ draft: true
 ---
 <pre>
 <div style="font-variant: small-caps;">
-Lord
+
 </div>
-Lorem ipsum
+
 </pre>
 EOF
    cat << EOF > "$posts_dir"/"$date_prayers"-pm-"$url_subject".md
@@ -79,9 +79,9 @@ draft: true
 ---
 <pre>
 <div style="font-variant: small-caps;">
-Lord
+
 </div>
-Lorem ipsum
+
 </pre>
 EOF
 done

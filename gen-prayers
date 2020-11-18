@@ -10,8 +10,8 @@ base_pm_prayers=pm_prayers
 first_day=1
 last_day=31
 # loop: print out 1-30
-for ((i=$first_day;i<=$last_day;i++)); 
-do 
+for ((i=$first_day;i<=$last_day;i++));
+do
    date_prayers=`date -j -v+"$i"d +%F`
    day_prayers=`date -j -v+"$i"d +'%A, %-e %B %Y'`
    am_time=T06:00:00-06:00
@@ -59,9 +59,9 @@ Do I take it?
 
 Will it draw me closer to you? Please be with me.
 
-Amen.  
+Amen.
 
-___
+---
 
 # For Sarah
 
@@ -103,11 +103,11 @@ Deanna & James, Quinn
 
 Keep Melissa. Seal her heart towards you.
 
-Speak to Andrew. 
+Speak to Andrew.
 
-Heal Faithie. 
+Heal Faithie.
 
-Heal Sean. 
+Heal Sean.
 
 Heal Gerry.
 
@@ -119,19 +119,19 @@ Heal Kathleen (Leah's mom)
 
 # Daily
 
-On marriage: **Sarah, my love** 
+On marriage: **Sarah, my love**
 
-On true friendship: **For my Jonathan** 
+On true friendship: **For my Jonathan**
 
-On sanctification: **Lord, help me to gentle, patient, and tender like you** 
+On sanctification: **Lord, help me to gentle, patient, and tender like you**
 
 On holiness: **2 Timothy 2:21 Therefore, if anyone cleanses himself from what is dishonorable, he will be a vessel for honorable use, set apart as holy, useful to the master of the house, ready for every good work.**
 
 Lord, as you draw me closer, please Lord please stop making everything about me. Please beat it out of me that i somehow think i am God’s gift to women. I still see lust on my heart and I still want to look at every woman not my wife.  World is telling me lies. But you have gave me eyes for my wife over anyone else. One day you will remove the foolish, prideful, lustful instincts and thoughts in thinking every woman is after me. I am a fool and a sinner. Every day I will repent. Discipline your son as you see fit but make me more like your Son.  Do not let your Spirit depart from me. Amen.
 
-On prophesying: **Lord, let me preach your gospel, die, and then be forgotten** 
+On prophesying: **Lord, let me preach your gospel, die, and then be forgotten**
 
-On pastoring: **Lord, I cared not where or how I lived, or what hardships I went through, so I could but gain souls to Christ. —Henry Martyn** 
+On pastoring: **Lord, I cared not where or how I lived, or what hardships I went through, so I could but gain souls to Christ. —Henry Martyn**
 
 On teaching: **“He who would be a good teacher must be gentle and leave some means to draw those who come to him, that he may win them.” —John Calvin**
 
@@ -169,35 +169,35 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 
 **Emily's mom, Cheri**
 
-**Yusef and Nichole** 
+**Yusef and Nichole**
 
 **Elijah & Ivy, Amber & Kara, Griffen, Gabe, Emma, Lacey, Grace, Lucy**
 
-**Natalie, Jackson, Kingston** 
+**Natalie, Jackson, Kingston**
 
-**Reed & Sandy** 
+**Reed & Sandy**
 
-**Johnny & Jamie, Kolton, Korbin** 
+**Johnny & Jamie, Kolton, Korbin**
 
-**Jeanny** 
+**Jeanny**
 
-**Jodi & Ryan, Piper, Rylee** 
+**Jodi & Ryan, Piper, Rylee**
 
-**Jennifer & John; Brandon; Phillip & Keri, Haley; Meagan & fam ; Pedigo & Deb** 
+**Jennifer & John; Brandon; Phillip & Keri, Haley; Meagan & fam ; Pedigo & Deb**
 
-**Melissa & Micah, Noah, Levi, Judah** 
+**Melissa & Micah, Noah, Levi, Judah**
 
-**James** 
+**James**
 
-**Jason, Molly** 
+**Jason, Molly**
 
 **Chelsea**
 
-**Jansen & Mandy** 
+**Jansen & Mandy**
 
-**Sean & Sunny** 
+**Sean & Sunny**
 
-**Evan** 
+**Evan**
 
 **Shannon & Michael, Elle**
 
@@ -207,29 +207,29 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 
 **Carl**
 
-**Mark & Nicole, Gabrielle** 
+**Mark & Nicole, Gabrielle**
 
-**Mark & Robin** 
+**Mark & Robin**
 
 **James & Hubs**
 
-**Louis** 
+**Louis**
 
-**Greg & wife** 
+**Greg & wife**
 
-**Liz** 
+**Liz**
 
-**Eileen & Hubs, fam** 
+**Eileen & Hubs, fam**
 
-**Ray** 
+**Ray**
 
-**Randall** 
+**Randall**
 
-**Cynthia** 
+**Cynthia**
 
-**Joe P** 
+**Joe P**
 
-**George** 
+**George**
 
 **Margo & kids**
 
@@ -257,11 +257,11 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 
 **Peter**
 
-**Wayne & Nicole Barber** 
+**Wayne & Nicole Barber**
 
-**Eric Robinson** 
+**Eric Robinson**
 
-**Jonathan & Jenn Williams** 
+**Jonathan & Jenn Williams**
 
 **Evan & Kaylee, Everett, Baby**
 
@@ -301,15 +301,15 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 
 **Leslie**
 
-**Andrew & Jordyn, Will, Alice, Elliot, Annie** 
+**Andrew & Jordyn, Will, Alice, Elliot, Annie**
 
-**Alix & Braden** 
+**Alix & Braden**
 
 **Aaron & Natasha, Audrey**
 
 **Holly & Jake, Jonah, Ellis, Finley**
 
-**Jason & Michelle, Hazel, Charlette, Evelyn** 
+**Jason & Michelle, Hazel, Charlette, Evelyn**
 
 **Landon & Jules, Eli, Sophia & Olivia**
 
@@ -318,9 +318,9 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 - Sarah and Mike Neustadt
 - Layne and Jackie Marshall
 - Evie
-- Kristie 
+- Kristie
 - John and Gina
-- Jen and Diddy 
+- Jen and Diddy
 EOF
    cat << EOF > "$dir_prayers"/"$date_prayers"-"$base_noon_prayers".md
 ---
@@ -475,9 +475,9 @@ Liz & Trey Davidson
 
 Aimee & James Coker
 
-**Sean & Sunny** 
+**Sean & Sunny**
 
-**Evan** 
+**Evan**
 
 ---
 
@@ -645,12 +645,12 @@ Aimee & James Coker
 
 > **“I am the good shepherd. I know my own, and my own know me, just as the Father knows me, and I know the Father. I lay down my life for the sheep. But I have other sheep that are not from this sheep pen; I must bring them also, and they will listen to my voice. Then there will be one flock, one shepherd. This is why the Father loves me, because I lay down my life so that I may take it up again. No one takes it from me, but I lay it down on my own. I have the right to lay it down, and I have the right to take it up again. I have received this command from my Father.”**
 
-- **Antioch OKC** 
+- **Antioch OKC**
 
 ---
 
 ## Everlasting Life Baptist Church
-- Terry & Carol Wilson 
+- Terry & Carol Wilson
 
 ---
 
@@ -662,7 +662,7 @@ Aimee & James Coker
 - **FaithChurch** - Joshua and Tiffany Cossey
 - **FaithChurch Hinton** - Mark and Brianna Lumpkin
 - **LifeSpring Church** Jeff Robinett
-- **Northgate Baptist** 
+- **Northgate Baptist**
 - **Calgary Church** - Daniel & Jamie Sweets, Lukas, Karis, Selah, & Zoe
 - **Apostolic Worship Center** (**United Pentecostal**) - K. L. & Denise Borders
 - **Holy Ancension Orthodox Church** - Fr. Jeremy
@@ -700,7 +700,7 @@ Aimee & James Coker
 - **Trinity Lutheran Church** - Pastor David Nehrenz & Vicar Rob Schrader
 - **Norman Seventh Day Adventist Church** - Harvey Gil
 - **Alameda Baptist Church** - Tristan & Gayla Martin, kids
-- **St. Joseph Catholic Churc** - Father Joseph Irwin 
+- **St. Joseph Catholic Churc** - Father Joseph Irwin
 - **Southern Oklahoma Chinese Baptist Church** - David & Linda Chan
 - **Robinson Street Baptist Church** - Ivan & Tammy Moore
 - **Immanuel Baptist Church** - Ken & Letha Huddleston
@@ -806,17 +806,17 @@ Aimee & James Coker
 - Caleb Reichert
 - Riley Roberson
 - Emily Roberson
-- Trey Scott 
-- Kathleen Scott 
+- Trey Scott
+- Kathleen Scott
 - Taylor Smith - SINGLE
-- Phong Ta 
+- Phong Ta
 - Micah Thomason
 - Melissa Thomason
 - Destiny Warrior
 
 Lord, every second of every day I must ask you: what is mine to do. I confess and repent that I don't turn to you. Lord, be gracious to me.
 
-My God, give me your Spirit. Give me the fullness of the Spirit that raised Jesus Christ from the dead. Moreso than for me to preach your word but to turn my heart and cleanse my heart and make me just like you. 
+My God, give me your Spirit. Give me the fullness of the Spirit that raised Jesus Christ from the dead. Moreso than for me to preach your word but to turn my heart and cleanse my heart and make me just like you.
 
 Draw me closer. Let the world die to me so I can live to you.
 
@@ -834,7 +834,7 @@ Lord, please multiply
 
 ---
 
-## 12th & Alameda
+## East Boyd
 
 Hunter & Maddie
 
@@ -922,7 +922,7 @@ But Lord, just like the mighty men of David, we are here to fight our sin and ch
 
 We need your salvation. You have to cover us with your righteousness. Give us the call the strap our feet with the gospel of your peace. We need the gift of faith. We need your word.
 
-Magnify and glorify Christ in us. 
+Magnify and glorify Christ in us.
 
 Shatter the gates of hell.
 
@@ -930,20 +930,22 @@ I love you so much.
 
 ## Chuck & Lauren, Timothy, Emily, Rebekah, Zachary, Samuel
 - Healing for Timothy
-- Zachary - salvation; acting out - lying & stealing screentime, respectful, struggling with Lauren as teaching
+- Zachary - salvation
 - Samuel - salvation
 
 ## Riley & Emily, Oliver
 - Oliver is here!
-- Logan - salvation
+- Logan - salvation; against isolation
 
 ## Scott & Melody, Emily, Adelyn, Caleb
+- lots of anxiety
+- waking up in the middle of the night
 - Emily
+- SLEEP KIDS SLEEP!
 - Started school with students from everywhere
-- Melody's mom & grandma - protection from exposure
 - Wayne & Nicole Barber
 - brother, Eric (Portland) vs parents who are Christian watches Fox News
-- **Randy** - liver cancer
+- **father Randy - liver cancer**
 
 ## Andrew & Andie
 - Faith: pain; but success on surgery. Take away her pain. Heal her sweet head.
@@ -973,7 +975,7 @@ I pray against attacks on our leaders. Shield their eyes and hearts.
 
 But Father, if they do not know you, please turn their hearts towards you.
 
-Lord, save my city, my state, and my nation and her people. 
+Lord, save my city, my state, and my nation and her people.
 
 > **1 Chronicles 29:18 O LORD, the God of Abraham, Isaac, and Israel, our fathers, keep forever such purposes and thoughts in the hearts of your people, and direct their hearts toward you.**
 
@@ -1062,7 +1064,7 @@ Have you way in them.
 
 **Nancy & Sean Love, Lauren, Anna, Teddy**
 
-**Lenore** 
+**Lenore**
 
 **Jeremiah Duckett**
 
@@ -1106,9 +1108,9 @@ Have you way in them.
 
 ## Leaders within Frontline
 
-Lord, would you raise up even more leaders for Norman. No matter what direction we take please tap more leaders.  More musicians. More of your Son in each of us so it won’t be dependent on any of us but on you alone.  
+Lord, would you raise up even more leaders for Norman. No matter what direction we take please tap more leaders.  More musicians. More of your Son in each of us so it won’t be dependent on any of us but on you alone.
 
-Lord, be glorified in our homes and in our city. Today. 
+Lord, be glorified in our homes and in our city. Today.
 
 # Core
 
@@ -1183,9 +1185,9 @@ Amen.
 - Heather & hubs
 - Ashlyn, Kadence, Liam, Coleman, Brayden, Gray, Madalyn, Hudson
 
-**Sean & Jacqueline** 
+**Sean & Jacqueline**
 
-**Andrew & Hilary, Evie, Eleanor, Bear** 
+**Andrew & Hilary, Evie, Eleanor, Bear**
 
 **Aaron & Kara, Beatrix & Peter**
 
@@ -1193,9 +1195,9 @@ Amen.
 
 **Tyler & Heather, Shepherd**
 
-**Reuben** 
+**Reuben**
 
-**Tyler & Melanie, Addy, Jocelyn, Kerslyn** 
+**Tyler & Melanie, Addy, Jocelyn, Kerslyn**
 
 **Will & Carli, Will, Theo**
 
@@ -1214,38 +1216,38 @@ Amen.
 ### Jhigh girls
 * Becca Finocchiaro - identity in Jesus apart from siblings, confidence in who Jesus made her.
 * Catherine Adams - just lost her step mom in a car wreck, has a lot of brokeness. salvation
-* Tatum Coleman - Identity in Jesus and overall growth in Jesus. 
+* Tatum Coleman - Identity in Jesus and overall growth in Jesus.
 * Claire Laib - salvation
 
 ### Jhigh guys
-* Ephraim Fox - salvation 
-* Zachary Ebaucher - salvation 
+* Ephraim Fox - salvation
+* Zachary Ebaucher - salvation
 * Noah Morgan - salvation
-* Isaac Post - salvation 
-* Coleman Evans - salvation 
+* Isaac Post - salvation
+* Coleman Evans - salvation
 * Seth Freeman - attends infrequently, salvation and understanding of who God is to become real.
 
-### 9th grade guys 
-* Liam Evans - for God to show himself to be real and tangible. 
-* Bryson White - salvation. 
-* JD Morgan - salvation 
-* Julian Ebaucher - salvation 
+### 9th grade guys
+* Liam Evans - for God to show himself to be real and tangible.
+* Bryson White - salvation.
+* JD Morgan - salvation
+* Julian Ebaucher - salvation
 
 ### 11th and 12th Guys
 * Timothy Finocchiaro - depression and friendships, feels very lonely and aimless.
 * Hunter Loughlin - sexual addiction with pornography and struggles to know what the future holds, God to give him a bigger vision of his life and grow him in the Gospel.
-* Charlie Longenbough - For Jesus to seem real and attractive to follow in the sake of the worlds offerings. Has an idea of Jesus with no real desire to follow him. 
+* Charlie Longenbough - For Jesus to seem real and attractive to follow in the sake of the worlds offerings. Has an idea of Jesus with no real desire to follow him.
 
 ### HS Girls
 * Breeli Stanberry - Depth in the Gospel, is chameleon like and changes depending on who she is around.
 * Brooklyn Stanberry - emotional health, struggles with friendships a lot, healing for a past friendship and relationship that fell thru
 * Calea Moser - split between two parents, attends once a month
 * Mallory Feighner - struggles deeply with what others think, gives her panic attacks, identity in Jesus and growth in emotional health and friendships with other girls
-* Emily Finocchiaro - struggles with her loving and respecting mom and brother. really needs help forgiving ways her mom has fallen short and self awareness to see her own sin. praying also for her leadership capabilities to be released through maturing in Jesus 
-* Sara Freeman - that God would show her life is more than sports. very talented athlete that has a heart for God but parents that prioritize sports. depth in the gospel. 
-* Ashlyn Evans - for God to heal wounds and heartache from past friendships, give vision and direction for post HS in the next year. 
+* Emily Finocchiaro - struggles with her loving and respecting mom and brother. really needs help forgiving ways her mom has fallen short and self awareness to see her own sin. praying also for her leadership capabilities to be released through maturing in Jesus
+* Sara Freeman - that God would show her life is more than sports. very talented athlete that has a heart for God but parents that prioritize sports. depth in the gospel.
+* Ashlyn Evans - for God to heal wounds and heartache from past friendships, give vision and direction for post HS in the next year.
 * Zoe Johnson - praying for her to show up more often, is often cliquey and struggles to allow herself to be known, praying God would convict her and give her a spiritual family if she came more.
-* Shelby Mathews - emotional health and freedom from anxiety/depression, pressure from parents and sisters to be “perfect” 
+* Shelby Mathews - emotional health and freedom from anxiety/depression, pressure from parents and sisters to be “perfect”
 * Hannah Lavender - raised by grandma, attends once a month, really needs healing with rough family and for the Lord to keep her from trying to find identity in hs guys and dating.
 
 ---
