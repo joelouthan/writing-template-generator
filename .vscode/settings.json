@@ -7,5 +7,43 @@
     "latex",
     "plaintext",
     "shellscript"
+  ],
+  "cSpell.words": [
+    "Dhruv",
+    "Martyn",
+    "Vinny",
+    "ablindman",
+    "batrick",
+    "codad",
+    "cosmicj",
+    "dam",
+    "emilee",
+    "faithie",
+    "glam",
+    "henex",
+    "nitrous",
+    "ogreinside",
+    "ogreinside henex nitrous syrill ablindman dam glam patch batrick cosmicj codad philosotoss",
+    "patch",
+    "philosotoss",
+    "syrill"
+  ],
+  "cSpell.ignoreWords": [
+    "ablindman",
+    "batrick",
+    "codad",
+    "cosmicj",
+    "dam",
+    "faithie",
+    "glam",
+    "henex",
+    "kaylee",
+    "neustadt",
+    "nitrous",
+    "ogreinside",
+    "ogreinside henex nitrous syrill ablindman dam glam patch batrick cosmicj codad philosotoss",
+    "patch",
+    "philosotoss",
+    "syrill"
   ]
 }
