@@ -1,0 +1,18 @@
+#! /bin/bash
+# date command: MACOS
+
+bin=$HOME/bin
+wc=$bin/wc
+content=$HOME/Sites/theologic.us/content/posts
+previous_file=$wc/wc_theo_previous
+output_file=$wc/wc_theo_totals
+date=$(date -j +%F)
+
+read previous_count < $previous_file
+
+this_word_count=$(find $content -name '*.md' -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }')
+words_written=$(($this_word_count-$previous_count))
+
+echo -e "$date \t$this_word_count \t$words_written" >> $output_file
+
+echo "$this_word_count" > "$previous_file" 
