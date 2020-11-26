@@ -12,7 +12,8 @@ read previous_count < $previous_file
 
 this_word_count=$(find $content -name '*.md' -type f -exec awk 1 {} + | wc -w | awk '{ print $1 }')
 words_written=$(($this_word_count-$previous_count))
+words_since=$(($this_word_count-177780))
 
-echo -e "$date \t$this_word_count \t$words_written" >> $output_file
+echo -e "$date \t$this_word_count \t$words_written \t$words_since" >> $output_file
 
 echo "$this_word_count" > "$previous_file" 
