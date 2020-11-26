@@ -1,12 +1,13 @@
 #!/bin/sh
 
 bin=$HOME/bin
+deploy=$bin/deploy
 
 # Set the prompt for the select command
 PS3="Type a number or 'q' to quit: "
 
 # Create a list of files to display
-genlist=$(ls -1 $bin | grep "deploy-" )
+genlist=$(ls -1 $deploy | grep "deploy_" )
 
 # Show a menu and ask for input. If the user entered a valid choice,
 # then invoke the editor on that file
