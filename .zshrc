@@ -108,7 +108,6 @@ alias purgereminders="/usr/bin/osascript /Users/jlouthan/bin/purge-all-completed
 alias pull-prayers="cd $HOME/Sites/theologic.us ; git pull ; cd $HOME/bin ; git pull ; cd $HOME/Sites/theologic.us"
 alias wordcount='find . -name "*.md" -mtime -"$i" -type f -maxdepth 1 -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias todayscount='gfind . -maxdepth 1 -name "*.md" -daystart -ctime 0 -type f -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
-alias thismonthscount='gfind . -maxdepth 1 -name "*.md" -daystart -ctime 30 -type f -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 
 # Change Dirs Shortcuts
 alias cdclients="cd $HOME/Drive/Clients ;  ls -la ; pwd"
