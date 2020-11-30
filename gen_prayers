@@ -8,7 +8,7 @@ noon_template=$prayer_templates/noon.md
 pm_template=$prayer_templates/pm.md
 content_dir=$HOME/Sites/theologic.us/content/posts
 dir_prayers=$content_dir/prayers
-first_day=1
+first_day=4
 last_day=31
 
 # loop: print out 1-30
