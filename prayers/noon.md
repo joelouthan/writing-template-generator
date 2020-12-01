@@ -602,7 +602,11 @@ I love you so much.
 ### Riley & Emily, Oliver
 
 - Oliver is here!
+- Sleep, rest
+- Anxiety, anger
 - Logan - salvation; against isolation
+- Exposure to COVID
+- Alex & Lisa - Alex tested positive
 
 ### Scott & Melody, Emily, Adelyn, Caleb
 
