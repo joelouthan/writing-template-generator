@@ -13,7 +13,7 @@ genlist=$(ls -1 $deploy | grep "deploy_" )
 # then invoke the editor on that file
   select scriptname in $genlist; do
       if [ -n "$scriptname" ]; then
-        $($bin/$scriptname)
+        $($deploy/$scriptname)
       fi
       break
   done
