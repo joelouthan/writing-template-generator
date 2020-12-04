@@ -3,7 +3,7 @@ title: 'Noon Prayers for $day_prayers'
 author: Joseph Louthan
 type: post
 publishDate: $date_prayers$noon_time
-url: /prayers/$date_prayers_noon_prayers/
+url: /prayers/$date_prayers-noon_prayers/
 categories:
  - Prayers
 tags:
