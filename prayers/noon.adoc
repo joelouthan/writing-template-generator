@@ -10,11 +10,11 @@ tags:
  - 'Prayers'
 draft: true
 ---
+[verse,,Valley of Vision]
 ____
-[verse,]
 
 ____
-[verse, Jeremiah]
+[verse, ]
 ____
 
 ____
