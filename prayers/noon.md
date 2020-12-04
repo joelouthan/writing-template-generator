@@ -3,7 +3,7 @@ title: 'Noon Prayers for $day_prayers'
 author: Joseph Louthan
 type: post
 publishDate: $date_prayers$noon_time
-url: /prayers/$date_prayers-noon_prayers/
+url: /prayers/$date_prayers_noon_prayers/
 categories:
  - Prayers
 tags:
@@ -22,16 +22,6 @@ draft: true
 > **The second woe has passed; behold, the third woe is soon to come.**
 ---
 
-<pre>
-<div style="font-variant: small-caps;">
-
-</div>
-
-</pre>
-
----
-
-<pre><b>
 Isaiah 61 (ESV)
 
 The Spirit of the Lord GOD

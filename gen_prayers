@@ -8,8 +8,8 @@ noon_template=$prayer_templates/noon.md
 pm_template=$prayer_templates/pm.md
 content_dir=$HOME/Sites/theologic.us/content/posts
 dir_prayers=$content_dir/prayers
-first_day=4
-last_day=31
+first_day=0
+last_day=26
 
 # loop: print out 1-30
 for ((i=$first_day;i<=$last_day;i++));
@@ -19,7 +19,7 @@ do
   export am_time=T06:00:00-06:00
   export noon_time=T12:00:00-06:00
   export pm_time=T20:00:00-06:00
-  envsubst < $am_template > "$dir_prayers"/"$date_prayers"-am_prayers.md
-  envsubst < $noon_template > "$dir_prayers"/"$date_prayers"-noon_prayers.md
-  envsubst < $pm_template > "$dir_prayers"/"$date_prayers"-pm_prayers.md
+  envsubst < $am_template > "$dir_prayers"/"$date_prayers"-am_prayers.adoc
+  envsubst < $noon_template > "$dir_prayers"/"$date_prayers"-noon_prayers.adoc
+  envsubst < $pm_template > "$dir_prayers"/"$date_prayers"-pm_prayers.adoc
 done

@@ -3,7 +3,7 @@ title: 'Evening Prayers for $day_prayers'
 author: Joseph Louthan
 type: post
 publishDate: $date_prayers$pm_time
-url: /pm_prayers/$date_prayers-pm_prayers/
+url: /pm_prayers/$date_prayers_pm_prayers/
 categories:
  - Prayers
 tags:

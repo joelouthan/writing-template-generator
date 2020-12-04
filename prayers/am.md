@@ -3,7 +3,7 @@ title: 'Morning Prayers for $day_prayers'
 author: Joseph Louthan
 type: post
 publishDate: $date_prayers$am_time
-url: /prayers/$date_prayers-am_prayers/
+url: /prayers/$date_prayers_am_prayers/
 categories:
  - Prayers
 tags:
