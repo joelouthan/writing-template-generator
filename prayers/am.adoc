@@ -10,15 +10,22 @@ tags:
  - 'Prayers'
 draft: true
 ---
+[verse, Jeremiah]
+____
 
 ____
-*2 Timothy 4:1-5 (ESV) I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom: preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths. As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry.*
+[verse, 2 Timothy 4:1-5 (ESV)]
+____
+ I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom: preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths. As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry.
+____
 
-*Revelation 11:1-14 (ESV) Then I was given a measuring rod like a staff, and I was told, "`Rise and measure the temple of God and the altar and those who worship there, but do not measure the court outside the temple; leave that out, for it is given over to the nations, and they will trample the holy city for forty-two months. And I will grant authority to my two witnesses, and they will prophesy for 1,260 days, clothed in sackcloth.`"*
+[verse, Revelation 11:1-14 (ESV)]
+____
+Then I was given a measuring rod like a staff, and I was told, "`Rise and measure the temple of God and the altar and those who worship there, but do not measure the court outside the temple; leave that out, for it is given over to the nations, and they will trample the holy city for forty-two months. And I will grant authority to my two witnesses, and they will prophesy for 1,260 days, clothed in sackcloth.`"
 
-*These are the two olive trees and the two lampstands that stand before the Lord of the earth. And if anyone would harm them, fire pours from their mouth and consumes their foes. If anyone would harm them, this is how he is doomed to be killed. They have the power to shut the sky, that no rain may fall during the days of their prophesying, and they have power over the waters to turn them into blood and to strike the earth with every kind of plague, as often as they desire. And when they have finished their testimony, the beast that rises from the bottomless pit will make war on them and conquer them and kill them, and their dead bodies will lie in the street of the great city that symbolically is called Sodom and Egypt, where their Lord was crucified. For three and a half days some from the peoples and tribes and languages and nations will gaze at their dead bodies and refuse to let them be placed in a tomb, and those who dwell on the earth will rejoice over them and make merry and exchange presents, because these two prophets had been a torment to those who dwell on the earth. But after the three and a half days a breath of life from God entered them, and they stood up on their feet, and great fear fell on those who saw them. Then they heard a loud voice from heaven saying to them, "`Come up here!`" And they went up to heaven in a cloud, and their enemies watched them. And at that hour there was a great earthquake, and a tenth of the city fell. Seven thousand people were killed in the earthquake, and the rest were terrified and gave glory to the God of heaven.*
+These are the two olive trees and the two lampstands that stand before the Lord of the earth. And if anyone would harm them, fire pours from their mouth and consumes their foes. If anyone would harm them, this is how he is doomed to be killed. They have the power to shut the sky, that no rain may fall during the days of their prophesying, and they have power over the waters to turn them into blood and to strike the earth with every kind of plague, as often as they desire. And when they have finished their testimony, the beast that rises from the bottomless pit will make war on them and conquer them and kill them, and their dead bodies will lie in the street of the great city that symbolically is called Sodom and Egypt, where their Lord was crucified. For three and a half days some from the peoples and tribes and languages and nations will gaze at their dead bodies and refuse to let them be placed in a tomb, and those who dwell on the earth will rejoice over them and make merry and exchange presents, because these two prophets had been a torment to those who dwell on the earth. But after the three and a half days a breath of life from God entered them, and they stood up on their feet, and great fear fell on those who saw them. Then they heard a loud voice from heaven saying to them, "`Come up here!`" And they went up to heaven in a cloud, and their enemies watched them. And at that hour there was a great earthquake, and a tenth of the city fell. Seven thousand people were killed in the earthquake, and the rest were terrified and gave glory to the God of heaven.
 
-*The second woe has passed; behold, the third woe is soon to come.*
+The second woe has passed; behold, the third woe is soon to come.
 ____
 
 '''
@@ -61,8 +68,6 @@ Natasha
 
 Jamie
 
-'''
-
 == Give thanks
 
 You gave me my heart. My provision. My joy.
@@ -72,8 +77,6 @@ Whatever I have lost, you have restored a millionfold.
 Whatever I have, it comes from your hand and is all your own.
 
 If I have nothing or anything, I have everything because I have your Son, Jesus Christ.
-
-'''
 
 == For healing
 
@@ -109,8 +112,6 @@ Be with Jordan.
 
 Heal Kathleen (Leah's mom)
 
-'''
-
 == Daily
 
 On marriage: *Sarah, my love*
@@ -135,8 +136,6 @@ On glory of God: *"`On Christ's glory I would fix all my thoughts and desires, a
 
 On his provision: *Lord, anything you give will be good enough for me.*
 
-'''
-
 == Next steps
 
 My God,
@@ -146,8 +145,6 @@ I am so uncertain. What are my next steps? Direct me, Holy Spirit.
 But I will praise you for the triple blessings of being with the staff. Bless them and keep them always.
 
 Amen
-
-'''
 
 == For those who may not know You
 
@@ -209,8 +206,6 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 * *Jonathan & Jenn Williams*
 * *Evan & Kaylee, Everett, Baby*
 
-'''
-
 == StarCraft 2
 
 * Zip
@@ -227,15 +222,11 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 * Codad
 * philosotoss
 
-'''
-
 == D&D
 
 * Andrew & Kara
 * Jeff & Emilee
 * Hannah
-
-'''
 
 == Friends
 
@@ -258,4 +249,3 @@ Call on me. I will be obedient. Tell me with whom shall I share your good news: 
 * *Kristie*
 * *John and Gina*
 * *Jen and Diddy*
-...

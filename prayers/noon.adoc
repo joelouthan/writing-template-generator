@@ -10,27 +10,35 @@ tags:
  - 'Prayers'
 draft: true
 ---
+____
+[verse,]
 
 ____
-*2 Timothy 4:1-5 (ESV) I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom: preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths. As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry.*
-
-*Revelation 11:1-14 (ESV) Then I was given a measuring rod like a staff, and I was told, "`Rise and measure the temple of God and the altar and those who worship there, but do not measure the court outside the temple; leave that out, for it is given over to the nations, and they will trample the holy city for forty-two months. And I will grant authority to my two witnesses, and they will prophesy for 1,260 days, clothed in sackcloth.`"*
-
-*These are the two olive trees and the two lampstands that stand before the Lord of the earth. And if anyone would harm them, fire pours from their mouth and consumes their foes. If anyone would harm them, this is how he is doomed to be killed. They have the power to shut the sky, that no rain may fall during the days of their prophesying, and they have power over the waters to turn them into blood and to strike the earth with every kind of plague, as often as they desire. And when they have finished their testimony, the beast that rises from the bottomless pit will make war on them and conquer them and kill them, and their dead bodies will lie in the street of the great city that symbolically is called Sodom and Egypt, where their Lord was crucified. For three and a half days some from the peoples and tribes and languages and nations will gaze at their dead bodies and refuse to let them be placed in a tomb, and those who dwell on the earth will rejoice over them and make merry and exchange presents, because these two prophets had been a torment to those who dwell on the earth. But after the three and a half days a breath of life from God entered them, and they stood up on their feet, and great fear fell on those who saw them. Then they heard a loud voice from heaven saying to them, "`Come up here!`" And they went up to heaven in a cloud, and their enemies watched them. And at that hour there was a great earthquake, and a tenth of the city fell. Seven thousand people were killed in the earthquake, and the rest were terrified and gave glory to the God of heaven.*
-
-*The second woe has passed; behold, the third woe is soon to come.*
+[verse, Jeremiah]
 ____
 
-Isaiah 61 (ESV)
+____
+[verse, 2 Timothy 4:1-5 (ESV)]
+____
+ I charge you in the presence of God and of Christ Jesus, who is to judge the living and the dead, and by his appearing and his kingdom: preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths. As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry.
+____
 
+[verse, Revelation 11:1-14 (ESV)]
+____
+Then I was given a measuring rod like a staff, and I was told, "`Rise and measure the temple of God and the altar and those who worship there, but do not measure the court outside the temple; leave that out, for it is given over to the nations, and they will trample the holy city for forty-two months. And I will grant authority to my two witnesses, and they will prophesy for 1,260 days, clothed in sackcloth.`"
+
+These are the two olive trees and the two lampstands that stand before the Lord of the earth. And if anyone would harm them, fire pours from their mouth and consumes their foes. If anyone would harm them, this is how he is doomed to be killed. They have the power to shut the sky, that no rain may fall during the days of their prophesying, and they have power over the waters to turn them into blood and to strike the earth with every kind of plague, as often as they desire. And when they have finished their testimony, the beast that rises from the bottomless pit will make war on them and conquer them and kill them, and their dead bodies will lie in the street of the great city that symbolically is called Sodom and Egypt, where their Lord was crucified. For three and a half days some from the peoples and tribes and languages and nations will gaze at their dead bodies and refuse to let them be placed in a tomb, and those who dwell on the earth will rejoice over them and make merry and exchange presents, because these two prophets had been a torment to those who dwell on the earth. But after the three and a half days a breath of life from God entered them, and they stood up on their feet, and great fear fell on those who saw them. Then they heard a loud voice from heaven saying to them, "`Come up here!`" And they went up to heaven in a cloud, and their enemies watched them. And at that hour there was a great earthquake, and a tenth of the city fell. Seven thousand people were killed in the earthquake, and the rest were terrified and gave glory to the God of heaven.
+
+The second woe has passed; behold, the third woe is soon to come.
+____
+[verse, Isaiah 61 (ESV)]
+____
 The Spirit of the Lord GOD
   is upon me,
   because the LORD
   has anointed me
-
 to bring good news
   to the poor;
-
 he has sent me
   to bind up the brokenhearted,
   to proclaim liberty to the captives,
@@ -39,7 +47,6 @@ he has sent me
   to proclaim the year
   of the LORD'S favor,
   and the day of vengeance of our God;
-
 to comfort all who mourn;
   to grant to those who mourn in Zion--
   to give them a beautiful headdress
@@ -48,10 +55,8 @@ to comfort all who mourn;
     instead of mourning,
   the garment of praise
     instead of a faint spirit;
-
 that they may be called
   oaks of righteousness,
-
 the planting of the LORD,
   that he may be glorified.
 
@@ -64,7 +69,6 @@ Strangers shall stand and tend your flocks;
   foreigners shall be your plowmen and vinedressers;
   but you shall be called the priests of the LORD;
   they shall speak of you as the ministers of our God;
-
 you shall eat the wealth of the nations,
   and in their glory you shall boast.
 
@@ -102,16 +106,13 @@ For as the earth brings forth its sprouts,
   so the Lord GOD will cause r
   righteousness and praise
   to sprout up before all the nations.
-</b></pre>
+____
 
-'''
 
 == Family
 
 * *Sarah, Yusef, Elijah, Ivy, Ava*
 * *Marmie & Jason, Molly*
-
-'''
 
 == Norman
 
@@ -648,14 +649,20 @@ But Father, if they do not know you, please turn their hearts towards you.
 
 Lord, save my city, my state, and my nation and her people.
 
+'''
+[verse, 1 Chronicles 29:10-18 (ESV)]
 ____
-*O LORD, the God of Abraham, Isaac, and Israel, our fathers, keep forever such purposes and thoughts in the hearts of your people, and direct their hearts toward you.*
+Therefore David blessed the LORD in the presence of all the assembly. And David said: “Blessed are you, O LORD, the God of Israel our father, forever and ever. Yours, O LORD, is the greatness and the power and the glory and the victory and the majesty, for all that is in the heavens and in the earth is yours. Yours is the kingdom, O LORD, and you are exalted as head above all. Both riches and honor come from you, and you rule over all. In your hand are power and might, and in your hand it is to make great and to give strength to all. And now we thank you, our God, and praise your glorious name.
 
-*When they heard about the resurrection of the dead, some began to ridicule him, but others said, "`We'd like to hear from you again about this.`" So Paul left their presence. However, some people joined him and believed, including Dionysius the Areopagite, a woman named Damaris, and others with them.*
+“But who am I, and what is my people, that we should be able thus to offer willingly? For all things come from you, and of your own have we given you. For we are strangers before you and sojourners, as all our fathers were. Our days on the earth are like a shadow, and there is no abiding. O LORD our God, all this abundance that we have provided for building you a house for your holy name comes from your hand and is all your own. I know, my God, that you test the heart and have pleasure in uprightness. In the uprightness of my heart I have freely offered all these things, and now I have seen your people, who are present here, offering freely and joyously to you. O LORD, the God of Abraham, Isaac, and Israel, our fathers, keep forever such purposes and thoughts in the hearts of your people, and direct their hearts toward you.
+____
+[verse, Acts 17:32 - 18:11]
+____
+When they heard about the resurrection of the dead, some began to ridicule him, but others said, "`We'd like to hear from you again about this.`" So Paul left their presence. However, some people joined him and believed, including Dionysius the Areopagite, a woman named Damaris, and others with them.
 
-*After this, he left Athens and went to Corinth, where he found a Jew named Aquila, a native of Pontus, who had recently come from Italy with his wife Priscilla because Claudius had ordered all the Jews to leave Rome. Paul came to them, and since they were of the same occupation, tentmakers by trade, he stayed with them and worked. He reasoned in the synagogue every Sabbath and tried to persuade both Jews and Greeks.*
+After this, he left Athens and went to Corinth, where he found a Jew named Aquila, a native of Pontus, who had recently come from Italy with his wife Priscilla because Claudius had ordered all the Jews to leave Rome. Paul came to them, and since they were of the same occupation, tentmakers by trade, he stayed with them and worked. He reasoned in the synagogue every Sabbath and tried to persuade both Jews and Greeks.
 
-*When Silas and Timothy arrived from Macedonia, Paul devoted himself to preaching the word and testified to the Jews that Jesus is the Messiah. When they resisted and blasphemed, he shook out his clothes and told them, "`Your blood is on your own heads! I am innocent. From now on I will go to the Gentiles.`" So he left there and went to the house of a man named Titius Justus, a worshiper of God, whose house was next door to the synagogue. Crispus, the leader of the synagogue, believed in the Lord, along with his whole household. Many of the Corinthians, when they heard, believed and were baptized.*
+When Silas and Timothy arrived from Macedonia, Paul devoted himself to preaching the word and testified to the Jews that Jesus is the Messiah. When they resisted and blasphemed, he shook out his clothes and told them, "`Your blood is on your own heads! I am innocent. From now on I will go to the Gentiles.`" So he left there and went to the house of a man named Titius Justus, a worshiper of God, whose house was next door to the synagogue. Crispus, the leader of the synagogue, believed in the Lord, along with his whole household. Many of the Corinthians, when they heard, believed and were baptized.
 
-*The Lord said to Paul in a night vision, "`Don't be afraid, but keep on speaking and don't be silent. For I am with you, and no one will lay a hand on you to hurt you, because I have many people in this city.`" He stayed there a year and a half, teaching the word of God among them.*
+The Lord said to Paul in a night vision, "`Don't be afraid, but keep on speaking and don't be silent. For I am with you, and no one will lay a hand on you to hurt you, because I have many people in this city.`" He stayed there a year and a half, teaching the word of God among them.
 ____
