@@ -115,12 +115,13 @@ alias cdtheo="cd $HOME/Sites/theologic.us ; ls -la ; pwd"
 alias cdtheomedia="cd $HOME/Sites/theologic.us/content/images ; ls -la ; pwd"
 alias cdpaclife="cd $HOME/Drive/Clients/PacLife ; ls -la ; pwd"
 alias cdplay="$HOME/Projects/Ansible/playbooks"
+alias cdprayers="$HOME/Sites/prayers ; ls -la ; pwd"
 
 # Ansible
 alias play="ansible-playbook"
 alias lint="ansible-lint"
 
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:$HOME/Library/Python/2.7/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:$HOME/Library/Python/2.7/bin:$HOME/Sites/prayers:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 eval "$(rbenv init -)"
 export GEM_HOME=$HOME/gems
