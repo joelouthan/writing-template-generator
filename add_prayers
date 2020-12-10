@@ -1,11 +1,8 @@
 #! /bin/bash
 # date command: MACOS
 
-bin=$HOME/bin
-genprayers=$bin/gen_prayers
-theologicus=$HOME/Sites/theologic.us
-posts=$theologicus/content/posts
-prayers=$posts/prayers
+prayers=$HOME/Sites/prayers/
+genprayers=$prayers/gen_prayers
 date_prayers=`date -j +%F`
 
 echo "============================================="
