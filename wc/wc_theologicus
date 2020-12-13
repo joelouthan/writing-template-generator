@@ -18,6 +18,6 @@ words_total=$(($theo_wc+$prayer_wc))
 words_current=$(($words_total-$previous_count))
 words_since=$(($words_total-177780))
 
-echo -e "$date \t$theo_wc \t$prayer_wc \t$words_total \t$words_current \t$words_since\n" >> $output_file
+echo -e "$date $theo_wc \t$prayer_wc \t$words_total \t$words_current $words_since\n" >> $output_file
 
 echo "$words_total" > "$words_previous" 
