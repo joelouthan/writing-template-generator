@@ -10,21 +10,21 @@ posts_dir=$content_dir/$subject_dir
 # posts_dir=$userdir/Temp/$subject_dir
 Category='Prayers'
 Tag='Now Sings My Soul: Psalms'
-month=Nov
-day=16
+month=Dec
+day=22
 year=2020
 first_day=0
-last_day=13
+last_day=30
 title='Now Sings My Soul: Psalm '
 # loop: print out 1-30
 for ((i=$first_day;i<=$last_day;i++)); 
 do 
-   date_prayers=`date -j -v"$month"m -v"$day"d -v"$year"y -v+"$i"d +%F`
-   day_prayers=`date -j -v"$month"m -v"$day"d -v"$year"y -v+"$i"d +'%A, %-e %B %Y'`
-   am_time=T06:00:00-06:00
-   noon_time=T12:00:00-06:00
-   pm_time=T20:00:00-06:00
-   cat << EOF > "$posts_dir"/"$date_prayers"-am-"$url_subject".md
+  date_prayers=`date -j -v"$month"m -v"$day"d -v"$year"y -v+"$i"d +%F`
+  day_prayers=`date -j -v"$month"m -v"$day"d -v"$year"y -v+"$i"d +'%A, %-e %B %Y'`
+  am_time=T06:00:00-06:00
+  noon_time=T12:00:00-06:00
+  pm_time=T20:00:00-06:00
+  cat << EOF > "$posts_dir"/"$date_prayers"-am-"$url_subject".md
 ---
 title: '$title'
 author: Joseph Louthan

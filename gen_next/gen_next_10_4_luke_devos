@@ -4,10 +4,10 @@
 dow='thu'
 title='Luke '
 subject='Family Devotions in Luke'
-url_subject='family-devos-luke'
+url_subject='family_devos_luke'
 userdir=$HOME
 bin_dir=$userdir/bin
-subject_dir=4-family-devos-luke
+subject_dir=4-family_devos_luke
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$userdir/Temp/$subject_dir
 Category='Devotions'

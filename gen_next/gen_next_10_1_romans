@@ -3,10 +3,10 @@
 
 dow='mon'
 subject='Romans'
-url_subject='commentary-romans'
+url_subject='commentary_romans'
 userdir=$HOME
 bin_dir=$userdir/bin
-subject_dir=1-commentary-romans
+subject_dir=1-commentary_romans
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$userdir/Temp/$subject_dir
 Category='Commentary'

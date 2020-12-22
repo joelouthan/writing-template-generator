@@ -1,7 +1,7 @@
 #!/bin/sh
 
 bin=$HOME/bin
-gen_next=$bin/gen-next
+gen_next=$bin/gen_next
 
 # Set the prompt for the select command
 PS3="Type a number or 'q' to quit: "
@@ -13,7 +13,7 @@ genlist=$(ls -1 $gen_next | grep "gen_" )
 # then invoke the editor on that file
   select scriptname in $genlist; do
       if [ -n "$scriptname" ]; then
-        $($bin/$scriptname)
+        $($gen_next/$scriptname)
       fi
       break
   done

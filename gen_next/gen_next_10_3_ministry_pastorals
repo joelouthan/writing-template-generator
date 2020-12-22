@@ -4,10 +4,10 @@
 dow='wed'
 title='Thinking Through Ministry: 1 Timothy '
 subject='Thinking Through Ministry: Pastoral Epistles'
-url_subject='letters-to-timothy'
+url_subject='letters_to_timothy'
 userdir=$HOME
 bin_dir=$userdir/bin
-subject_dir=3-letters-to-timothy
+subject_dir=3-letters_to_timothy
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$userdir/Temp/$subject_dir
 Category='Ministry'
