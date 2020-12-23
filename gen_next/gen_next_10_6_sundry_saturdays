@@ -3,10 +3,10 @@
 dow='sat'
 title='Sundry Saturdays: '
 subject='Sundry Saturdays'
-url_subject='sundry_saturday'
+url_subject='sundry-saturday'
 userdir=$HOME
 bin_dir=$userdir/bin
-subject_dir=6-sundry_saturday
+subject_dir=6-sundry-saturday
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$userdir/Temp/$subject_dir
 Category='Links'

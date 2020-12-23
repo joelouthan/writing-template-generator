@@ -4,10 +4,10 @@
 dow='fri'
 title='A Few Points for Friday '
 subject='Few Points for Friday'
-url_subject='few_points_friday'
+url_subject='few-points-friday'
 userdir=$HOME
 bin_dir=$userdir/bin
-subject_dir=5-few_points_friday
+subject_dir=5-few-points-friday
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$userdir/Temp/$subject_dir
 Category='Links'

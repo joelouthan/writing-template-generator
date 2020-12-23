@@ -3,10 +3,10 @@
 dow='tue'
 title='Now Sings My Soul: Psalm 3:'
 subject='Prayers in the Psalms'
-url_subject='now_sings_my_soul_psalm'
+url_subject='now-sings-my-soul-psalm'
 userdir=$HOME
 bin_dir=$userdir/bin
-subject_dir=2-now_sings_my_soul_psalm
+subject_dir=2-now-sings-my-soul-psalm
 posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$userdir/Temp/$subject_dir
 Category='Prayers'
