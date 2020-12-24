@@ -7,13 +7,13 @@ gen_next=$bin/gen_next
 PS3="Type a number or 'q' to quit: "
 
 # Create a list of files to display
-genlist=$(ls -1 $gen_next | grep "gen_" )
+genlist=$(ls -1 $gen_next | grep "gen_")
 
 # Show a menu and ask for input. If the user entered a valid choice,
 # then invoke the editor on that file
-  select scriptname in $genlist; do
-      if [ -n "$scriptname" ]; then
-        $($gen_next/$scriptname)
-      fi
-      break
-  done
+select scriptname in $genlist; do
+    if [ -n "$scriptname" ]; then
+      $($gen_next/$scriptname)
+    fi
+    break
+done
