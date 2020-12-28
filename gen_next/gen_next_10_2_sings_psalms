@@ -2,7 +2,7 @@
 # date command: MACOS
 bin_dir=$HOME/bin
 dow='tue'
-title='Now Sings My Soul: Psalm 3:'
+title='Now Sings My Soul: '
 subject='Prayers in the Psalms'
 url_subject='now-sings-my-soul-psalm'
 subject_dir=2-now-sings-my-soul-psalm
@@ -72,7 +72,7 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-
+    start-here
 EOF
    cat << EOF > "$posts_dir"/"$dates"-noon-"$url_subject".md
 ---
@@ -90,7 +90,7 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-    
+    start-here
 EOF
    cat << EOF > "$posts_dir"/"$dates"-pm-"$url_subject".md
 ---
@@ -108,7 +108,7 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-    
+    start-here
 EOF
 done
 fi
