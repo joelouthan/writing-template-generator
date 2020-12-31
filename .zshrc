@@ -121,7 +121,7 @@ alias cdprayers="$HOME/Sites/prayers ; ls -la ; pwd"
 alias play="ansible-playbook"
 alias lint="ansible-lint"
 
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:$HOME/Library/Python/2.7/bin:$HOME/Sites/prayers:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:$HOME/Library/Python/2.7/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 eval "$(rbenv init -)"
 export GEM_HOME=$HOME/gems
