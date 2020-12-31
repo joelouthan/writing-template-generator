@@ -2,7 +2,7 @@
 # date command: MACOS
 
 content_dir=$HOME/Sites/theologic.us/content/posts
-title='Now Sings My Soul: Psalm 3:'
+title='Now Sings My Soul: '
 url_subject='now-sings-my-soul-psalm'
 bin_dir=$userdir/bin
 subject_dir=2-now-sings-my-soul-psalm
@@ -15,7 +15,6 @@ day=22
 year=2020
 first_day=0
 last_day=30
-title='Now Sings My Soul: Psalm '
 # loop: print out 1-30
 for ((i=$first_day;i<=$last_day;i++)); 
 do 

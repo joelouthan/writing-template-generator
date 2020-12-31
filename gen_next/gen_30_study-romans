@@ -1,0 +1,50 @@
+#! /bin/bash
+# date command: MACOS
+
+userdir=$HOME
+bin_dir=$userdir/bin
+title='Study: Romans '
+url_subject='study-romans'
+subject_dir=study-romans
+content_dir=$HOME/Sites/theologic.us/content/posts
+posts_dir=$content_dir/$subject_dir
+Category='Bible Study'
+Tag='Bible Study: Romans'
+month=Jan
+day=3
+year=2021
+first_day=0
+last_day=30
+# loop: print out 1-30
+for ((i=$first_day;i<=$last_day;i++)); 
+do 
+  dates=`date -j -v"$month"m -v"$day"d -v"$year"y -v+"$i"d +%F`
+  days=`date -j -v"$month"m -v"$day"d -v"$year"y -v+"$i"d +'%A, %-e %B %Y'`
+#  am_time=T06:00:00-06:00
+#  noon_time=T12:00:00-06:00
+#  pm_time=T20:00:00-06:00
+  cat << EOF > "$posts_dir"/"$dates"-"$url_subject".md
+---
+title: '$title '
+author: Joseph Louthan
+type: post
+publishDate: $dates
+url: /$url_subject/$dates-$url_subject/
+categories:
+  - $Category
+tags:
+  - '$Tag'
+draft: false
+---
+## The Text
+
+## The Support
+
+## Our God
+
+## The Gospel
+
+## Our Responsibility
+
+EOF
+done

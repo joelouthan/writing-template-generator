@@ -2,13 +2,12 @@
 # date command: MACOS
 
 dow='mon'
-subject='Romans'
+subject='Romans '
 url_subject='commentary-romans'
-userdir=$HOME
-bin_dir=$userdir/bin
+bin_dir=$HOME/bin
 subject_dir=1-commentary-romans
-posts_dir=$userdir/Sites/theologic.us/content/posts/$subject_dir
-# posts_dir=$userdir/Temp/$subject_dir
+content_dir=$HOME/Sites/theologic.us/content/posts
+posts_dir=$content_dir/$subject_dir
 Category='Commentary'
 Tag='Commentary: Romans'
 
