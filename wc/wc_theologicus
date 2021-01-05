@@ -1,5 +1,5 @@
 #! /bin/bash
-# date command: MACOS
+# date command: macOS
 
 bin=$HOME/bin
 wc=$bin/wc

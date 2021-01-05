@@ -1,5 +1,5 @@
 #! /bin/bash
-# date command: MACOS
+# date command: macOS
 
 prayers=$HOME/Sites/prayers/
 genprayers=$prayers/gen_prayers
