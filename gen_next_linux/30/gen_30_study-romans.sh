@@ -51,7 +51,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	for j in {0..30}; do
 	  postdate=$(date -d "$selectdate $j days" +%F)
-    cat << EOF > "$posts_dir"/"$postdate"-am-"$url_subject".md
+    cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
 ---
 title: "$title"
 author: Joseph Louthan
