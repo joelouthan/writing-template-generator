@@ -1,0 +1,96 @@
+#!/bin/bash
+#### date command: Linux
+
+#### Common variables
+bin_dir=$HOME/bin
+posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
+# posts_dir=$HOME/Temp/$subject_dir
+
+#### Post and date specific variables
+dow="sat"
+title="Sundry Saturdays: "
+subject="Sundry Saturdays"
+url_subject="sundry-saturday"
+subject_dir=6-sundry-saturday
+Category="Links"
+Tag="Sundry Saturday"
+
+# mkdir working directory if there is none
+mkdir -p "$posts_dir"
+
+# Clear current weeks
+weeks=$bin_dir/weeks
+true > $weeks
+
+echo "Last entry for $subject: "
+echo "$(ls -1 $posts_dir | grep md | tail -n1)"
+
+# Set the prompt for the select command
+echo "Setting up posts for $subject: "
+PS3="Select a date or "q" to quit: "
+
+# Give me the next 20 weeks starting on $dow
+for i in {1..20}; do
+  echo "$(date -d "next $dow $i weeks" +%F)" >> $weeks
+done
+
+next5weeks=$(cat $weeks)
+
+# Show a menu and ask for input.
+select selectdate in $next5weeks; do
+    if [ -n "$selectdate" ]; then
+        echo ${selectdate}
+    fi
+    break
+done
+
+echo "Publishing "$subject" starting the week of" $selectdate"!"
+
+read -p "Are you sure? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	for j in {0..20}; do
+	  postdate=`date -d "$selectdate $j weeks" +%F`
+      cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
+---
+title: "$title"
+author: Joseph Louthan
+type: post
+publishDate: $postdate
+url: /$url_subject/$postdate-$url_subject/
+categories:
+  - $Category
+tags:
+  - "$Tag"
+draft: true
+---
+
+##
+
+
+------
+
+##
+
+
+------
+
+##
+
+
+------
+
+##
+
+
+------
+
+##
+
+
+------
+
+EOF
+	done
+fi

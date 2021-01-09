@@ -1,15 +1,19 @@
 #!/bin/bash
-# date command: Linux
+#### date command: Linux
 
-dow='mon'
-subject='Romans'
-url_subject='commentary-romans'
+#### Common variables
 bin_dir=$HOME/bin
-subject_dir=1-commentary-romans
 posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$HOME/Temp/$subject_dir
-Category='Commentary'
-Tag='Commentary: Romans'
+
+#### Post and date specific variables
+dow="wed"
+title="Thinking Through Ministry: 1 Timothy "
+subject="Thinking Through Ministry: Pastoral Epistles"
+url_subject="letters-to-timothy"
+subject_dir=3-letters-to-timothy
+Category="Ministry"
+Tag="Philosophy of Ministry"
 
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"
@@ -23,11 +27,11 @@ echo "$(ls -1 $posts_dir | grep md | tail -n1)"
 
 # Set the prompt for the select command
 echo "Setting up posts for $subject: "
-PS3="Select a date or 'q' to quit: "
+PS3="Select a date or "q" to quit: "
 
 # Give me the next 20 weeks starting on $dow
 for i in {1..20}; do
-  echo "$(date -d "next $dow $i weeks" +%F)" >> $bin_dir/weeks
+  echo "$(date -d "next $dow $i weeks" +%F)" >> $weeks
 done
 
 next5weeks=$(cat $weeks)
@@ -40,20 +44,17 @@ select selectdate in $next5weeks; do
     break
 done
 
-# set your dates for each post
-selectday=`date -d "$selectdate" +%A`
-
-echo "Publishing '$subject' starting the week of" $selectday"!"
+echo "Publishing "$subject" starting the week of" $selectdate"!"
 
 read -p "Are you sure? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	for j in {0..20}; do
-	  postdate=`date -d "$selectdate $j weeks" +%F`
-      cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
+  for j in {0..20}; do
+    postdate=`date -d "$selectdate $j weeks" +%F`
+    cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
 ---
-title: '$subject '
+title: "$title"
 author: Joseph Louthan
 type: post
 publishDate: $postdate
@@ -61,7 +62,7 @@ url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
 tags:
-  - '$Tag'
+  - "$Tag"
 draft: true
 ---
 EOF
