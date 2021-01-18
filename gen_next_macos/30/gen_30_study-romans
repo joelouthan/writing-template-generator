@@ -10,7 +10,7 @@ posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
 title="Study: Romans "
 subject="Bible Study on Romans"
 url_subject="study-romans"
-subject_dir=study-romans
+subject_dir=0-study-romans
 Category="Bible Study"
 Tag="Bible Study: Romans"
 
