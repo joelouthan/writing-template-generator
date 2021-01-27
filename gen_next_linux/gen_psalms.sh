@@ -1,11 +1,6 @@
 #!/bin/bash
 #### date command: Linux
 
-#### Common variables
-bin_dir=$HOME/bin
-posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
-# posts_dir=$HOME/Temp/$subject_dir
-
 #### Post and date specific variables
 dow="tue"
 title="Now Sings My Soul: Psalm "
@@ -14,6 +9,11 @@ url_subject="now-sings-my-soul-psalm"
 subject_dir=2-now-sings-my-soul-psalm
 Category="Prayers"
 Tag="Now Sings My Soul: Psalms"
+
+#### Common variables
+bin_dir=$HOME/bin
+posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
+# posts_dir=$HOME/Temp/$subject_dir
 
 # For multiple posts in one day, set the publish time
 am_time="T06:00:00-06:00"

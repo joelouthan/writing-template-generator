@@ -1,7 +1,7 @@
 #!/bin/sh
 
 bin=$HOME/bin
-gen_next=$bin/gen_next_macos
+gen_next=$bin/gen_next_linux
 
 # Set the prompt for the select command
 PS3="Type a number or "q" to quit: "

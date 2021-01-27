@@ -1,11 +1,6 @@
 #!/bin/bash
 #### date command: Linux
 
-#### Common variables
-bin_dir=$HOME/bin
-posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
-# posts_dir=$HOME/Temp/$subject_dir
-
 #### Post and date specific variables
 title="Study: Romans "
 subject="Bible Study on Romans"
@@ -13,6 +8,11 @@ url_subject="study-romans"
 subject_dir=0-study-romans
 Category="Bible Study"
 Tag="Bible Study: Romans"
+
+#### Common variables
+bin_dir=$HOME/bin
+posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
+# posts_dir=$HOME/Temp/$subject_dir
 
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"

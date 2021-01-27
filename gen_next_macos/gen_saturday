@@ -1,11 +1,6 @@
 #!/bin/bash
 #### date command: macOS
 
-#### Common variables
-bin_dir=$HOME/bin
-posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
-# posts_dir=$HOME/Temp/$subject_dir
-
 #### Post and date specific variables
 dow="sat"
 title="Sundry Saturdays: "
@@ -14,6 +9,11 @@ url_subject="sundry-saturday"
 subject_dir=6-sundry-saturday
 Category="Links"
 Tag="Sundry Saturday"
+
+#### Common variables
+bin_dir=$HOME/bin
+posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
+# posts_dir=$HOME/Temp/$subject_dir
 
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"
