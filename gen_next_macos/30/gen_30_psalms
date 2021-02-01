@@ -7,15 +7,18 @@ subject="Prayers in the Psalms"
 url_subject="now-sings-my-soul-psalm"
 subject_dir=2-now-sings-my-soul-psalm
 Category="Prayers"
-Tag="Now Sings My Soul: Psalms"
-am_time="T06:00:00-06:00"
-noon_time="T12:00:00-06:00"
-pm_time="T20:00:00-06:00"
+Tag="Psalms"
+Series="Now Sings My Soul: Psalms"
 
 #### Common variables
 bin_dir=$HOME/bin
 posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$HOME/Temp/$subject_dir
+
+# For multiple posts in one day, set the publish time
+am_time="T06:00:00-06:00"
+noon_time="T12:00:00-06:00"
+pm_time="T21:00:00-06:00"
 
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"
@@ -58,13 +61,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$am_time
 url: /$url_subject/$postdate-am-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -76,13 +80,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$noon_time
 url: /$url_subject/$postdate-noon-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -94,13 +99,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$pm_time
 url: /$url_subject/$postdate-pm-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">

@@ -8,7 +8,9 @@ subject="Thinking Through Ministry: Pastoral Epistles"
 url_subject="letters-to-timothy"
 subject_dir=3-letters-to-timothy
 Category="Ministry"
-Tag="Philosophy of Ministry"
+Tag="1 Timothy"
+Series="Philosophy of Ministry"
+time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -56,13 +58,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
-publishDate: $postdate
+publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 EOF

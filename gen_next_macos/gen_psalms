@@ -8,7 +8,9 @@ subject="Prayers in the Psalms"
 url_subject="now-sings-my-soul-psalm"
 subject_dir="2-now-sings-my-soul-psalm"
 Category="Prayers"
-Tag="Now Sings My Soul: Psalms"
+Tag="Psalms"
+Series="Now Sings My Soul: Psalms"
+time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -64,13 +66,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$time_0600
 url: /$url_subject/$postdate-0600-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -82,13 +85,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$time_0900
 url: /$url_subject/$postdate-0900-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -100,13 +104,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$time_1200
 url: /$url_subject/$postdate-1200-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -118,13 +123,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$time_1430
 url: /$url_subject/$postdate-1430-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -136,13 +142,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$time_1700
 url: /$url_subject/$postdate-1700-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -154,13 +161,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$time_2000
 url: /$url_subject/$postdate-2000-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">

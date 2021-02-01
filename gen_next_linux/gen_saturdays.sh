@@ -8,7 +8,9 @@ subject="Sundry Saturdays"
 url_subject="sundry-saturday"
 subject_dir=6-sundry-saturday
 Category="Links"
-Tag="Sundry Saturday"
+Tag="Sundry"
+Series="Sundry Saturday"
+time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -56,13 +58,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
-publishDate: $postdate
+publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 

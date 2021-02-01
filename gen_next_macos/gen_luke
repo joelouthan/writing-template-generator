@@ -8,7 +8,9 @@ subject="Family Devotions in Luke"
 url_subject="family-devos-luke"
 subject_dir=4-family-devos-luke
 Category="Devotions"
-Tag="Family Devotions: Luke"
+Tag="Luke"
+Series="Family Devotions: Luke"
+time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -56,13 +58,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
-publishDate: $postdate
+publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 EOF

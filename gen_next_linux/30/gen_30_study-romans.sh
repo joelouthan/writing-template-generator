@@ -7,7 +7,9 @@ subject="Bible Study on Romans"
 url_subject="study-romans"
 subject_dir=0-study-romans
 Category="Bible Study"
-Tag="Bible Study: Romans"
+Tag="Romans"
+Series="Bible Study: Romans"
+time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -55,13 +57,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
-publishDate: $postdate
+publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 ## The Text

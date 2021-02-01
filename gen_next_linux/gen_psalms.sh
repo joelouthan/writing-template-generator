@@ -8,7 +8,9 @@ subject="Prayers in the Psalms"
 url_subject="now-sings-my-soul-psalm"
 subject_dir=2-now-sings-my-soul-psalm
 Category="Prayers"
-Tag="Now Sings My Soul: Psalms"
+Tag="Psalms"
+Series="Now Sings My Soul: Psalms"
+time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -61,13 +63,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$am_time
 url: /$url_subject/$postdate-am-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -79,13 +82,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$noon_time
 url: /$url_subject/$postdate-noon-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -97,13 +101,14 @@ EOF
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
 publishDate: $postdate$pm_time
 url: /$url_subject/$postdate-pm-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 <div style="font-variant: small-caps;">

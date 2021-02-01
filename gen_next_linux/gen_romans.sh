@@ -8,7 +8,9 @@ subject="Commentary: Romans"
 url_subject="commentary-romans"
 subject_dir=1-commentary-romans
 Category="Commentary"
-Tag="Commentary: Romans"
+Tag="Romans"
+Series="Commentary: Romans"
+time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -56,13 +58,14 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-type: post
-publishDate: $postdate
+publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
+series:
+  - "$Series"
 draft: true
 ---
 EOF
