@@ -6,11 +6,10 @@ dow="tue"
 title="Now Sings My Soul: Psalm "
 subject="Prayers in the Psalms"
 url_subject="now-sings-my-soul-psalm"
-subject_dir=2-now-sings-my-soul-psalm
+subject_dir="2-now-sings-my-soul-psalm"
 Category="Prayers"
 Tag="Psalms"
 Series="Now Sings My Soul: Psalms"
-time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -18,9 +17,12 @@ posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$HOME/Temp/$subject_dir
 
 # For multiple posts in one day, set the publish time
-am_time="T06:00:00-06:00"
-noon_time="T12:00:00-06:00"
-pm_time="T20:00:00-06:00"
+time_0600="T06:00:00-06:00"
+time_0900="T09:00:00-06:00"
+time_1200="T12:00:00-06:00"
+time_1500="T15:00:00-06:00"
+time_1800="T18:00:00-06:00"
+time_2100="T21:00:00-06:00"
 
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"
@@ -59,37 +61,43 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	for j in {0..20}; do
 	  postdate="$(date -d "$selectdate $j weeks" +%F)"
-    cat << EOF > "$posts_dir"/"$postdate"-am-"$url_subject".md
+    cat << EOF > "$posts_dir"/"$postdate"-0600-"$url_subject".md
 ---
 title: "$title"
 author: Joseph Louthan
-publishDate: $postdate$am_time
-url: /$url_subject/$postdate-am-$url_subject/
+publishDate: $postdate$time_0600
+url: /$url_subject/$postdate-0600-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
 series:
   - "$Series"
+showtoc: false
+css: "prayer"
 draft: true
 ---
 <div style="font-variant: small-caps;">
 
 </div>
-    |<---start-here
+&nbsp;
+
+
 EOF
-    cat << EOF > "$posts_dir"/"$postdate"-noon-"$url_subject".md
+    cat << EOF > "$posts_dir"/"$postdate"-0900-"$url_subject".md
 ---
 title: "$title"
 author: Joseph Louthan
-publishDate: $postdate$noon_time
-url: /$url_subject/$postdate-noon-$url_subject/
+publishDate: $postdate$time_0900
+url: /$url_subject/$postdate-0900-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
 series:
   - "$Series"
+showtoc: false
+css: "prayer"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -97,24 +105,95 @@ draft: true
 </div>
     start-here
 EOF
-    cat << EOF > "$posts_dir"/"$postdate"-pm-"$url_subject".md
+    cat << EOF > "$posts_dir"/"$postdate"-1200-"$url_subject".md
 ---
 title: "$title"
 author: Joseph Louthan
-publishDate: $postdate$pm_time
-url: /$url_subject/$postdate-pm-$url_subject/
+publishDate: $postdate$time_1200
+url: /$url_subject/$postdate-1200-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
 series:
   - "$Series"
+showtoc: false
+css: "prayer"
 draft: true
 ---
 <div style="font-variant: small-caps;">
 
 </div>
-    |<---start-here
+    start-here
+EOF
+    cat << EOF > "$posts_dir"/"$postdate"-1500-"$url_subject".md
+---
+title: "$title"
+author: Joseph Louthan
+publishDate: $postdate$time
+url: /$url_subject/$postdate-1500-$url_subject/
+categories:
+  - $Category
+tags:
+  - "$Tag"
+series:
+  - "$Series"
+showtoc: false
+css: "prayer"
+draft: true
+---
+<div style="font-variant: small-caps;">
+
+</div>
+&nbsp;
+
+
+EOF
+    cat << EOF > "$posts_dir"/"$postdate"-1800-"$url_subject".md
+---
+title: "$title"
+author: Joseph Louthan
+publishDate: $postdate$time_1800
+url: /$url_subject/$postdate-1800-$url_subject/
+categories:
+  - $Category
+tags:
+  - "$Tag"
+series:
+  - "$Series"
+showtoc: false
+css: "prayer"
+draft: true
+---
+<div style="font-variant: small-caps;">
+
+</div>
+&nbsp;
+
+
+EOF
+    cat << EOF > "$posts_dir"/"$postdate"-2100-"$url_subject".md
+---
+title: "$title"
+author: Joseph Louthan
+publishDate: $postdate$time_2100
+url: /$url_subject/$postdate-2100-$url_subject/
+categories:
+  - $Category
+tags:
+  - "$Tag"
+series:
+  - "$Series"
+showtoc: false
+css: "prayer"
+draft: true
+---
+<div style="font-variant: small-caps;">
+
+</div>
+&nbsp;
+
+
 EOF
   done
 fi

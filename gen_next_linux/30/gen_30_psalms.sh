@@ -74,7 +74,9 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-    |<---start-here
+&nbsp;
+
+
 EOF
     cat << EOF > "$posts_dir"/"$postdate"-noon-"$url_subject".md
 ---
@@ -93,7 +95,9 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-    |<---start-here
+&nbsp;
+
+
 EOF
     cat << EOF > "$posts_dir"/"$postdate"-pm-"$url_subject".md
 ---
@@ -112,7 +116,9 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-    |<---start-here
+&nbsp;
+
+
 EOF
   done
 fi
