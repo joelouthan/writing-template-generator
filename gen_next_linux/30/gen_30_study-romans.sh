@@ -31,7 +31,7 @@ echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next 30 days to choose from
-for i in {0..30}; do
+for i in {0..60}; do
   echo "$(date -d "next $dow $i days" +%F)" >> $weeks
 done
 
