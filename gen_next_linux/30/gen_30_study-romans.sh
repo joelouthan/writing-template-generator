@@ -61,10 +61,13 @@ publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
+  - Podcast
 tags:
   - "$Tag"
+  - Podcast
 series:
   - "$Series"
+tocopen: true
 draft: true
 ---
 ## The Text
