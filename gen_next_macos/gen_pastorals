@@ -3,13 +3,13 @@
 
 #### Post and date specific variables
 dow="wed"
-title="Thinking Through Ministry: 1 Timothy "
-subject="Thinking Through Ministry: Pastoral Epistles"
-url_subject="letters-to-timothy"
-subject_dir=3-letters-to-timothy
+title="Mediations: "
+subject="Mediations: Pastoral Epistles"
+url_subject="mediations-on-pastorals"
+subject_dir=3-mediations-on-the-pastorals
 Category="Ministry"
 Tag="1 Timothy"
-Series="Philosophy of Ministry"
+Series="Mediations: Pastoral Epistles"
 time="T06:00:00-06:00"
 
 #### Common variables
@@ -33,7 +33,7 @@ PS3="Select a date or "q" to quit: "
 
 # Give me the next 20 weeks starting on $dow
 for i in {1..20}; do
-  echo "$(date -j -v+"$dow" -v"$i"w +%F)" >> $weeks
+  echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
 listofdates=$(cat $weeks)
@@ -53,7 +53,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {0..20}; do
-    postdate="$(date -d "$selectdate $j weeks" +%F)"
+    postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
     cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
 ---
 title: "$title"
@@ -68,6 +68,15 @@ series:
   - "$Series"
 draft: true
 ---
+
+## The Text
+
+
+## The Devotion
+
+
+## The Prayer
+
 EOF
 	done
 fi

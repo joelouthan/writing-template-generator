@@ -3,13 +3,13 @@
 
 #### Post and date specific variables
 dow="wed"
-title="Thinking Through Ministry: 1 Timothy "
-subject="Thinking Through Ministry: Pastoral Epistles"
-url_subject="letters-to-timothy"
-subject_dir=3-letters-to-timothy
+title="Mediations: "
+subject="Mediations: Pastoral Epistles"
+url_subject="mediations-on-pastorals"
+subject_dir=3-mediations-on-the-pastorals
 Category="Ministry"
 Tag="1 Timothy"
-Series="Philosophy of Ministry"
+Series="Mediations: Pastoral Epistles"
 time="T06:00:00-06:00"
 
 #### Common variables
@@ -36,10 +36,10 @@ for i in {1..20}; do
   echo "$(date -d "next $dow $i weeks" +%F)" >> $weeks
 done
 
-next5weeks=$(cat $weeks)
+listofdates=$(cat $weeks)
 
 # Show a menu and ask for input.
-select selectdate in $next5weeks; do
+select selectdate in $listofdates; do
     if [ -n "$selectdate" ]; then
         echo ${selectdate}
     fi
@@ -68,6 +68,15 @@ series:
   - "$Series"
 draft: true
 ---
+
+## The Text
+
+
+## The Devotion
+
+
+## The Prayer
+
 EOF
 	done
 fi
