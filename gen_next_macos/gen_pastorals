@@ -3,13 +3,13 @@
 
 #### Post and date specific variables
 dow="wed"
-title="Mediations: "
-subject="Mediations: Pastoral Epistles"
-url_subject="mediations-on-pastorals"
-subject_dir=3-mediations-on-the-pastorals
+title="Meditations: "
+subject="Meditations: Pastoral Epistles"
+url_subject="meditations-pastorals"
+subject_dir=3-meditations-pastorals
 Category="Ministry"
 Tag="1 Timothy"
-Series="Mediations: Pastoral Epistles"
+Series="Meditations: Pastoral Epistles"
 time="T06:00:00-06:00"
 
 #### Common variables
