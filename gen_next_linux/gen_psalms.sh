@@ -80,8 +80,10 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-&nbsp;
 
+\`\`\`text
+
+\`\`\`
 
 EOF
     cat << EOF > "$posts_dir"/"$postdate"-0900-"$url_subject".md
@@ -103,7 +105,11 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-    start-here
+
+\`\`\`text
+
+\`\`\`
+
 EOF
     cat << EOF > "$posts_dir"/"$postdate"-1200-"$url_subject".md
 ---
@@ -124,7 +130,11 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-    start-here
+
+\`\`\`text
+
+\`\`\`
+
 EOF
     cat << EOF > "$posts_dir"/"$postdate"-1500-"$url_subject".md
 ---
@@ -145,8 +155,10 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-&nbsp;
 
+\`\`\`text
+
+\`\`\`
 
 EOF
     cat << EOF > "$posts_dir"/"$postdate"-1800-"$url_subject".md
@@ -168,8 +180,10 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-&nbsp;
 
+\`\`\`text
+
+\`\`\`
 
 EOF
     cat << EOF > "$posts_dir"/"$postdate"-2100-"$url_subject".md
@@ -191,8 +205,10 @@ draft: true
 <div style="font-variant: small-caps;">
 
 </div>
-&nbsp;
 
+\`\`\`text
+
+\`\`\`
 
 EOF
   done
