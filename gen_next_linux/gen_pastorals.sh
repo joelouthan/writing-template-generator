@@ -5,12 +5,14 @@
 dow="wed"
 title="Meditations: "
 subject="Meditations: Pastoral Epistles"
-url_subject="meditations-pastorals"
 subject_dir=3-meditations-pastorals
-Category="Ministry"
+url_cat="meditations"
+url_sub="1st-timothy"
+Category="Meditations"
 Tag="1 Timothy"
 Series="Meditations: Pastoral Epistles"
 time="T06:00:00-06:00"
+css="prayer"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -54,18 +56,20 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {0..20}; do
     postdate=`date -d "$selectdate $j weeks" +%F`
-    cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
+    cat << EOF > "$posts_dir"/"$postdate"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
-url: /$url_subject/$postdate-$url_subject/
+url: /$url_cat/$postdate-$url_sub/
 categories:
   - $Category
 tags:
   - "$Tag"
 series:
   - "$Series"
+css: "$css"
+showtoc: true
 draft: true
 ---
 
@@ -77,6 +81,13 @@ draft: true
 
 ## The Prayer
 
+<div style="font-variant: small-caps;">
+
+</div>
+
+\`\`\`text
+
+\`\`\`
 EOF
 	done
 fi
