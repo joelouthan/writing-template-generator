@@ -3,13 +3,13 @@
 
 #### Post and date specific variables
 dow="tue"
-title="Now Sings My Soul: Psalm "
-subject="Prayers in the Psalms"
-url_subject="now-sings-my-soul-psalm"
-subject_dir="2-now-sings-my-soul-psalm"
+title="Praying Through: "
+subject="Praying Through: The Psalms"
+url_subject="praying-through-psalm"
+subject_dir=2-praying-through-psalm
 Category="Prayers"
 Tag="Psalms"
-Series="Now Sings My Soul: Psalms"
+Series="Praying Through: The Psalms"
 
 #### Common variables
 bin_dir=$HOME/bin

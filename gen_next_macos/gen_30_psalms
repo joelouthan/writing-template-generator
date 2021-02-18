@@ -2,24 +2,20 @@
 #### date command: macOS
 
 #### Post and date specific variables
-title="Now Sings My Soul: Psalm "
-subject="Prayers in the Psalms"
-url_subject="now-sings-my-soul-psalm"
-subject_dir=2-now-sings-my-soul-psalm
+title="Praying Through: "
+subject="Praying Through: The Psalms"
+url_subject="praying-through-psalm"
+subject_dir=2-praying-through-psalm
 Category="Prayers"
 Tag="Psalms"
-Series="Now Sings My Soul: Psalms"
+Series="Praying Through: The Psalms"
 
 #### Common variables
 bin_dir=$HOME/bin
 posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$HOME/Temp/$subject_dir
 
-# For multiple posts in one day, set the publish time
-am_time="T06:00:00-06:00"
-noon_time="T12:00:00-06:00"
-pm_time="T21:00:00-06:00"
-
+time="T06:00:00-06:00"
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"
 
@@ -57,64 +53,20 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	for j in {0..30}; do
   postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$posts_dir"/"$postdate"-am-"$url_subject".md
+  cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
 ---
 title: "$title"
 author: Joseph Louthan
-publishDate: $postdate$am_time
-url: /$url_subject/$postdate-am-$url_subject/
+publishDate: $postdate$time
+url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
 tags:
   - "$Tag"
 series:
   - "$Series"
-draft: true
----
-<div style="font-variant: small-caps;">
-
-</div>
-
-\`\`\`text
-
-\`\`\`
-
-EOF
-    cat << EOF > "$posts_dir"/"$postdate"-noon-"$url_subject".md
----
-title: "$title"
-author: Joseph Louthan
-publishDate: $postdate$noon_time
-url: /$url_subject/$postdate-noon-$url_subject/
-categories:
-  - $Category
-tags:
-  - "$Tag"
-series:
-  - "$Series"
-draft: true
----
-<div style="font-variant: small-caps;">
-
-</div>
-
-\`\`\`text
-
-\`\`\`
-
-EOF
-    cat << EOF > "$posts_dir"/"$postdate"-pm-"$url_subject".md
----
-title: "$title"
-author: Joseph Louthan
-publishDate: $postdate$pm_time
-url: /$url_subject/$postdate-pm-$url_subject/
-categories:
-  - $Category
-tags:
-  - "$Tag"
-series:
-  - "$Series"
+showtoc: false
+css: "prayer"
 draft: true
 ---
 <div style="font-variant: small-caps;">
