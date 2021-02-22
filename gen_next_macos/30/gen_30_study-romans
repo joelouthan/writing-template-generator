@@ -68,6 +68,7 @@ tags:
 series:
   - "$Series"
 tocopen: true
+css: "prayers"
 draft: true
 ---
 ## The Text
@@ -82,6 +83,9 @@ draft: true
 
 ## Pray
 
+```text
+
+```
 EOF
   done
 fi
