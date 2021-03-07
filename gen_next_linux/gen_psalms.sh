@@ -74,7 +74,7 @@ tags:
 series:
   - "$Series"
 showtoc: false
-css: "prayer"
+css: "prayers"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -99,7 +99,7 @@ tags:
 series:
   - "$Series"
 showtoc: false
-css: "prayer"
+css: "prayers"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -124,7 +124,7 @@ tags:
 series:
   - "$Series"
 showtoc: false
-css: "prayer"
+css: "prayers"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -149,7 +149,7 @@ tags:
 series:
   - "$Series"
 showtoc: false
-css: "prayer"
+css: "prayers"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -174,7 +174,7 @@ tags:
 series:
   - "$Series"
 showtoc: false
-css: "prayer"
+css: "prayers"
 draft: true
 ---
 <div style="font-variant: small-caps;">
@@ -199,7 +199,7 @@ tags:
 series:
   - "$Series"
 showtoc: false
-css: "prayer"
+css: "prayers"
 draft: true
 ---
 <div style="font-variant: small-caps;">
