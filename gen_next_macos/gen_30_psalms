@@ -3,12 +3,12 @@
 
 #### Post and date specific variables
 title="Praying Through: "
-subject="Praying Through: The Psalms"
+subject="Praying Through Psalms"
 url_subject="praying-through-psalm"
 subject_dir=2-praying-through-psalm
 Category="Prayers"
 Tag="Psalms"
-Series="Praying Through: The Psalms"
+Series="Praying Through: Psalms"
 
 #### Common variables
 bin_dir=$HOME/bin
