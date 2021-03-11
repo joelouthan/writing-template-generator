@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/pilot:/usr/local/bin:$PATH
+export PATH="$HOME/bin:$HOME/pilot:/usr/local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jlouthan/.oh-my-zsh"
@@ -123,10 +123,7 @@ alias cdprayers="$HOME/Sites/prayers ; ls -la ; pwd"
 alias play="ansible-playbook"
 alias lint="ansible-lint"
 
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:$HOME/Library/Python/2.7/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:$PATH
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:$HOME/Library/Python/2.7/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
 export MANPATH=/opt/local/share/man:$MANPATH
 eval "$(rbenv init -)"
 export GEM_HOME=$HOME/gems
-
-# Repo management
-alias mirrorBSBCMA="cd /Users/jlouthan/Clients/BCBSMA/ddaniels ; git checkout master ; git fetch upstream ; git pull upsteam master ; git push origin master"
