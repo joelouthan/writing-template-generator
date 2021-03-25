@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 # Shortcuts
-alias python="/usr/bin/python3"
+alias python="/usr/local/bin/python3"
 alias vi="/usr/bin/vim"
 alias pip="/usr/local/bin/pip3"
 alias editzshrc="vi $HOME/.zshrc ; cp $HOME/.zshrc $HOME/bin ; source $HOME/.zshrc"
@@ -118,12 +118,13 @@ alias cdtheomedia="cd $HOME/Sites/theologic.us/content/images ; ls -la ; pwd"
 alias cdpaclife="cd $HOME/Drive/Clients/PacLife ; ls -la ; pwd"
 alias cdplay="$HOME/Projects/Ansible/playbooks"
 alias cdprayers="$HOME/Sites/prayers ; ls -la ; pwd"
+alias cdceareplays="$HOME/SC2/CEA\ StarCraft\ Team\ Resources/CEA\ Replays"
 
 # Ansible
 alias play="ansible-playbook"
 alias lint="ansible-lint"
 
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:$HOME/Library/Python/2.7/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:/usr/local/opt/python@3.9/libexec/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
 export MANPATH=/opt/local/share/man:$MANPATH
 eval "$(rbenv init -)"
 export GEM_HOME=$HOME/gems
