@@ -12,7 +12,7 @@ date=$(date -j +%F)
 
 read previous_count < $words_previous
 
-theo_wc=$(find $theo_content -name "*.md" -type f -exec awk 1 {} + | wc -w | awk "{ print $1 }")
+theo_wc=$(find $theo_content -type f -exec awk 1 {} + | wc -w | awk "{ print $1 }")
 prayer_wc=$(find $prayer_content -type f -exec awk 1 {} + | wc -w | awk "{ print $1 }")
 words_total=$((theo_wc+prayer_wc))
 words_current=$((words_total-previous_count))
