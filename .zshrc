@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 # Shortcuts
+alias SCELight="/Users/jlouthan/Down/Scelight/Scelight-os-x.command"
 alias python="/usr/local/bin/python3"
 alias vi="/usr/bin/vim"
 alias pip="/usr/local/bin/pip3"
