@@ -1,15 +1,15 @@
 #!/bin/bash
-#### date command: macOS
+#### date command: Linux
 
 #### Post and date specific variables
 dow="thu"
-title="Luke "
-subject="Family Devotions in Luke"
-url_subject="family-devos-luke"
-subject_dir=4-family-devos-luke
+title="Matthew "
+subject="Family Devotions in Matthew"
+url_subject="family-devos-matthew"
+subject_dir=4-family-devos-matthew
 Category="Devotions"
-Tag="Luke"
-Series="Family Devotions: Luke"
+Tag="Matthew"
+Series="Family Devotions: Matthew"
 time="T06:00:00-06:00"
 
 #### Common variables
@@ -28,18 +28,18 @@ echo "Last entry for $subject: "
 echo "$(ls -1 $posts_dir | grep md | tail -n1)"
 
 # Set the prompt for the select command
-echo "Setting up posts for $subject: "
+echo "Setting up posts for $subject"
 PS3="Select a date or "q" to quit: "
 
 # Give me the next 20 weeks starting on $dow
 for i in {1..20}; do
-  echo "$(date -j -v+"$dow" -v+"$i"w +%F)" >> $weeks
+  echo "$(date -d "next $dow $i weeks" +%F)" >> $weeks
 done
 
-listofdates=$(cat $weeks)
+next5weeks=$(cat $weeks)
 
 # Show a menu and ask for input.
-select selectdate in $listofdates; do
+select selectdate in $next5weeks; do
     if [ -n "$selectdate" ]; then
         echo ${selectdate}
     fi
@@ -53,7 +53,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {0..20}; do
-    postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
+    postdate=`date -d "$selectdate $j weeks" +%F`
     cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
 ---
 title: "$title"

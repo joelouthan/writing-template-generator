@@ -35,7 +35,7 @@ PS3="Select a date or "q" to quit: "
 
 # Give me the next 20 weeks starting on $dow
 for i in {1..20}; do
-  echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
+  echo "$(date -j -v+"$dow" -v+"$i"w +%F)" >> $weeks
 done
 
 listofdates=$(cat $weeks)

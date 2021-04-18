@@ -3,19 +3,19 @@
 
 #### Post and date specific variables
 dow="thu"
-title="Luke "
-subject="Family Devotions in Luke"
-url_subject="family-devos-luke"
-subject_dir=4-family-devos-luke
+title="Matthew "
+subject="Family Devotions in Matthew"
+url_subject="family-devos-matthew"
+subject_dir=4-family-devos-matthew
 Category="Devotions"
-Tag="Luke"
-Series="Family Devotions: Luke"
+Tag="Matthew"
+Series="Family Devotions: Matthew"
 time="T06:00:00-06:00"
 
 #### Common variables
 bin_dir=$HOME/bin
 posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
-# posts_dir=$HOME/Temp/$subject_dir
+#posts_dir=$HOME/Temp/$subject_dir
 
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"
