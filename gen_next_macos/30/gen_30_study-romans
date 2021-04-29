@@ -61,14 +61,16 @@ publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
+  - Video
   - Podcast
 tags:
   - "$Tag"
+  - Video
   - Podcast
 series:
   - "$Series"
 tocopen: true
-css: "prayers"
+css: "family-devos"
 draft: true
 ---
 ## The Text
@@ -77,15 +79,24 @@ draft: true
 
 ## Our God
 
+
+
+\`\`\`text
+Where do you see God in the text? What does the text say about God?
+\`\`\`
+
 ## The Gospel
 
 ## Our Responsibility
 
 ## Pray
 
-```text
+<div style="font-variant: small-caps;">
 
-```
+</div>
+&nbsp;
+
+
 EOF
   done
 fi
