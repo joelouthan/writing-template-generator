@@ -61,12 +61,8 @@ publishDate: $postdate$time
 url: /$url_subject/$postdate-$url_subject/
 categories:
   - $Category
-  - Video
-  - Podcast
 tags:
   - "$Tag"
-  - Video
-  - Podcast
 series:
   - "$Series"
 tocopen: true
