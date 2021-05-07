@@ -5,7 +5,7 @@
 title="Study: "
 subject="Bible Study on Romans"
 url_subject="study-romans"
-subject_dir=0-study-romans
+subject_dir=1-study-romans
 Category="Bible Study"
 Tag="Romans"
 Series="Bible Study: Romans"
