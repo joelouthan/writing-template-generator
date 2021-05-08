@@ -111,6 +111,8 @@ alias pull-prayers="cd $HOME/Sites/theologic.us ; git pull ; cd $HOME/bin ; git 
 alias wordcount='find . -name "*.md" -mtime -"$i" -type f -maxdepth 2 -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias todayscount='gfind . -maxdepth 1 -name "*.md" -daystart -ctime 0 -type f -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias archive_prayers='/usr/bin/find $HOME/Sites/prayers/pages -iname "$(date -j -v -1d +%F)*.adoc" -maxdepth 1'
+alias sync-audio='rsync -aP /Volumes/Media/The-Study/Audio metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
+alias sync-images='rsync -aP /Volumes/Media/The-Study/Images metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
 
 # Change Dirs Shortcuts
 alias cdclients="cd $HOME/Drive/Clients ;  ls -la ; pwd"
