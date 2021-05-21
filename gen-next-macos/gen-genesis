@@ -2,10 +2,10 @@
 #### date command: macOS
 
 #### Post and date specific variables
-dow="tue"
+dow="thu"
 title="Study: "
 subject="Bible Study on Genesis"
-subject_dir=2-study-genesis
+subject_dir=4-study-genesis
 url_cat="bible-study"
 url_sub="study-genesis"
 Category="Bible Study"
