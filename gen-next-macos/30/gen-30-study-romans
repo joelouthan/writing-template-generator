@@ -4,7 +4,8 @@
 #### Post and date specific variables
 title="Study: "
 subject="Bible Study on Romans"
-url_subject="study-romans"
+url_cat="bible-study"
+url_sub="study-romans"
 subject_dir=1-study-romans
 Category="Bible Study"
 Tag="Romans"
@@ -53,12 +54,12 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	for j in {0..30}; do
   postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
+  cat << EOF > "$posts_dir"/"$postdate"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
-url: /$url_subject/$postdate-$url_subject/
+url: /$url_cat/$postdate-$url_sub/
 categories:
   - $Category
 tags:

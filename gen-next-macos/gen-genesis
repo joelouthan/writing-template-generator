@@ -1,0 +1,100 @@
+#!/bin/bash
+#### date command: macOS
+
+#### Post and date specific variables
+dow="tue"
+title="Study: "
+subject="Bible Study on Genesis"
+subject_dir=2-study-genesis
+url_cat="bible-study"
+url_sub="study-genesis"
+Category="Bible Study"
+Tag="Genesis"
+Series="Bible Study: Genesis"
+time="T06:00:00-06:00"
+
+#### Common variables
+bin_dir=$HOME/bin
+posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
+# posts_dir=$HOME/Temp/$subject_dir
+
+# mkdir working directory if there is none
+mkdir -p "$posts_dir"
+
+# Clear current weeks
+weeks=$bin_dir/weeks
+true > $weeks
+
+echo "Last entry for $subject: "
+echo "$(ls -1 $posts_dir | grep md | tail -n1)"
+
+# Set the prompt for the select command
+echo "Setting up posts for $subject: "
+PS3="Select a date or "q" to quit: "
+
+# Give me the next 20 weeks starting on $dow
+for i in {1..20}; do
+  echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
+done
+
+listofdates=$(cat $weeks)
+
+# Show a menu and ask for input.
+select selectdate in $listofdates; do
+    if [ -n "$selectdate" ]; then
+        echo ${selectdate}
+    fi
+    break
+done
+
+echo "Publishing "$subject" starting the week of" $selectdate"!"
+
+read -p "Are you sure? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  for j in {0..52}; do
+    postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
+  cat << EOF > "$posts_dir"/"$postdate"-"$url_sub".md
+---
+title: "$title"
+author: Joseph Louthan
+publishDate: $postdate$time
+url: /$url_cat/$postdate-$url_sub/
+categories:
+  - $Category
+tags:
+  - "$Tag"
+series:
+  - "$Series"
+tocopen: true
+css: "family-devos"
+draft: true
+---
+## The Text
+
+## The Support
+
+## Our God
+
+
+
+\`\`\`text
+Where do you see God in the text? What does the text say about God?
+\`\`\`
+
+## The Gospel
+
+## Our Responsibility
+
+## Pray
+
+<div style="font-variant: small-caps;">
+
+</div>
+&nbsp;
+
+
+EOF
+  done
+fi
