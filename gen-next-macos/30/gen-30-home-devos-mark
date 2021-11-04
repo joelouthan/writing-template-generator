@@ -2,14 +2,14 @@
 #### date command: macOS
 
 #### Post and date specific variables
-title="Study: "
-subject="Bible Study on Romans"
-url_cat="bible-study"
-url_sub="study-romans"
-subject_dir=1-study-romans
-Category="Bible Study"
-Tag="Romans"
-Series="Bible Study: Romans"
+title="Home Devotions: "
+subject="Home Devotions in Mark"
+url_cat="home-devotions"
+url_sub="home-devos-mark"
+subject_dir=5-home-devos-mark
+Category="Home Devotions"
+Tag="Mark"
+Series="Home Devotions: Mark"
 time="T06:00:00-06:00"
 
 #### Common variables
@@ -70,30 +70,47 @@ tocopen: true
 css: "home-devos"
 draft: true
 ---
-## The Introduction
-
 ## The Text
 
-## The Support
-
-## Our God
 
 
+## The Devotion
+
+
+
+## The Discussion
 
 \`\`\`text
-Where do you see God in the text? What does the text say about God?
+
 \`\`\`
 
-## The Gospel
+\`\`\`text
 
-## Our Responsibility
+\`\`\`
 
-## Pray
+\`\`\`text
 
-<div style="font-variant: small-caps;">
+\`\`\`
+
+\`\`\`text
+
+\`\`\`
+
+## The Prayer
+
+<div style='font-variant: small-caps;'>
 
 </div>
-&nbsp;
+
+\`\`\`text
+
+\`\`\`
+
+## The Media
+
+Today's episode at [The Study](http://study.theologic.us/podcast/)
+
+\[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Discord](http://discord.theologic.us)\]
 
 EOF
   done
