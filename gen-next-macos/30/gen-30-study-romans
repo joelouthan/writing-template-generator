@@ -11,6 +11,7 @@ Category="Bible Study"
 Tag="Romans"
 Series="Bible Study: Romans"
 time="T06:00:00-06:00"
+css="home-devos"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -67,33 +68,48 @@ tags:
 series:
   - "$Series"
 tocopen: true
-css: "home-devos"
+css: $css
 draft: true
 ---
 ## The Introduction
+
+<div style="page-break-after: always;"></div>
 
 ## The Text
 
 ## The Support
 
-## Our God
-
-
+<div style="page-break-after: always;"></div>
 
 \`\`\`text
 Where do you see God in the text? What does the text say about God?
 \`\`\`
 
+## Our God
+
+<div style="page-break-after: always;"></div>
+
 ## The Gospel
+
+<div style="page-break-after: always;"></div>
 
 ## Our Responsibility
 
-## Pray
+## The Prayer
 
-<div style="font-variant: small-caps;">
+<div style='font-variant: small-caps;'>
 
 </div>
-&nbsp;
+
+\`\`\`text
+
+\`\`\`
+
+## The Media
+
+Today's episode at [The Study](http://study.theologic.us/podcast/)
+
+\[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Discord](http://discord.theologic.us)\]
 
 EOF
   done
