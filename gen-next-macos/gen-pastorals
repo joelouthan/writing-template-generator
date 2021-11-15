@@ -3,16 +3,15 @@
 
 #### Post and date specific variables
 dow="wed"
-title="Meditations: "
-subject="Meditations: Pastoral Epistles"
-subject_dir=3-meditations-pastorals
-url_cat="meditations"
-url_sub="2nd-timothy"
-Category="Meditations"
 Tag="2 Timothy"
-Series="Meditations: Pastoral Epistles"
+title="Gospel Meditations: $Tag "
+subject_dir=3-gospel-meditations-nt
+url_cat="gospel-meditations"
+url_sub="2-timothy"
+Category="Meditations"
+Series="Gospel Meditations: Pastorals"
 time="T06:00:00-06:00"
-css="prayer"
+css: "home-devos"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -26,16 +25,16 @@ mkdir -p "$posts_dir"
 weeks=$bin_dir/weeks
 true > $weeks
 
-echo "Last entry for $subject: "
+echo "Last entry for $title: "
 echo "$(ls -1 $posts_dir | grep md | tail -n1)"
 
 # Set the prompt for the select command
-echo "Setting up posts for $subject: "
+echo "Setting up posts for $title"
 PS3="Select a date or "q" to quit: "
 
-# Give me the next 20 weeks starting on $dow
-for i in {1..20}; do
-  echo "$(date -j -v+"$dow" -v+"$i"w +%F)" >> $weeks
+# Give me the next x weeks starting on $dow
+for i in {1..35}; do
+  echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
 listofdates=$(cat $weeks)
@@ -48,7 +47,7 @@ select selectdate in $listofdates; do
     break
 done
 
-echo "Publishing "$subject" starting the week of" $selectdate"!"
+echo "Publishing "$title" starting the week of" $selectdate"!"
 
 read -p "Are you sure? " -n 1 -r
 echo
@@ -79,15 +78,43 @@ draft: true
 ## The Meditation
 
 
+## The Gospel
+
+
+## The Discussion
+
+\`\`\`text
+1. 
+\`\`\`
+
+\`\`\`text
+2. 
+\`\`\`
+
+\`\`\`text
+3. 
+\`\`\`
+
+\`\`\`text
+4. 
+\`\`\`
+
 ## The Prayer
 
-<div style="font-variant: small-caps;">
+<div style='font-variant: small-caps;'>
 
 </div>
 
 \`\`\`text
 
 \`\`\`
+
+## The Media
+
+Today's episode at [The Study](http://study.theologic.us/podcast/)
+
+\[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Discord](http://discord.theologic.us)\]
+
 EOF
 	done
 fi

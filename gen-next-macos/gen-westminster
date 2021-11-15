@@ -34,7 +34,7 @@ echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next x weeks starting on $dow
-for i in {1..33}; do
+for i in {1..35}; do
   echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
@@ -70,6 +70,7 @@ series:
   - "$Series"
 tocopen: true
 css: "$css"
+showtoc: true
 draft: true
 ---
 ## The Text
@@ -89,6 +90,24 @@ draft: true
 <div style="page-break-after: always;"></div>
 
 ## Our Responsibility
+
+## The Discussion
+
+\`\`\`text
+1. 
+\`\`\`
+
+\`\`\`text
+2. 
+\`\`\`
+
+\`\`\`text
+3. 
+\`\`\`
+
+\`\`\`text
+4. 
+\`\`\`
 
 ## The Prayer
 
