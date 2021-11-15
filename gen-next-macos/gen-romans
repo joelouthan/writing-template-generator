@@ -3,14 +3,16 @@
 
 #### Post and date specific variables
 dow="mon"
-title="Romans "
-subject="Commentary: Romans"
-url_subject="commentary-romans"
-subject_dir=1-commentary-romans
-Category="Commentary"
+title="Study: Romans "
+subject="Bible Study on Romans"
+url_cat="bible-study"
+url_sub="study-romans"
+subject_dir=1-study-romans
+Category="Bible Study"
 Tag="Romans"
-Series="Commentary: Romans"
+Series="Bible Study: Romans"
 time="T06:00:00-06:00"
+css="home-devos"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -33,7 +35,7 @@ PS3="Select a date or "q" to quit: "
 
 # Give me the next 20 weeks starting on $dow
 for i in {1..20}; do
-  echo "$(date -j -v+"$dow" -v"$i"w +%F)" >> $weeks
+  echo "$(date -j -v +"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
 listofdates=$(cat $weeks)
@@ -53,21 +55,62 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {0..20}; do
-    postdate="$(date -d "$selectdate $j weeks" +%F)"
-    cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
+    postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
+    cat << EOF > "$posts_dir"/"$postdate"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
-url: /$url_subject/$postdate-$url_subject/
+url: /$url_cat/$postdate-$url_sub/
 categories:
   - $Category
 tags:
   - "$Tag"
 series:
   - "$Series"
+tocopen: true
+css: $css
 draft: true
 ---
+## The Introduction
+
+<div style="page-break-after: always;"></div>
+
+## The Text
+
+## The Support
+
+<div style="page-break-after: always;"></div>
+
+\`\`\`text
+Where do you see God in the text? What does the text say about God?
+\`\`\`
+
+## Our God
+
+<div style="page-break-after: always;"></div>
+
+## The Gospel
+
+<div style="page-break-after: always;"></div>
+
+## Our Responsibility
+
+## The Prayer
+
+<div style='font-variant: small-caps;'>
+
+</div>
+
+\`\`\`text
+
+\`\`\`
+
+## The Media
+
+Today's episode at [The Study](http://study.theologic.us/podcast/)
+
+\[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Discord](http://discord.theologic.us)\]
 EOF
-	done
+  done
 fi

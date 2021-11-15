@@ -2,7 +2,7 @@
 #### date command: macOS
 
 #### Post and date specific variables
-title="Study: "
+title="Study: Romans "
 subject="Bible Study on Romans"
 url_cat="bible-study"
 url_sub="study-romans"
@@ -110,7 +110,6 @@ Where do you see God in the text? What does the text say about God?
 Today's episode at [The Study](http://study.theologic.us/podcast/)
 
 \[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Discord](http://discord.theologic.us)\]
-
 EOF
   done
 fi
