@@ -2,10 +2,10 @@
 #### date command: macOS
 
 #### Post and date specific variables
-dow="tue"
+dow="wed"
 title="Westminster Confession of Faith, Chapter "
 subject="Westminster Confession"
-subject_dir=2-westminster-confession
+subject_dir=3-westminster-confession
 url_cat="confession"
 url_sub="westminster-confession"
 Category="Confessions"

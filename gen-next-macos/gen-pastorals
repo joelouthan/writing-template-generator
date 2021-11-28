@@ -2,10 +2,10 @@
 #### date command: macOS
 
 #### Post and date specific variables
-dow="wed"
+dow="tue"
 Tag="2 Timothy"
 title="Gospel Meditations: $Tag "
-subject_dir=3-gospel-meditations-nt
+subject_dir=2-gospel-meditations-nt
 url_cat="gospel-meditations"
 url_sub="2-timothy"
 Category="Meditations"
