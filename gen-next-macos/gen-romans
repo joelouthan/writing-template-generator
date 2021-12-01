@@ -5,9 +5,9 @@
 dow="mon"
 title="Study: Romans "
 subject="Bible Study on Romans"
+subject_dir=1-study-romans
 url_cat="bible-study"
 url_sub="study-romans"
-subject_dir=1-study-romans
 Category="Bible Study"
 Tag="Romans"
 Series="Bible Study: Romans"
@@ -33,9 +33,9 @@ echo "$(ls -1 $posts_dir | grep md | tail -n1)"
 echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
-# Give me the next 20 weeks starting on $dow
-for i in {1..20}; do
-  echo "$(date -j -v +"$dow" -v +"$i"w +%F)" >> $weeks
+# Give me the next x weeks starting on $dow
+for i in {1..35}; do
+  echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
 listofdates=$(cat $weeks)
@@ -55,7 +55,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {0..20}; do
-    postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
+    postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
     cat << EOF > "$posts_dir"/"$postdate"-"$url_sub".md
 ---
 title: "$title"
@@ -69,7 +69,7 @@ tags:
 series:
   - "$Series"
 tocopen: true
-css: $css
+css: "$css"
 draft: true
 ---
 ## The Introduction
@@ -114,7 +114,7 @@ Where do you see God in the text? What does the text say about God?
 4. 
 \`\`\`
 
-## The Prayer
+## The Prayer from the Psalms
 
 <div style='font-variant: small-caps;'>
 
