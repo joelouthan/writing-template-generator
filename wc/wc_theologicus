@@ -1,9 +1,8 @@
 #! /bin/bash
 # date command: macOS
 
-bin=$HOME/bin
-wc=$bin/wc
 sites=$HOME/Sites
+wc=$sites/writing-template-generator/wc
 theo_content=$sites/theologic.us/content/posts
 prayer_content=$sites/prayers
 words_previous=$wc/words_previous
