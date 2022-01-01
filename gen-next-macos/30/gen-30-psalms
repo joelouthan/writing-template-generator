@@ -52,7 +52,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	for j in {0..30}; do
-  postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
+  postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F-%a)
   cat << EOF > "$posts_dir"/"$postdate"-"$url_subject".md
 ---
 title: "$title"
@@ -79,3 +79,6 @@ draft: true
 EOF
   done
 fi
+
+
+find $posts_dir -type f \( -name "*Sun*.md" -o -name "*Sat*.md" \) -exec rm -f {} \;
