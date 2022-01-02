@@ -11,7 +11,7 @@ Category="Home Devotions"
 Tag="Mark"
 Series="Home Devotions: Mark"
 time="T06:00:00-06:00"
-css="home-devos"
+css="prayers"
 
 #### Common variables
 bin_dir=$HOME/bin

@@ -12,7 +12,7 @@ url_sub="daniel"
 Category="Meditations"
 Series="Gospel Meditations: Daniel"
 time="T06:00:00-06:00"
-css="home-devos"
+css="prayers"
 
 #### Common variables
 bin_dir=$HOME/bin
