@@ -54,13 +54,14 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	for j in {0..30}; do
-  postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F-%a)
-  cat << EOF > "$posts_dir"/"$postdate"-"$url_sub".md
+  postday=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F-%a)
+  postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
+  cat << EOF > "$posts_dir"/"$postday"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
-url: /$url_cat/$postdate-$url_sub/
+url: /$url_cat/$postday-$url_sub/
 categories:
   - $Category
 tags:
