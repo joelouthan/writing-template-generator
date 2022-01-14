@@ -2,14 +2,15 @@
 #### date command: macOS
 
 #### Post and date specific variables
-title="Home Devotions: "
-subject="Home Devotions in Mark"
-url_cat="home-devotions"
-url_sub="home-devos-mark"
-subject_dir=home-devos-mark
-Category="Home Devotions"
-Tag="Mark"
-Series="Home Devotions: Mark"
+dow="fri"
+Tag="Daniel"
+title="Gospel OT: $Tag "
+subject="Gospel OT in $Tag"
+subject_dir=2022
+url_cat="gospel-ot"
+url_sub="daniel"
+Category="Gospel"
+Series="Gospel OT: Daniel"
 time="T06:00:00-06:00"
 css="prayers"
 
@@ -28,13 +29,16 @@ true > $weeks
 echo "Last entry for $subject: "
 echo "$(ls -1 $posts_dir | grep md | tail -n1)"
 
+lastdate=$(head $posts_dir/`ls -1 $posts_dir | grep md | tail -n1` | grep publishDate)
+echo $lastdate
+
 # Set the prompt for the select command
 echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
-# Give me the next 30 days to choose from
-for i in {0..60}; do
-  echo "$(date -j -v +"$i"d +%F)" >> $weeks
+# Give me the next x weeks starting on $dow
+for i in {1..10}; do
+  echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
 listofdates=$(cat $weeks)
@@ -47,21 +51,20 @@ select selectdate in $listofdates; do
     break
 done
 
-echo "Publishing "$subject" starting on "$selectdate"!"
+echo "Publishing "$title" starting the week of" $selectdate"!"
 
 read -p "Are you sure? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	for j in {0..30}; do
-  postday=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F-%a)
-  postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$posts_dir"/"$postday"-"$url_sub".md
+  for j in {00..09}; do
+    postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
+    cat << EOF > "$posts_dir"/XX0"$j"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
-url: /$url_cat/$postday-$url_sub/
+url: /$url_cat/$postdate-$url_sub/
 categories:
   - $Category
 tags:
@@ -72,12 +75,18 @@ tocopen: true
 css: "$css"
 draft: true
 ---
+## The Introduction
+
+<div style="page-break-after: always;"></div>
+
 ## The Text
 
+<div style="page-break-after: always;"></div>
+
+## The Meditation
 
 
-## The Devotion
-
+## The Gospel
 
 
 ## The Discussion
@@ -113,8 +122,27 @@ draft: true
 Today's episode at [The Study](http://study.theologic.us/podcast/)
 
 \[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Twitter](https://twitter.com/theologic_us)\]\[[Facebook](https://www.facebook.com/groups/462231051477464)\]\[[Afreeca](https://bj.afreecatv.com/theologicus)\]\[[Discord](http://discord.theologic.us)\]
-EOF
-  done
-fi
 
-find $posts_dir -type f \( -name "*Sun*.md" -o -name "*Sat*.md" \) -exec rm -f {} \;
+## The Resources
+
+[<img src="https://images-na.ssl-images-amazon.com/images/I/51FEocBP3YL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg" align="left" width="100" style="padding-right: 10px" />The Preacher's Commentary - Vol. 21- Daniel](https://amzn.to/3t3AaAt).  
+by Sinclair Ferguson.  
+Thomas Nelson. 2002.  
+
+&nbsp;
+&nbsp;
+
+---
+
+[<img src="https://images-na.ssl-images-amazon.com/images/I/41e9y9NB-VL._SX330_BO1,204,203,200_.jpg" align="left" width="100" style="padding-right: 10px" />Daniel (Reformed Expository Commentary)](https://amzn.to/3t5W85L).  
+by Iain M. Duguid.  
+P & R Publishing. 2008.  
+
+&nbsp;
+&nbsp;
+
+---
+
+EOF
+	done
+fi
