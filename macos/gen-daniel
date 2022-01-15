@@ -5,14 +5,16 @@
 dow="fri"
 Tag="Daniel"
 tag="daniel"
-title="Gospel OT: $Tag "
-subject_dir=2022
+title="Gospel OT: "
 url_cat="gospel-ot"
-url_sub="gospel-$tag"
 Category="Gospel"
-Series="Gospel OT: $Tag"
 time="T06:00:00-06:00"
 css="prayers"
+
+subject="$title$Tag"
+subject_dir=2022
+url_sub="$url_cat-$tag"
+Series="$subject"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -26,7 +28,7 @@ mkdir -p "$posts_dir"
 weeks=$bin_dir/weeks
 true > $weeks
 
-echo "Last entry for $title: "
+echo "Last entry for $subject: "
 echo "$(ls -1 $posts_dir | grep md | grep $tag | tail -n1)"
 
 lastdate=$(head $posts_dir/`ls -1 $posts_dir | grep md | grep $tag | tail -n1` | grep publishDate)
@@ -51,7 +53,7 @@ select selectdate in $listofdates; do
     break
 done
 
-echo "Publishing "$title" starting the week of" $selectdate"!"
+echo "Publishing "$subject" starting the week of" $selectdate"!"
 
 read -p "Are you sure? " -n 1 -r
 echo
@@ -59,7 +61,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {00..09}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-    cat << EOF > "$posts_dir"/XX0"$j"-"$url_sub".md
+    cat << EOF > "$posts_dir"/"$tag""$j"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan

@@ -2,17 +2,19 @@
 #### date command: macOS
 
 #### Post and date specific variables
+## dow="everyday"
 Tag="Mark"
 tag="mark"
 title="Home Devotions: "
-
-subject_dir=2022
-url_cat="home-devotions"
-url_sub="home-devos-$book"
+url_cat="home-devos"
 Category="Home Devotions"
-Series="Home Devotions: $Tag"
 time="T06:00:00-06:00"
 css="prayers"
+
+subject="$title$Tag"
+subject_dir=2022
+url_sub="$url_cat-$tag"
+Series="$subject"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -61,7 +63,7 @@ then
   postday=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F-%a)
   postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
   day=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%a)
-  cat << EOF > "$posts_dir"/XXX"$j"-"$day"-"$url_sub".md
+  cat << EOF > "$posts_dir"/"$tag""$j"-"$day"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan

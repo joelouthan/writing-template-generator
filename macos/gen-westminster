@@ -5,15 +5,17 @@
 dow="wed"
 Tag="Westminster Confession of Faith"
 tag="westminster"
-title="$Tag, Chapter"
-subject="$Tag"
-subject_dir=2022
-url_cat="confession"
-url_sub="$tag"
+title="$Tag, Chapter "
+url_cat="confessions"
 Category="Confessions"
-Series="Tag"
+
 time="T06:00:00-06:00"
 css="prayers"
+
+subject="$title$Tag"
+subject_dir=2022
+url_sub="$url_cat-$tag"
+Series="$subject"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -30,12 +32,11 @@ true > $weeks
 echo "Last entry for $subject: "
 echo "$(ls -1 $posts_dir | grep md | grep $tag | tail -n1)"
 
-
 lastdate=$(head $posts_dir/`ls -1 $posts_dir | grep md | grep $tag | tail -n1` | grep publishDate)
 echo $lastdate
 
 # Set the prompt for the select command
-echo "Setting up posts for $title: "
+echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next x weeks starting on $dow
@@ -61,7 +62,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {00..09}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$posts_dir"/XX0"$j"-"$url_sub".md
+  cat << EOF > "$posts_dir"/"$tag""$j"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
