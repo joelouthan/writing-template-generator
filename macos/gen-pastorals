@@ -8,13 +8,13 @@ tag="titus"
 title="Gospel NT: "
 url_cat="gospel-nt"
 Category="Gospel"
+Series="Gospel NT"
 time="T06:00:00-06:00"
 css="prayers"
 
 subject="$title$Tag"
 subject_dir=2022
 url_sub="$url_cat-$tag"
-Series="$subject"
 
 #### Common variables
 bin_dir=$HOME/bin
