@@ -15,7 +15,7 @@ css="prayers"
 subject="$title$Tag"
 subject_dir=2022
 url_sub="$url_cat-$tag"
-Series="$subject"
+Series="$Tag"
 
 #### Common variables
 bin_dir=$HOME/bin
