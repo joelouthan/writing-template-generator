@@ -2,7 +2,7 @@
 # date command: macOS
 
 sites=$HOME/Sites
-wc=$sites/writing-template-generator/wc
+wc=$sites/wtg/wc
 theo_content=$sites/theologic.us/content/posts
 prayer_content=$sites/prayers
 words_previous=$wc/words_previous
