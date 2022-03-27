@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 # Shortcuts
+alias l='gls -lah --group-directories-first --color=auto'
 alias SCELight="cd /Users/jlouthan/Down/Scelight/ ; ./Scelight-os-x.command"
 alias python="/usr/local/bin/python3"
 alias vi="/usr/bin/vim"
@@ -126,17 +127,20 @@ alias cdpaclife="cd $HOME/Drive/Clients/PacLife ; ls -la ; pwd"
 alias cdplay="$HOME/Projects/Ansible/playbooks"
 alias cdprayers="$HOME/Sites/prayers ; ls -la ; pwd"
 alias cdceareplays="$HOME/SC2/CEA\ StarCraft\ Team\ Resources/CEA\ Replays"
-alias cdwc="$HOME/Sites/writing-template-generator/wc"
 
 # Ansible
 alias play="ansible-playbook"
 alias lint="ansible-lint"
 
-# RH PM
+# Red Hat PMO
 alias javaform="javaws $HOME/Downloads/frmservlet"
+alias cdburns="$HOME/Google\ Drive/My\ Drive/Chevron/Burns"
+alias burnssee="ls -la $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
+alias burnsclean="rm -f $HOME/Google\ Drive/My\ Drive/Chevron/Burns/*.* ; ls -la $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
+alias burnsmerge="cdburns ; cat *.tsv >> `date -j +%F-%H%M%S`-CVX-Oracle.tsv ; ls -la $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
 
 # Home
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:/usr/local/opt/python@3.9/libexec/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
 export MANPATH=/opt/local/share/man:$MANPATH
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 export GEM_HOME=$HOME/gems
