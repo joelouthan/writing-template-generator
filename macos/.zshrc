@@ -135,9 +135,12 @@ alias lint="ansible-lint"
 # Red Hat PMO
 alias javaform="javaws $HOME/Downloads/frmservlet"
 alias cdburns="$HOME/Google\ Drive/My\ Drive/Chevron/Burns"
-alias burnssee="ls -la $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
-alias burnsclean="rm -f $HOME/Google\ Drive/My\ Drive/Chevron/Burns/*.* ; ls -la $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
-alias burnsmerge="cdburns && cat *.tsv >> `date -j +%F`-CVX-Oracle.tsv && echo -e "28801624\t49270\t3\tLabor\t27-Dec-2021\tLeBlanc, Zachary (Zachary)\t0\tHours\t0\t0\t\t\t\tUS.Consulting Central.160\t\t\t\tRed Hat Inc\tRed Hat Inc\t" >> `date -j +%F`-CVX-Oracle.tsv && tail `date -j +%F`-CVX-Oracle.tsv && ls -la $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
+alias burnssee="l $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
+alias burnsclean="rm -f $HOME/Google\ Drive/My\ Drive/Chevron/Burns/*.* ; l $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
+alias burnsmerge="cdburns
+dos2unix *.tsv
+cat *.tsv >> `date -j +%F`-CVX-Oracle.tsv
+l $HOME/Google\ Drive/My\ Drive/Chevron/Burns/"
 
 # Home
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:/usr/local/opt/python@3.9/libexec/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
