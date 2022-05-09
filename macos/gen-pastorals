@@ -8,13 +8,13 @@ tag="titus"
 title="Gospel NT: "
 url_cat="gospel-nt"
 Category="Gospel"
-Series="Gospel NT"
 time="T06:00:00-06:00"
 css="prayers"
 
 subject="$title$Tag"
-subject_dir=2022
+subject_dir=$(date -j +%Y)
 url_sub="$url_cat-$tag"
+Series="$subject"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -35,7 +35,7 @@ lastdate=$(head $posts_dir/`ls -1 $posts_dir | grep md | grep $tag | tail -n1` |
 echo $lastdate
 
 # Set the prompt for the select command
-echo "Setting up posts for $title: "
+echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next x weeks starting on $dow
@@ -66,7 +66,6 @@ then
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
-url: /$url_cat/$postdate-$url_sub/
 categories:
   - $Category
 tags:

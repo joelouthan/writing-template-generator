@@ -67,7 +67,6 @@ then
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
-url: /$url_cat/$postdate-$url_sub/
 categories:
   - $Category
 tags:
