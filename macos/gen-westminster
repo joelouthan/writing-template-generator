@@ -4,7 +4,7 @@
 #### Post and date specific variables
 dow="wed"
 Tag="Westminster Confession of Faith"
-tag="westminster"
+tag="wcf"
 title="$Tag, Chapter "
 url_cat="confessions"
 Category="Confessions"
@@ -13,13 +13,15 @@ time="T06:00:00-06:00"
 css="prayers"
 
 subject="$title$Tag"
-subject_dir=2022
+subject_dir=doctrine-wcf
+year_dir=2022
 url_sub="$url_cat-$tag"
 Series="$Tag"
 
 #### Common variables
 bin_dir=$HOME/bin
 posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
+current_dir=$HOME/Sites/theologic.us/content/posts/$year_dir
 # posts_dir=$HOME/Temp/$subject_dir
 
 # mkdir working directory if there is none
@@ -62,7 +64,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {00..09}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$posts_dir"/"$tag""$j"-"$url_sub".md
+  cat << EOF > "$current_dir"/"$tag""$j"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
