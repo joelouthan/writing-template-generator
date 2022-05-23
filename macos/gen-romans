@@ -64,7 +64,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {00..09}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$current_dir"/"$tag""$j"-"$url_sub".md
+  cat << EOF > "$current_dir"/"$url_sub"8-"$j".md
 ---
 title: "$title"
 author: Joseph Louthan
