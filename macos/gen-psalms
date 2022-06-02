@@ -12,7 +12,7 @@ time="T06:00:00-06:00"
 css="prayers"
 
 subject="$title$Tag"
-subject_dir=praying-through-psalm
+subject_dir=praying-through-psalms
 year_dir=$(date -j +%Y)
 url_sub="$url_cat-$tag"
 Series="$Tag"
@@ -63,7 +63,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {00..19}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$current_dir"/"$url_sub"-"$j".md
+  cat << EOF > "$current_dir"/"$url_sub""$j".md
 ---
 title: "$title"
 author: Joseph Louthan
