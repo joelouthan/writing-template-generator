@@ -2,17 +2,17 @@
 #### date command: macOS
 
 #### Post and date specific variables
-dow="fri"
-Tag="Mark"
-tag="mark"
-title="Home Devotions: "
-url_cat="home-devos"
-Category="Home Devotions"
+dow="sun"
+Tag="Psalms"
+tag="psalm"
+title="Praying Through: "
+url_cat="praying-through"
+Category="Prayers"
 time="T06:00:00-06:00"
 css="prayers"
 
 subject="$title$Tag"
-subject_dir=home-devos-mark
+subject_dir=praying-through-psalm
 year_dir=$(date -j +%Y)
 url_sub="$url_cat-$tag"
 Series="$Tag"
@@ -74,39 +74,17 @@ tags:
   - "$Tag"
 series:
   - "$Series"
-tocopen: true
+showtoc: false
+css: "prayers"
 css: "$css"
-draft: true
 ---
-## The Text
+## The Psalms
 
 
-
-## The Devotion
-
-
-
-## The Discussion
-
-\`\`\`text
-1. 
-\`\`\`
-
-\`\`\`text
-2. 
-\`\`\`
-
-\`\`\`text
-3. 
-\`\`\`
-
-\`\`\`text
-4. 
-\`\`\`
 
 ## The Prayer
 
-<div style='font-variant: small-caps;'>
+<div style="font-variant: small-caps;">
 
 </div>
 
@@ -114,14 +92,6 @@ draft: true
 
 \`\`\`
 
-## The Media
-
-Today's episode at [The Study](http://study.theologic.us/podcast/)
-
-\[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Twitter](https://twitter.com/theologic_us)\]\[[Facebook](https://www.facebook.com/groups/462231051477464)\]\[[Afreeca](https://bj.afreecatv.com/theologicus)\]\[[Discord](http://discord.theologic.us)\]
 EOF
   done
 fi
-
-## Former: Line to clean up weekends
-## find $posts_dir -type f \( -name "*Sun*.md" -o -name "*Sat*.md" \) -exec rm -f {} \;
