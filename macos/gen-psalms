@@ -6,13 +6,13 @@ dow="sun"
 Tag="Psalms"
 tag="psalm"
 title="Praying Through: "
-url_cat="praying-through"
+url_cat="praying-thru"
 Category="Prayers"
 time="T06:00:00-06:00"
 css="prayers"
 
 subject="$title$Tag"
-subject_dir=praying-through-psalms
+subject_dir=praying-thru-psalms
 year_dir=$(date -j +%Y)
 url_sub="$url_cat-$tag"
 Series="$Tag"
@@ -75,8 +75,8 @@ tags:
 series:
   - "$Series"
 showtoc: false
-css: "prayers"
 css: "$css"
+draft: true
 ---
 ## The Psalms
 
