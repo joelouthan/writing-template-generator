@@ -16,7 +16,7 @@ subject="$title$Tag"
 subject_dir=study-romans
 year_dir=$(date -j +%Y)
 url_sub="$url_cat-$tag"
-Series="$Tag"
+Series="Bible Study: Romans"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -101,7 +101,9 @@ Where do you see God in the text? What does the text say about God?
 
 <div style="page-break-after: always;"></div>
 
-## Our Responsibility
+## Our Response
+
+
 
 ## The Discussion
 
@@ -130,12 +132,6 @@ Where do you see God in the text? What does the text say about God?
 \`\`\`text
 
 \`\`\`
-
-## The Media
-
-Today's episode at [The Study](http://study.theologic.us/podcast/)
-
-\[[Apple](https://podcasts.apple.com/us/podcast/the-study/id1557102127)\]\[[Spotify](https://open.spotify.com/show/0Xs5qsNvWePyRqcmtOTPkR)\]\[[YouTube](http://youtube.theologic.us)\]\[[Twitch](http://twitch.theologic.us)\]\[[Twitter](https://twitter.com/theologic_us)\]\[[Facebook](https://www.facebook.com/groups/462231051477464)\]\[[Afreeca](https://bj.afreecatv.com/theologicus)\]\[[Discord](http://discord.theologic.us)\]
 
 ## Resources
 

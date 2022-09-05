@@ -147,10 +147,14 @@ l $cvxburns
 cd $bpburns
 dos2unix *.tsv
 cat *.tsv >> `date -j +%F`-bp-oracle.tsv
-l $bpburns'
+l $bpburns
+cd $cvxburns'
 
 # Home
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:/usr/local/opt/python@3.9/libexec/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
 export MANPATH=/opt/local/share/man:$MANPATH
 # eval "$(rbenv init -)"
 export GEM_HOME=$HOME/gems
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

@@ -80,7 +80,7 @@ draft: true
 
 ## The Gospel
 
-## Our Responsibility
+## Our Response
 
 EOF
   done
