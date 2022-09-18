@@ -15,7 +15,7 @@ subject="$title$Tag"
 subject_dir=home-devos-mark
 year_dir=$(date -j +%Y)
 url_sub="$url_cat-$tag"
-Series="$Tag"
+Series="$subject"
 
 #### Common variables
 bin_dir=$HOME/bin
@@ -69,6 +69,7 @@ title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
 categories:
+  - Commentaries
   - $Category
 tags:
   - "$Tag"
