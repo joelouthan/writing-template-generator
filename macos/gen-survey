@@ -13,7 +13,7 @@ time="T06:00:00-05:00"
 css="prayers"
 
 subject="$title$Tag"
-subject_dir=doctrine-wcf
+subject_dir=survey-bible
 year_dir=2022
 url_sub="$url_cat-$tag"
 Series="$Tag"
@@ -79,69 +79,39 @@ tocopen: true
 css: "$css"
 draft: true
 ---
-## The Text
+## The Intro
 
 <div style="page-break-after: always;"></div>
 
-## The Article
-
-\`\`\`text
-
-\`\`\`
+## The Book
 
 <div style="page-break-after: always;"></div>
 
-## The Confession
+## The Survey
 
-### 
 
-## The Discussion
-
-\`\`\`text
-1. 
-\`\`\`
-
-\`\`\`text
-2. 
-\`\`\`
-
-\`\`\`text
-3. 
-\`\`\`
-
-\`\`\`text
-4. 
-\`\`\`
-
-## The Prayer
-
-<div style='font-variant: small-caps;'>
-
-</div>
-
-\`\`\`text
-
-\`\`\`
+## The Christ
 
 ## The Resources
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/91Ce5gPJWRL.jpg" align="left" width="100" style="padding-right: 10px" />Truths We Confess: A Systematic Exposition of the Westminster Confession of Faith.  
-Sproul, R. C.    
-Orlando: Reformation Trust, 2019.  
-[Amazon](https://amzn.to/3tdrQyf)
-
-___
-<img src="https://banneroftruth.org/us/wp-content/uploads/sites/2/2018/04/westminster-confession.jpg" align="left" width="100" style="padding-right: 10px" />The Westminster Confession: The Confession of Faith, The Larger and Shorter Catechism.  
-Westminster Assembly.  
-The Directory for the Public Worship of God, with Associated Historical Documents. 2018.   
-[Amazon](https://amzn.to/34ok0az)
+[<img src="https://images-na.ssl-images-amazon.com/images/I/91DXb+atXsL.jpg" align="left" width="100" style="padding-right: 10px" />Christian Standard Bible](https://amzn.to/3FbGqbM).  
+Holmon Publishing. 2020.  
+&nbsp;
 
 ___
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/91dj-UoPpxL.jpg" align="left" width="100" style="padding-right: 10px" />The Creedal Imperative.  
-Carl R. Trueman    
-Crossway, 2012.  
-[Amazon](https://amzn.to/34gzOMl)
+[<img src="https://images-na.ssl-images-amazon.com/images/I/41nNWgurO3L._SX394_BO1,204,203,200_.jpg" align="left" width="100" style="padding-right: 10px" />ESV Study Bible](https://amzn.to/3FbGs38).  
+Crossway. 2016.
+
+&nbsp;
+
+___
+
+[<img src="https://images-na.ssl-images-amazon.com/images/I/41mjq2lbVJL._SX330_BO1,204,203,200_.jpg" align="left" width="100" style="padding-right: 10px" />Calvin's Commentaries](https://www.olivetree.com/store/product.php?productid=17517).  
+by John Calvin.  
+Baker. 2009.
+
+&nbsp;
 
 ___
 
