@@ -12,7 +12,7 @@ Category="Survey"
 time="T06:00:00-05:00"
 css="prayers"
 
-subject="$title$Tag"
+subject="$title"
 subject_dir=survey-bible
 year_dir=2022
 url_sub="$url_cat-$tag"
@@ -42,7 +42,7 @@ echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next x weeks starting on $dow
-for i in {0..10}; do
+for i in {0..30}; do
   echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
@@ -64,7 +64,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {00..09}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$current_dir"/"$tag""$j"-"$url_sub".md
+  cat << EOF > "$current_dir"/"$tag"0"$j"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
@@ -110,6 +110,22 @@ ___
 [<img src="https://images-na.ssl-images-amazon.com/images/I/41mjq2lbVJL._SX330_BO1,204,203,200_.jpg" align="left" width="100" style="padding-right: 10px" />Calvin's Commentaries](https://www.olivetree.com/store/product.php?productid=17517).  
 by John Calvin.  
 Baker. 2009.
+
+&nbsp;
+
+___
+
+[<img src="https://images-na.ssl-images-amazon.com/images/I/81a-Z-PCV0L.jpg" align="left" width="100" style="padding-right: 10px" />The IVP Bible Background Commentary: Old Testament](https://www.amazon.com/gp/product/0830824782/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).  
+by John H. Walton, Victor H. Matthews, Mark W. Chavalas.  
+IVP Academic. November 8, 2000.
+
+&nbsp;
+
+___
+
+[<img src="https://images-na.ssl-images-amazon.com/images/I/81a-Z-PCV0L.jpg" align="left" width="100" style="padding-right: 10px" />The IVP Bible Background Commentary: New Testament](https://www.amazon.com/gp/product/0830824782/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).  
+by Craig S. Keener.  
+IVP Academic. January 3, 2014.
 
 &nbsp;
 
