@@ -2,23 +2,26 @@
 #### date command: macOS
 
 #### Post and date specific variables
-dow="fri"
-Tag="Daniel"
-tag="daniel"
-title="Gospel OT: "
-url_cat="gospel-ot"
-Category="Gospel"
-Series="Gospel OT: Major Prophets"
+dow="tue"
+Tag="Survey of the Old & New Testaments"
+tag="survey"
+title="$Tag"
+url_cat="$tag"
+Category="Survey"
+
 time="T06:00:00-05:00"
 css="prayers"
 
 subject="$title$Tag"
-subject_dir=2022
+subject_dir=doctrine-wcf
+year_dir=2022
 url_sub="$url_cat-$tag"
+Series="$Tag"
 
 #### Common variables
 bin_dir=$HOME/bin
 posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
+current_dir=$HOME/Sites/theologic.us/content/posts/$year_dir
 # posts_dir=$HOME/Temp/$subject_dir
 
 # mkdir working directory if there is none
@@ -35,7 +38,7 @@ lastdate=$(head $posts_dir/`ls -1 $posts_dir | grep md | grep $tag | tail -n1` |
 echo $lastdate
 
 # Set the prompt for the select command
-echo "Setting up posts for $title: "
+echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next x weeks starting on $dow
@@ -61,7 +64,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {00..09}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-    cat << EOF > "$posts_dir"/"$tag""$j"-"$url_sub".md
+  cat << EOF > "$current_dir"/"$tag""$j"-"$url_sub".md
 ---
 title: "$title"
 author: Joseph Louthan
@@ -76,19 +79,21 @@ tocopen: true
 css: "$css"
 draft: true
 ---
-## The Introduction
-
-<div style="page-break-after: always;"></div>
-
 ## The Text
 
 <div style="page-break-after: always;"></div>
 
-## The Meditation
+## The Article
 
+\`\`\`text
 
-## The Gospel
+\`\`\`
 
+<div style="page-break-after: always;"></div>
+
+## The Confession
+
+### 
 
 ## The Discussion
 
@@ -118,27 +123,28 @@ draft: true
 
 \`\`\`
 
-
 ## The Resources
 
-[<img src="https://images-na.ssl-images-amazon.com/images/I/51FEocBP3YL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg" align="left" width="100" style="padding-right: 10px" />The Preacher's Commentary - Vol. 21- Daniel](https://amzn.to/3t3AaAt).  
-by Sinclair Ferguson.  
-Thomas Nelson. 2002.  
+<img src="https://images-na.ssl-images-amazon.com/images/I/91Ce5gPJWRL.jpg" align="left" width="100" style="padding-right: 10px" />Truths We Confess: A Systematic Exposition of the Westminster Confession of Faith.  
+Sproul, R. C.    
+Orlando: Reformation Trust, 2019.  
+[Amazon](https://amzn.to/3tdrQyf)
 
-&nbsp;
-&nbsp;
+___
+<img src="https://banneroftruth.org/us/wp-content/uploads/sites/2/2018/04/westminster-confession.jpg" align="left" width="100" style="padding-right: 10px" />The Westminster Confession: The Confession of Faith, The Larger and Shorter Catechism.  
+Westminster Assembly.  
+The Directory for the Public Worship of God, with Associated Historical Documents. 2018.   
+[Amazon](https://amzn.to/34ok0az)
 
----
+___
 
-[<img src="https://images-na.ssl-images-amazon.com/images/I/41e9y9NB-VL._SX330_BO1,204,203,200_.jpg" align="left" width="100" style="padding-right: 10px" />Daniel (Reformed Expository Commentary)](https://amzn.to/3t5W85L).  
-by Iain M. Duguid.  
-P & R Publishing. 2008.  
+<img src="https://images-na.ssl-images-amazon.com/images/I/91dj-UoPpxL.jpg" align="left" width="100" style="padding-right: 10px" />The Creedal Imperative.  
+Carl R. Trueman    
+Crossway, 2012.  
+[Amazon](https://amzn.to/34gzOMl)
 
-&nbsp;
-&nbsp;
-
----
+___
 
 EOF
-	done
+  done
 fi

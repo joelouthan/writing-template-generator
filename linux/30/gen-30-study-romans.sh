@@ -9,7 +9,7 @@ subject_dir=1-study-romans
 Category="Bible Study"
 Tag="Romans"
 Series="Bible Study: Romans"
-time="T06:00:00-06:00"
+time="T06:00:00-05:00"
 
 #### Common variables
 bin_dir=$HOME/bin

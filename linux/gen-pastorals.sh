@@ -11,7 +11,7 @@ url_sub="1st-timothy"
 Category="Meditations"
 Tag="1 Timothy"
 Series="Meditations: Pastoral Epistles"
-time="T06:00:00-06:00"
+time="T06:00:00-05:00"
 css="prayer"
 
 #### Common variables

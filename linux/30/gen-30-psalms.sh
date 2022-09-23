@@ -16,7 +16,7 @@ posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$HOME/Temp/$subject_dir
 
 # For multiple posts in one day, set the publish time
-am_time="T06:00:00-06:00"
+am_time="T06:00:00-05:00"
 noon_time="T12:00:00-06:00"
 pm_time="T21:00:00-06:00"
 

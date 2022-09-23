@@ -15,7 +15,7 @@ bin_dir=$HOME/bin
 posts_dir=$HOME/Sites/theologic.us/content/posts/$subject_dir
 # posts_dir=$HOME/Temp/$subject_dir
 
-time="T06:00:00-06:00"
+time="T06:00:00-05:00"
 # mkdir working directory if there is none
 mkdir -p "$posts_dir"
 
