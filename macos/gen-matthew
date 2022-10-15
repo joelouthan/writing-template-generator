@@ -82,40 +82,6 @@ draft: true
 
 ## The Devotion
 
-
-
-## The Discussion
-
-\`\`\`text
-1. 
-\`\`\`
-
-\`\`\`text
-2. 
-\`\`\`
-
-\`\`\`text
-3. 
-\`\`\`
-
-\`\`\`text
-4. 
-\`\`\`
-
-## The Prayer
-
->
-
-<div style='font-variant: small-caps;'>
-
-</div>
-
-\`\`\`text
-
-\`\`\`
-
-<div style="page-break-after: always;"></div>
-
 EOF
   done
 fi
