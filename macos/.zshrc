@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 # Shortcuts
+alias todayslongdate="date '+%A, %B %d, %Y.'"
 alias l='gls -lah --group-directories-first --color=auto'
 alias SCELight="cd /Users/jlouthan/Down/Scelight/ ; ./Scelight-os-x.command"
 alias python="/usr/local/bin/python3"
@@ -137,7 +138,7 @@ googledrive=$HOME/Google\ Drive/My\ Drive
 burnsdir=$googledrive/Burns
 cvxburns=$burnsdir/Chevron
 bpburns=$burnsdir/BP
-alias javaform='javaws $HOME/Downloads/frmservlet'
+alias javaform='javaws $HOME/Downloads/frmservlet.jnlp'
 alias cdburns='cd $burnsdir'
 alias burnsclean='rm -f $cvxburns/*.tsv ; rm -f $bpburns/*.tsv ; l -R $burnsdir'
 alias burnsmerge='cd $cvxburns
