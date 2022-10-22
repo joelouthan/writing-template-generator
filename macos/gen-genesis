@@ -69,11 +69,12 @@ title: "$title"
 author: Joseph Louthan
 publishDate: $postdate$time
 categories:
-  - $Category
+  - Commentaries
+  - Bible Study
 tags:
   - "$Tag"
 series:
-  - "$Series"
+  - "Study: $Tag"
 tocopen: true
 css: "$css"
 draft: true
