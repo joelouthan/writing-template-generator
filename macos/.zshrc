@@ -106,15 +106,15 @@ alias python="/usr/local/bin/python3"
 alias vi="/usr/bin/vim"
 alias pip="/usr/local/bin/pip3"
 alias editzshrc="vi $HOME/.zshrc ; cp $HOME/.zshrc $HOME/bin ; source $HOME/.zshrc"
-alias starttheo="cdtheo ; hugo server --buildFuture --buildDrafts"
-alias starttheonodrafts="cdtheo ; hugo server --buildFuture"
+alias starttheo="cdtheo ; hugo server --buildFuture --buildDrafts --ignoreCache --noHTTPCache"
+alias starttheonodrafts="cdtheo ; hugo server --buildFuture --ignoreCache --noHTTPCache"
 alias purgereminders="/usr/bin/osascript /Users/jlouthan/bin/purge-all-completed-reminders.scpt"
 alias wordcount='find . -name "*.md" -mtime -"$i" -type f -maxdepth 2 -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias todayscount='gfind . -maxdepth 1 -name "*.md" -daystart -ctime 0 -type f -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias archive_prayers='/usr/bin/find $HOME/Sites/prayers/pages -iname "$(date -j -v -1d +%F)*.adoc" -maxdepth 1'
 alias sync-audio='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Audio metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
 alias sync-images='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Images metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
-alias archive-videos="find $HOME/Movies -name '*.mp4' -mtime +1 -exec mv -f {} /Volumes/Media/Theologicus/Video \;"
+alias archive-videos="find $HOME/Movies -name '*.mp4' -mtime +1 -exec mv -f {} /Volumes/Media/Theologicus/Video \;"Z
 
 # Git
 alias push-ark="cd $HOME/Ark ; git add . ; git commit ; git push origin main"
