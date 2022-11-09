@@ -18,11 +18,11 @@ ____
 
 ## Scripts
 
-### [gen_next_linux](gen_next_linux)
+### [linux](linux)
 
 Using Linux `date` command format, generating writing templates formated in Markdown for Hugo server.
 
-### [gen_next_macos](gen_next_macos)
+### [macos](macos)
 
 Using macOS `date` command format, generating writing templates formated in Markdown for Hugo server.
 
