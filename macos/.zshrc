@@ -140,7 +140,7 @@ cvxburns=$burnsdir/Chevron
 bpburns=$burnsdir/BP
 alias javaform='javaws $HOME/Downloads/frmservlet.jnlp'
 alias cdburns='cd $burnsdir'
-alias burnsclean='rm -f $cvxburns/*.tsv ; rm -f $bpburns/*.tsv ; l -R $burnsdir'
+alias burnsclean='rm -f $cvxburns/*.tsv ; rm -f $bpburns/*.tsv ; l -R $burnsdir ; rm -f $HOME/Downloads/*.tsv'
 alias burnsmerge='cd $cvxburns
 dos2unix *.tsv
 cat *.tsv >> `date -j +%F`-cvx-oracle.tsv
