@@ -1,3 +1,5 @@
+[![tools](https://skillicons.dev/icons?i=bash,applescript)](https://theologic.us/contact-me/)
+
 # bin-writing-template-generator
 
 Various scripts to generate writing templates
