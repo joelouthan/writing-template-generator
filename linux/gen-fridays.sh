@@ -10,7 +10,7 @@ subject_dir=5-few-points-friday
 Category="Links"
 Tag="Links"
 Series="A Few Points for Friday"
-time="T06:00:00-05:00"
+time="T00:00:00-05:00"
 
 #### Common variables
 bin_dir=$HOME/bin

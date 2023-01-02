@@ -10,7 +10,7 @@ subject_dir=4-family-devos-matthew
 Category="Devotions"
 Tag="Matthew"
 Series="Family Devotions: Matthew"
-time="T06:00:00-05:00"
+time="T00:00:00-05:00"
 
 #### Common variables
 bin_dir=$HOME/bin

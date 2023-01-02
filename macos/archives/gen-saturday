@@ -10,7 +10,7 @@ subject_dir=6-sundry-saturday
 Category="Links"
 Tag="Sundry"
 Series="Sundry Saturday"
-time="T06:00:00-05:00"
+time="T00:00:00-05:00"
 
 #### Common variables
 bin_dir=$HOME/bin
