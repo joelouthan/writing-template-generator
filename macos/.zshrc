@@ -2,7 +2,7 @@
 export PATH="$HOME/bin:$HOME/pilot:/usr/local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jlouthan/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -81,9 +81,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='nvim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='vim'
 # fi
 
 # Compilation flags
@@ -103,7 +103,7 @@ alias todayslongdate="date '+%A, %B %d, %Y.'"
 alias l='gls -lah --group-directories-first --color=auto'
 alias SCELight="cd /Users/jlouthan/Down/Scelight/ ; ./Scelight-os-x.command"
 alias python="/usr/local/bin/python3"
-alias vi="/usr/bin/vim"
+alias vi="/usr/local/bin/nvim"
 alias pip="/usr/local/bin/pip3"
 alias editzshrc="vi $HOME/.zshrc ; cp $HOME/.zshrc $HOME/bin ; source $HOME/.zshrc"
 alias starttheo="cdtheo ; hugo server --buildFuture --buildDrafts"
