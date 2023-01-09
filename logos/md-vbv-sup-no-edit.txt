@@ -1,0 +1,10 @@
+%NoCharFormatting
+%NoRedLetter
+%NoFootnotes
+%NoCitation
+
+=Header
+<p>>[FullPassageRef] ([Version])  </p>
+
+=ForEachVerse
+<<sup>sup>[VerseNum]</</sup>sup> [VerseText]
