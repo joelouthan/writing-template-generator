@@ -3,8 +3,8 @@
 
 #### Post and date specific variables
 dow="wed"
-Tag="1689 Baptist Confession of Faith"
-tag="1689"
+Tag="1689"
+tag="$Tag"
 title="$Tag, Chapter "
 url_cat="confessions"
 Category="Confessions"
@@ -16,7 +16,7 @@ subject="$title$Tag"
 subject_dir=confession-1689
 year_dir=2022
 url_sub="$url_cat-$tag"
-Series="$Tag"
+Series="$Tag."
 
 #### Common variables
 bin_dir=$HOME/bin
