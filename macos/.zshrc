@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="$HOME/bin:$HOME/pilot:/usr/local/bin:`pwd`/flutter/bin:$PATH"
+export PATH="$HOME/bin:$HOME/pilot:/usr/local/bin:/bin:/usr/bin:$HOME/Library/Python/3.9/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -105,7 +105,7 @@ alias SCELight="cd /Users/jlouthan/Down/Scelight/ ; ./Scelight-os-x.command"
 alias python="/usr/local/bin/python3"
 alias vi="/usr/local/bin/nvim"
 alias pip="/usr/local/bin/pip3"
-alias editzshrc="vi $HOME/.zshrc ; cp $HOME/.zshrc $HOME/bin ; source $HOME/.zshrc"
+alias editzshrc="vi $HOME/.zshrc ; /bin/cp $HOME/.zshrc $HOME/bin ; source $HOME/.zshrc"
 alias starttheo="cdtheo ; hugo server --buildFuture --buildDrafts"
 alias starttheonodrafts="cdtheo ; hugo server --buildFuture"
 alias purgereminders="/usr/bin/osascript /Users/jlouthan/bin/purge-all-completed-reminders.scpt"
@@ -150,6 +150,9 @@ dos2unix *.tsv
 cat *.tsv >> `date -j +%F`-bp-oracle.tsv
 l $bpburns
 cd $cvxburns'
+
+# StarCraft
+alias scelight='$HOME/Projects/Scelight/Scelight-os-x.command'
 
 # Home
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:/usr/local/opt/python@3.9/libexec/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
