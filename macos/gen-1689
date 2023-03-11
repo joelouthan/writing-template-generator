@@ -8,8 +8,6 @@ tag="$Tag"
 title="$Tag, Chapter "
 url_cat="confessions"
 Category="Confessions"
-
-time="T00:00:00-05:00"
 css="prayers"
 
 subject="$title$Tag"
@@ -68,8 +66,7 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-publishDate: $postdate$time
-categories:
+publishDate: $postdate
   - $Category
 tags:
   - "$Tag"

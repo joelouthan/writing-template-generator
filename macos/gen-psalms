@@ -8,7 +8,6 @@ tag="psalm"
 title="Praying Through: 103"
 url_cat="praying-thru"
 Category="Prayers"
-time="T00:00:00-05:00"
 css="prayers"
 
 subject="$title$Tag"
@@ -67,7 +66,7 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-publishDate: $postdate$time
+publishDate: $postdate
 categories:
   - $Category
 tags:

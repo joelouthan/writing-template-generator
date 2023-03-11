@@ -9,7 +9,6 @@ title="$Tag"
 url_cat="$tag"
 Category="Survey NT"
 
-time="T00:00:00-05:00"
 css="prayers"
 
 subject="$title"
@@ -68,7 +67,7 @@ then
 ---
 title: "$title"
 author: Joseph Louthan
-publishDate: $postdate$time
+publishDate: $postdate
 categories:
   - $Category
 tags:
