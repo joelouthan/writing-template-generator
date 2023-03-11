@@ -2,7 +2,10 @@
 #### date command: macOS
 
 #### Post and date specific variables
-title="Calvin's Institutes Ch 10:"
+filename="calvin-institutes"
+bookchapter="11"
+Book="Book First: Of the Knowledge of God the Creator"
+title="Calvin's Institutes"
 category1="Reading"
 category2="Books"
 tag="Reading Notes"
@@ -11,29 +14,29 @@ css="prayers"
 
 #### Common variables
 bin_dir=$HOME/bin
-year=(date -j +%Y)
-posts_dir=$HOME/Sites/theologic.us/content/posts/$year
-TODO:
-
-# mkdir working directory if there is none
-mkdir -p "$posts_dir"
+year=$(date -j +%Y)
+site=$HOME/Sites/theologic.us
+content=$site/content
+posts=$content/posts
+reading=$posts/reading
+output=$posts/$year
 
 # Clear current weeks
 weeks=$bin_dir/weeks
 true > $weeks
 
-echo "Last entry for $subject: "
-echo "$(ls -1 $posts_dir | grep md | grep $tag | tail -n1)"
+echo "Last entry for $title "
+echo "$(ls -1 $reading | grep md | grep $filename | tail -n1)"
 
-lastdate=$(head $posts_dir/`ls -1 $posts_dir | grep md | grep $tag | tail -n1` | grep publishDate)
+lastdate=$(head $reading/`ls -1 $reading | grep md | grep $filename | tail -n1` | grep publishDate)
 echo $lastdate
 
 # Set the prompt for the select command
-echo "Setting up posts for $subject: "
+echo "Setting up posts for $title: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next 60 days to choose from
-for i in {0..60}; do
+for i in {00..30}; do
   echo "$(date -j -v +"$i"d +%F)" >> $weeks
 done
 
@@ -47,68 +50,53 @@ select selectdate in $listofdates; do
     break
 done
 
-echo "Publishing "$subject" starting on "$selectdate"!"
+echo "Publishing "$title" starting on "$selectdate"!"
 
 read -p "Are you sure? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	for j in {0..30}; do
+	for j in {0..9}; do
   postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$posts_dir"/"$url_sub""$j".md
+  cat << EOF > "$output"/"$filename""$bookchapter""$j".md
 ---
-title: "$title"
+title: "$title" Ch "$bookchapter""$j":
 author: Joseph Louthan
-publishDate: $postdate$time
+publishDate: $postdate
 categories:
-  - $category
+  - $category1
+  - $category2
 tags:
   - "$tag"
 series:
-  - "$Series"
+  - "$series"
 tocopen: true
 css: "$css"
 draft: true
 ---
-## The Text
 
+## The Title
 
+Book: $Book
 
-## The Devotion
+## The Sections
 
+1.
 
+## The Resources
 
-## The Discussion
+<p style="clear:both;">
 
-\`\`\`text
-1. 
-\`\`\`
+<img src="https://theologic.us/images/resources/book-calvin-beveridge-institutes.jpg" align="left" width="200" style="padding-right: 10px" />The Institutes of the Christian Religion.  
+by John Calvin.  Translated by Henry Beveridge  
+Hendrickson Publishers. January 1, 2008.  
+[Goodreads](https://www.goodreads.com/book/show/1155340.Institutes_of_the_Christian_Religion)
 
-\`\`\`text
-2. 
-\`\`\`
+<p style="clear:both;">
 
-\`\`\`text
-3. 
-\`\`\`
+---
 
-\`\`\`text
-4. 
-\`\`\`
-
-## The Prayer from the Psalms
-
->
-
-<div style='font-variant: small-caps;'>
-
-</div>
-
-\`\`\`text
-
-\`\`\`
-
-<div style="page-break-after: always;"></div>
+## The Copy
 
 EOF
   done
