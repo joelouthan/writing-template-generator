@@ -2,7 +2,7 @@
 export PATH="$HOME/bin:$HOME/pilot:/usr/local/bin:/bin:/usr/bin:$HOME/Library/Python/3.9/bin"
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/Users/jlouthan/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,8 +106,8 @@ alias python="/usr/local/bin/python3"
 alias vi="/usr/local/bin/nvim"
 alias pip="/usr/local/bin/pip3"
 alias editzshrc="vi $HOME/.zshrc ; /bin/cp $HOME/.zshrc $HOME/bin ; source $HOME/.zshrc"
-alias starttheo="cdtheo ; hugo server --buildFuture --buildDrafts"
-alias starttheonodrafts="cdtheo ; hugo server --buildFuture"
+alias starttheo="cdtheo ; hugo server -D -F"
+alias starttheonodrafts="cdtheo ; hugo server -F"
 alias purgereminders="/usr/bin/osascript /Users/jlouthan/bin/purge-all-completed-reminders.scpt"
 alias wordcount='find . -name "*.md" -mtime -"$i" -type f -maxdepth 2 -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias todayscount='gfind . -maxdepth 1 -name "*.md" -daystart -ctime 0 -type f -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
