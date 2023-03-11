@@ -60,7 +60,7 @@ then
   postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
   cat << EOF > "$output"/"$filename""$bookchapter""$j".md
 ---
-title: "$title" Ch "$bookchapter""$j":
+title: "$title Ch $bookchapter$j: "
 author: Joseph Louthan
 publishDate: $postdate
 categories:
