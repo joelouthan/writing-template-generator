@@ -1,0 +1,109 @@
+#!/bin/bash
+#### date command: macOS
+
+#### Post and date specific variables
+filename="owen-v"
+volume="07"
+book="reason-for-faith"
+title="Owen. VII. The Reason of Faith. Ch "
+category1="Reading"
+category2="Books"
+tag="Reading Notes"
+series="Reading: The Complete Works of John Owen"
+css="prayers"
+Set="The Complete Works of John Owen"
+Volume="VII The Holy Spirit--The Helper"
+Book="The Reason for Faith"
+
+
+#### Common variables
+bin_dir=$HOME/bin
+year=$(date -j +%Y)
+site=$HOME/Sites/theologic.us
+content=$site/content
+posts=$content/posts
+reading=$posts/reading
+output=$posts/$year
+
+# Clear current weeks
+weeks=$bin_dir/weeks
+true > $weeks
+
+echo "Last entry for $title "
+echo "$(ls -1 $reading | grep md | grep $filename | tail -n1)"
+
+lastdate=$(head $reading/`ls -1 $reading | grep md | grep $filename | tail -n1` | grep publishDate)
+echo $lastdate
+
+# Set the prompt for the select command
+echo "Setting up posts for $title: "
+PS3="Select a date or "q" to quit: "
+
+# Give me the next 60 days to choose from
+for i in {00..30}; do
+  echo "$(date -j -v +"$i"d +%F)" >> $weeks
+done
+
+listofdates=$(cat $weeks)
+
+# Show a menu and ask for input.
+select selectdate in $listofdates; do
+    if [ -n "$selectdate" ]; then
+        echo ${selectdate}
+    fi
+    break
+done
+
+echo "Publishing "$title" starting on "$selectdate"!"
+
+read -p "Are you sure? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	for j in {01..20}; do
+  postdate=$(date -j -v +"$j"d -f "%Y-%m-%d" "$selectdate" +%F)
+  cat << EOF > "$output"/"$filename""$volume"-"$book"-"$j".md
+---
+title: "$title$j: "
+author: Joseph Louthan
+publishDate: $postdate
+categories:
+  - $category1
+  - $category2
+tags:
+  - "$tag"
+series:
+  - "$series"
+tocopen: true
+css: "$css"
+draft: true
+---
+
+## The Title
+
+**$Set**  
+Volume: **$Volume**  
+Book: **$Book**  
+Chapter: **$j**
+
+## The Notes
+
+## The Resource
+
+<p style="clear:both;">
+
+<img src="https://theologic.us/images/resources/book-owen-tcw-07-the-helper.jpg" align="left" width="200" style="padding-right: 10px" />  Volume 7. The Holy Spirit--The Helper.  
+The Complete Works.  
+by John Owen.  
+Crossway. November 8, 2022.   
+[Goodreads](https://www.goodreads.com/book/show/60354441-the-holy-spirit?from_search=true&from_srp=true&qid=nA4DypqmnH&rank=9)
+
+<p style="clear:both;">
+
+---
+
+## The Copy
+
+EOF
+  done
+fi
