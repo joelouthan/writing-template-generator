@@ -112,8 +112,9 @@ alias purgereminders="/usr/bin/osascript /Users/jlouthan/bin/purge-all-completed
 alias wordcount='find . -name "*.md" -mtime -"$i" -type f -maxdepth 2 -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias todayscount='gfind . -maxdepth 1 -name "*.md" -daystart -ctime 0 -type f -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias archive_prayers='/usr/bin/find $HOME/Sites/prayers/pages -iname "$(date -j -v -1d +%F)*.adoc" -maxdepth 1'
-alias sync-audio='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Audio metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
-alias sync-images='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Images metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
+# alias sync-audio='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Audio metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
+# alias sync-images='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Images metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
+alias sync-audio='rsync -avP --exclude=".DS_Store" /Users/jlouthan/Projects/Theologicus/Audio barracks:/var/www/media.theologic.us/html/'
 alias archive-videos="find $HOME/Movies -name '*.mp4' -mtime +1 -exec mv -f {} /Volumes/Media/Theologicus/Video \;"Z
 
 # Git
