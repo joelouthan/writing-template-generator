@@ -40,7 +40,7 @@ echo "Setting up posts for $subject: "
 PS3="Select a date or "q" to quit: "
 
 # Give me the next x weeks starting on $dow
-for i in {0..10}; do
+for i in {0..25}; do
   echo "$(date -j -v+"$dow" -v +"$i"w +%F)" >> $weeks
 done
 
