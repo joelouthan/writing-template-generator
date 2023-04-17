@@ -74,9 +74,11 @@ series:
   - "$Series"
 tocopen: true
 css: "$css"
-draft: true
+draft: false
 ---
 ## The Text
+
+TODO:
 
 ## The Chapter
 
