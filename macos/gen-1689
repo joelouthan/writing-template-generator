@@ -67,6 +67,7 @@ then
 title: "$title"
 author: Joseph Louthan
 publishDate: $postdate
+categories
   - $Category
 tags:
   - "$Tag"
