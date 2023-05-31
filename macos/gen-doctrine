@@ -13,6 +13,7 @@ css="prayers"
 
 subject="$title"
 subject_dir=doctrine-god-saves-sinners
+file_name=god-saves-sinners
 year_dir=2023
 url_sub="$url_cat-$tag"
 Series="$Tag"
@@ -63,7 +64,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for j in {01..30}; do
     postdate=$(date -j -v +"$j"w -f "%Y-%m-%d" "$selectdate" +%F)
-  cat << EOF > "$current_dir"/"$tag""$j".md
+  cat << EOF > "$current_dir"/"$file_name"-"$j"-.md
 ---
 title: "$title"
 author: Joseph Louthan
@@ -71,7 +72,7 @@ publishDate: $postdate
 categories:
   - $Category
 tags:
-  - "$Tag"
+  - "$tag"
 series:
   - "$Series"
 tocopen: true
@@ -87,7 +88,6 @@ draft: true
 ## The Scriptural Prooftext
 
 ---
-
 EOF
   done
 fi
