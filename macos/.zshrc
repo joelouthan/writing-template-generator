@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="$HOME/bin:$HOME/pilot:/usr/local/bin:/bin:/usr/bin:$HOME/Library/Python/3.9/bin"
+export PATH="/opt/homebrew/opt/ruby/bin:$HOME/bin:$HOME/pilot:/usr/local/bin:/bin:/usr/bin:$HOME/Library/Python/3.11/bin:/usr/sbin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jlouthan/.oh-my-zsh"
@@ -99,22 +99,21 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 # Shortcuts
+alias cdmodels="cd $HOME/.cache/lm-studio/models"
+alias starttheo="cdtheo ; mdbook clean && mdbook serve"
+alias syncscans="rsync -avz --progress jlouthan@barracks:~/Brother/ $HOME/Scans/ ; cd $HOME/Scans ; l"
+alias xpass="xkcdpass -C capitalize --acrostic='chaos' --delimiter='-' --min=3 --max=4 --valid-chars='[a-z]'"
+alias pip='/opt/homebrew/bin/pip3'
+alias prename='/opt/homebrew/bin/rename'
 alias todayslongdate="date '+%A, %B %d, %Y.'"
-alias l='gls -lah --group-directories-first --color=auto'
-alias SCELight="cd /Users/jlouthan/Down/Scelight/ ; ./Scelight-os-x.command"
-alias python="/usr/local/bin/python3"
+alias l='ls -lah --color=auto'
 alias vi="/usr/local/bin/nvim"
-alias pip="/usr/local/bin/pip3"
 alias editzshrc="vi $HOME/.zshrc ; /bin/cp $HOME/.zshrc $HOME/bin ; source $HOME/.zshrc"
-alias starttheo="cdtheo ; hugo server -D -F"
-alias starttheonodrafts="cdtheo ; hugo server -F"
 alias purgereminders="/usr/bin/osascript /Users/jlouthan/bin/purge-all-completed-reminders.scpt"
 alias wordcount='find . -name "*.md" -mtime -"$i" -type f -maxdepth 2 -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias todayscount='gfind . -maxdepth 1 -name "*.md" -daystart -ctime 0 -type f -exec awk 1 {} + | wc -w | awk "{ print \$1 }"'
 alias archive_prayers='/usr/bin/find $HOME/Sites/prayers/pages -iname "$(date -j -v -1d +%F)*.adoc" -maxdepth 1'
-# alias sync-audio='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Audio metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
-# alias sync-images='rsync -avP --exclude=".DS_Store" /Volumes/Media/Theologicus/Images metroplex:/home/30373/users/.home/domains/study.theologic.us/html/wp-content/uploads/'
-alias sync-audio='rsync -avP --exclude=".DS_Store" /Users/jlouthan/Projects/Theologicus/Audio barracks:/var/www/media.theologic.us/html/'
+alias sync-audio='rsync -avPO --exclude=".DS_Store" --exclude=".Media Preferences.plist" /Users/jlouthan/Sites/media.theologic.us/audio/ barracks:/var/www/media.theologic.us/html/audio'
 alias archive-videos="find $HOME/Movies -name '*.mp4' -mtime +1 -exec mv -f {} /Volumes/Media/Theologicus/Video \;"Z
 
 # Git
@@ -123,12 +122,14 @@ alias pull-prayers="cd $HOME/Sites/theologic.us ; git pull ; cd $HOME/bin ; git 
 
 # Change Dirs Shortcuts
 alias cdclients="cd $HOME/Drive/Clients ;  ls -la ; pwd"
-alias cdtheo="cd $HOME/Sites/theologic.us ; ls -la ; pwd"
-alias cdtheomedia="cd $HOME/Sites/theologic.us/content/images ; ls -la ; pwd"
+alias cdtheo="cd $HOME/Projects/Books/Theologicus ; ls -la ; pwd"
 alias cdpaclife="cd $HOME/Drive/Clients/PacLife ; ls -la ; pwd"
-alias cdplay="$HOME/Projects/Ansible/playbooks"
-alias cdprayers="$HOME/Sites/prayers ; ls -la ; pwd"
-alias cdceareplays="$HOME/SC2/CEA\ StarCraft\ Team\ Resources/CEA\ Replays"
+alias cdplay="cd $HOME/Projects/Ansible/playbooks"
+alias cdprayers="cd $HOME/Sites/prayers ; ls -la ; pwd"
+alias cdceareplays="cd $HOME/SC2/CEA\ StarCraft\ Team\ Resources/CEA\ Replays"
+alias cdmedia_audio="cd $HOME/Sites/media.theologic.us/audio"
+alias cdcyclone="cd $HOME/Notes/Adjutant-Cyclone"
+alias cdviking=" cd $HOME/Notes/Adjutant-Viking"
 
 # Ansible
 alias play="ansible-playbook"
@@ -141,19 +142,18 @@ cvxburns=$burnsdir/Chevron
 bpburns=$burnsdir/BP
 alias javaform='javaws $HOME/Downloads/frmservlet.jnlp'
 alias cdburns='cd $burnsdir'
-alias burnsclean='rm -f $cvxburns/*.tsv ; rm -f $bpburns/*.tsv ; l -R $burnsdir ; rm -f $HOME/Downloads/*.tsv'
-alias burnsmerge='cd $cvxburns
-dos2unix *.tsv
-cat *.tsv >> `date -j +%F`-cvx-oracle.tsv
-l $cvxburns
-cd $bpburns
-dos2unix *.tsv
-cat *.tsv >> `date -j +%F`-bp-oracle.tsv
-l $bpburns
-cd $cvxburns'
+alias burnsclean='rm -f $HOME/Downloads/*.tsv'
+# alias burnsmerge='cd $cvxburns
+# dos2unix *.tsv
+# cat *.tsv >> `date -j +%F`-cvx-oracle.tsv
+# l $cvxburns
+# cd $bpburns
+# dos2unix *.tsv
+# cat *.tsv >> `date -j +%F`-bp-oracle.tsv
+# l $bpburns
+# cd $cvxburns'
 
 # StarCraft
-alias scelight='$HOME/Projects/Scelight/Scelight-os-x.command'
 
 # Home
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/ruby/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/gems/bin:/usr/local/opt/python@3.9/libexec/bin:$HOME/Sites/prayers:$HOME/bin/gen_next:$HOME/Projects/PanaCEA/scripts:/opt/homebrew/bin:$PATH"
@@ -163,3 +163,6 @@ export GEM_HOME=$HOME/gems
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jlouthan/.cache/lm-studio/bin"
